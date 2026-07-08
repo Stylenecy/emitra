@@ -1,0 +1,90 @@
+Diagram di atas menggambarkan alur data end-to-end Emitra. Berikut penjabaran lengkap dua section yang diminta.
+
+---
+
+# SECTION 1: RECOMMENDED SOLUTION
+
+## 1.1 Gambaran Umum Solusi
+
+Emitra adalah platform *AI-powered carbon compliance and export intelligence* yang dirancang untuk membantu eksportir Indonesia di sektor besi, baja, dan aluminium menghasilkan laporan emisi karbon tertanam (*embedded emissions*) yang akurat, terverifikasi, dan sesuai format deklarasi Carbon Border Adjustment Mechanism (CBAM) Uni Eropa. Platform ini memposisikan dirinya bukan sebagai alat pembayaran pajak karbon, melainkan sebagai infrastruktur data yang memungkinkan eksportir menyediakan bukti emisi aktual kepada importir mereka di Uni Eropa — sehingga importir dapat menghindari penggunaan nilai emisi *default* Komisi Eropa yang cenderung lebih tinggi dan merugikan kompetitivitas harga produk Indonesia.
+
+Filosofi desain Emitra bertumpu pada satu prinsip: dalam konteks kepatuhan regulasi, *auditability* lebih penting daripada kecanggihan algoritmik semata. Karena itu, arsitektur sistem menggabungkan komponen AI/ML untuk mengurangi beban kerja manual (ekstraksi dokumen, klasifikasi, deteksi anomali) dengan mesin kalkulasi berbasis aturan deterministik yang mengikuti metodologi resmi Uni Eropa — memastikan setiap angka yang dihasilkan dapat dilacak, dijelaskan, dan dipertahankan di hadapan verifikator eksternal.
+
+## 1.2 System Architecture
+
+Sebagaimana ditunjukkan pada diagram, arsitektur Emitra terdiri dari lima lapisan pemrosesan sekuensial, dibungkus oleh satu lapisan audit trail dan keamanan yang bersifat *cross-cutting* — artinya setiap transaksi data yang melewati kelima lapisan tersebut dicatat secara otomatis ke dalam log yang dapat ditelusuri kembali ke dokumen sumbernya.
+
+**Lapisan input data** menerima empat kategori dokumen mentah dari klien: tagihan listrik (untuk menghitung emisi Scope 2 dari konsumsi energi), tagihan bahan bakar/BBM (emisi Scope 1 dari pembakaran langsung), data produksi (volume dan jenis produk yang diekspor), dan *bill of materials* (komposisi bahan baku, termasuk kandungan skrap yang relevan mengingat Uni Eropa kini mengklasifikasikan skrap pra-konsumsi sebagai bahan prekursor yang harus dilacak emisinya, bukan lagi dianggap bebas karbon secara otomatis).
+
+**Lapisan OCR & AI extraction** memproses dokumen-dokumen tersebut — baik dalam format PDF hasil scan maupun foto dari kamera ponsel — menjadi data terstruktur. Di sinilah komponen computer vision bekerja untuk mengenali tabel, nomor, dan satuan pengukuran dari dokumen yang formatnya bervariasi antar pemasok listrik, distributor BBM, dan sistem ERP internal masing-masing eksportir.
+
+**Lapisan validation & normalization** menyatukan data terstruktur dari berbagai sumber ke dalam satu skema internal yang konsisten, sekaligus menjalankan pemeriksaan anomali statistik terhadap pola historis perusahaan. Di titik inilah audit trail mulai aktif mencatat asal setiap nilai.
+
+**Emission calculation engine** adalah inti deterministik dari sistem — mesin ini menerapkan metodologi resmi Uni Eropa untuk menghitung emisi tertanam Scope 1 dan Scope 2, dengan opsi menggunakan nilai default Komisi Eropa atau data aktual instalasi (jika tersedia dan terverifikasi). Mesin ini secara sengaja dibangun sebagai *rule engine* yang eksplisit dan dapat diaudit baris per baris, bukan model *black-box*, karena regulator dan verifikator CBAM mensyaratkan kejelasan metodologis, bukan prediksi probabilistik.
+
+**CBAM XML report generator** mengonversi hasil kalkulasi menjadi format deklarasi yang selaras dengan skema registry CBAM Uni Eropa. *Saya perlu menandai di sini bahwa skema XML resmi ini dapat diperbarui oleh Komisi Eropa dari waktu ke waktu (sebagaimana terjadi pada Desember 2025 ketika Komisi menerbitkan serangkaian tindakan implementasi baru) — tim sebaiknya memverifikasi versi skema XSD terbaru langsung dari dokumentasi teknis resmi Uni Eropa sebelum finalisasi modul ini, bukan mengandalkan asumsi versi yang mungkin sudah usang.*
+
+## 1.3 AI/ML Pipeline
+
+Penting untuk digarisbawahi bahwa "AI" dalam Emitra bukan satu model tunggal, melainkan kombinasi beberapa komponen dengan peran yang berbeda dan tingkat keterjelasan (*explainability*) yang disesuaikan dengan risiko masing-masing tahap:
+
+**OCR untuk parsing dokumen** menggunakan pendekatan *document understanding* — kombinasi deteksi layout (untuk mengenali struktur tabel pada invoice) dan pengenalan karakter untuk mengekstrak nilai numerik dan satuan. Karena ini adalah tahap ekstraksi, bukan keputusan final, tingkat kesalahan yang dapat ditoleransi lebih tinggi asalkan diikuti tahap validasi manusia.
+
+**Auto-classification HS Code** menggunakan model klasifikasi teks (berbasis deskripsi produk) untuk memetakan produk klien ke kode HS yang relevan, kemudian mencocokkannya terhadap daftar kode CN (*Combined Nomenclature*) yang telah ditetapkan Komisi Eropa sebagai barang dalam lingkup CBAM. Pendekatan ini bersifat *assistive* — hasil klasifikasi selalu ditampilkan sebagai saran dengan skor keyakinan, bukan keputusan otomatis final.
+
+**Emission factor auto-mapping** adalah komponen hybrid: sebagian besar logikanya berbasis tabel lookup deterministik (mencocokkan aktivitas seperti kWh listrik atau liter BBM terhadap faktor emisi default resmi dari lampiran regulasi implementasi Uni Eropa), dengan lapisan ML tipis untuk menyarankan pemetaan kategori aktivitas yang ambigu ke kategori standar terdekat.
+
+**Anomaly detection** menerapkan deteksi outlier statistik sederhana (misalnya berbasis deviasi dari baseline historis perusahaan) untuk menandai lonjakan konsumsi energi atau bahan baku yang tidak wajar, yang kemudian masuk ke antrean tinjauan manusia sebelum data tersebut ikut dihitung dalam laporan final.
+
+*Saya ingin menekankan satu hal secara jujur: keputusan desain untuk menjadikan mesin kalkulasi emisi sebagai rule engine deterministik — bukan model ML end-to-end — bukan keterbatasan teknis, melainkan pilihan yang justru memperkuat kredibilitas produk di hadapan verifikator dan auditor, karena regulasi kepatuhan karbon global secara konsisten mensyaratkan metodologi yang dapat ditelusuri secara manual, bukan prediksi statistik.*
+
+## 1.4 MVP Features
+
+Untuk fase awal, Emitra membatasi lingkup fungsional pada empat fitur inti yang langsung menjawab kebutuhan kepatuhan, sengaja menghindari fitur pelengkap yang menambah kompleksitas tanpa nilai kepatuhan langsung:
+
+- **OCR invoice & bill of materials** — unggah dokumen dalam format PDF/gambar, ekstraksi otomatis ke data terstruktur dengan antarmuka koreksi manual.
+- **Kalkulator Scope 1 & 2 emissions** — mengikuti metodologi resmi Uni Eropa, mendukung baik nilai default maupun input data aktual terverifikasi.
+- **CBAM Declarant Report Generator** — menghasilkan output XML yang selaras dengan format deklarasi registry CBAM.
+- **Audit-trail log** — setiap angka pada laporan final dapat diklik untuk menampilkan dokumen sumber, tahap pemrosesan, dan pengguna/sistem yang melakukan validasi terakhir.
+
+Fitur seperti dashboard analitik lanjutan, marketplace verifikator pihak ketiga, atau integrasi pembiayaan hijau sengaja tidak dimasukkan ke MVP — fitur-fitur tersebut dicadangkan sebagai roadmap fase pengembangan berikutnya, agar sumber daya tim terfokus pada inti kepatuhan yang paling mendesak.
+
+## 1.5 Tech Stack
+
+Rekomendasi tumpukan teknologi berikut disusun dengan pertimbangan kecepatan pengembangan, kematangan ekosistem, dan kesesuaian dengan kebutuhan auditability:
+
+- **Backend & calculation engine**: Python dengan framework FastAPI — dipilih karena ekosistem library data science/ML Python yang matang, serta kemudahan menulis *rule engine* yang eksplisit dan mudah diuji unit per unit (penting untuk auditability).
+- **Frontend dashboard**: TypeScript dengan React atau Next.js — untuk antarmuka yang responsif dan mendukung *type safety* pada data numerik sensitif.
+- **OCR**: Tesseract OCR sebagai baseline open-source untuk MVP, dengan opsi migrasi ke layanan *document AI* berbasis cloud pada fase scale-up jika akurasi pada dokumen kualitas rendah (misalnya foto invoice dari ponsel) belum memadai. *Saya belum dapat memastikan perbandingan akurasi terkini antar penyedia layanan document AI komersial — ini sebaiknya divalidasi lewat uji coba langsung terhadap sampel dokumen nyata dari calon klien, bukan diasumsikan dari materi pemasaran vendor.*
+- **Database**: PostgreSQL untuk data emisi terstruktur dan log audit trail; object storage kompatibel S3 untuk penyimpanan dokumen mentah.
+- **Machine learning**: scikit-learn untuk deteksi anomali (misalnya pendekatan isolation forest atau z-score sederhana), model klasifikasi teks ringan untuk pemetaan HS code.
+- **XML generation**: library `lxml` pada Python dengan validasi skema XSD, memastikan setiap output tervalidasi terhadap skema resmi sebelum dikirim ke klien.
+- **Cloud infrastructure**: AWS atau GCP sebagai pilihan default; namun perlu dicatat sebagai pertimbangan desain bahwa jika ada kebutuhan residensi data spesifik dari klien korporat besar atau regulasi data Indonesia ke depan, arsitektur perlu mendukung opsi hosting yang selaras dengan persyaratan tersebut sejak awal (*cloud-agnostic design*).
+
+## 1.6 UI/UX Dashboard Description
+
+Dashboard utama Emitra dirancang dengan empat area fungsional. Panel ringkasan menampilkan status kepatuhan per produk/pengiriman ekspor — total emisi tertanam, estimasi jumlah sertifikat yang relevan berdasarkan faktor phase-in tahun berjalan, dan status verifikasi dokumen. Zona unggah dokumen memungkinkan klien menyeret-lepas invoice listrik, tagihan BBM, dan data produksi, dengan indikator progres ekstraksi OCR secara real-time. Antrean validasi menampilkan item yang ditandai sistem sebagai anomali atau memiliki tingkat keyakinan ekstraksi rendah, menunggu konfirmasi manual dari staf klien atau tim Emitra sebelum masuk ke kalkulasi final. Terakhir, penampil audit trail memungkinkan pengguna — atau auditor eksternal — mengeklik setiap angka pada laporan untuk melihat rantai penuh dari dokumen sumber hingga hasil akhir, lengkap dengan cap waktu dan identitas pihak yang memvalidasi.
+
+## 1.7 Keamanan Data
+
+Desain keamanan Emitra mengikuti prinsip *defense in depth* dengan beberapa lapisan: enkripsi data dalam transit menggunakan TLS 1.2 atau lebih tinggi, dan enkripsi data saat disimpan (*at rest*) menggunakan standar AES-256. Arsitektur multi-tenant menerapkan isolasi data logis antar klien — baik melalui *row-level security* di tingkat database maupun pemisahan skema per klien untuk data yang paling sensitif seperti detail proses produksi.
+
+Mengenai sertifikasi ISO 27001 — *saya perlu jujur di sini agar proposal tidak overclaiming*: sebagai startup pada tahap MVP, Emitra belum akan memiliki sertifikasi ISO 27001 aktual pada saat peluncuran. Yang lebih akurat dan tetap kredibel untuk dicantumkan dalam proposal adalah bahwa arsitektur sistem *dirancang sejak awal untuk selaras dengan kontrol-kontrol inti ISO 27001* (manajemen akses, enkripsi, log audit, manajemen insiden), dengan sertifikasi formal ditetapkan sebagai target roadmap tahun kedua setelah traksi pelanggan awal tercapai — pola yang umum dan dapat dipertanggungjawabkan di kalangan B2B SaaS tahap awal. Selain itu, penanganan data produksi dan emisi klien perlu selaras dengan Undang-Undang Pelindungan Data Pribadi (UU No. 27 Tahun 2022), khususnya terkait persetujuan pemrosesan data dan hak klien atas data mereka.
+
+---
+
+# SECTION 2: RISK ANALYSIS — TECHNICAL RISKS
+
+**2.1 Data quality risk.** Risiko utama pada tahap awal adopsi adalah kualitas data input yang tidak konsisten — invoice listrik dari penyedia daerah yang formatnya berbeda-beda, tagihan BBM yang difoto dalam kondisi pencahayaan buruk, atau data produksi yang dicatat manual tanpa standardisasi satuan. Kesalahan ekstraksi pada tahap ini akan menjalar ke seluruh hasil kalkulasi hilir. *Mitigasi*: penyediaan template input terstandardisasi untuk klien yang bersedia mengadopsinya, dikombinasikan dengan lapisan validasi AI yang menandai nilai di luar rentang wajar (misalnya konsumsi listrik yang melonjak tidak proporsional terhadap volume produksi) untuk ditinjau manusia sebelum masuk ke laporan final — bukan diterima secara otomatis.
+
+**2.2 Regulation change risk.** CBAM sebagai kerangka regulasi masih dalam evolusi aktif — Komisi Eropa telah menerbitkan berbagai tindakan implementasi tambahan sejak akhir 2025, termasuk perluasan lingkup ke produk hilir dan penguatan aturan anti-sirkumvensi. Faktor phase-in yang saat ini sebesar 2,5% pada 2026 juga dijadwalkan naik bertahap hingga mencapai 100% pada 2034, dan skema penetapan harga sertifikat berubah dari kuartalan menjadi mingguan mulai 2027. *Mitigasi*: mesin kalkulasi dirancang modular — faktor emisi default, tarif phase-in, dan format skema XML disimpan sebagai parameter konfigurasi yang dapat diperbarui tanpa mengubah logika inti sistem, sehingga tim dapat merespons perubahan regulasi dalam hitungan hari, bukan menulis ulang kode.
+
+**2.3 Verification rejection risk.** Laporan yang dihasilkan Emitra pada akhirnya akan diperiksa oleh verifikator terakreditasi di sisi importir Uni Eropa. Ada risiko riil bahwa metodologi atau data yang digunakan Emitra tidak diterima karena tidak memenuhi standar verifikasi yang disyaratkan Implementing Regulation Uni Eropa. *Mitigasi*: menerapkan pendekatan *dual-verification* — laporan internal divalidasi dua tahap (otomatis dan manual) sebelum diserahkan ke klien, serta membangun kemitraan dengan lembaga verifikator terakreditasi lokal atau regional sebagai mitra rujukan, sehingga klien memiliki jalur eskalasi yang jelas jika verifikator Uni Eropa meminta klarifikasi tambahan.
+
+**2.4 Adoption risk.** Target pasar Emitra — pemilik UKM manufaktur besi/baja/aluminium — cenderung konservatif dan skeptis terhadap klaim "AI" pada alat kepatuhan yang berdampak finansial langsung terhadap bisnis mereka. Ketidakpercayaan ini dapat memperlambat adopsi, terutama jika hasil kalkulasi sistem tidak dapat dijelaskan secara meyakinkan. *Mitigasi*: audit trail yang transparan dan dapat diklik ke setiap sumber dokumen menjadi alat kepercayaan utama, dikombinasikan dengan prinsip *human-in-the-loop* di setiap tahap kritikal — sistem tidak pernah mengklaim otomatisasi penuh tanpa pengawasan manusia, melainkan memposisikan diri sebagai alat bantu yang mempercepat kerja tim keuangan/kepatuhan klien, bukan menggantikannya.
+
+**2.5 Data security risk.** Data produksi dan konsumsi energi adalah informasi kompetitif yang sensitif bagi eksportir manufaktur — kebocoran dapat mengungkap struktur biaya operasional kepada pesaing. *Mitigasi*: penerapan enkripsi end-to-end (transit dan at-rest), isolasi data logis antar-klien pada arsitektur multi-tenant, kontrol akses berbasis peran (*role-based access control*) yang membatasi visibilitas data hanya kepada personel yang berwenang, serta menjadikan pencapaian sertifikasi ISO 27001 sebagai milestone roadmap yang dikomunikasikan secara transparan kepada klien — bukan diklaim sudah tercapai sebelum benar-benar diaudit pihak ketiga.
+
+---
+
+Catatan buat tim: bagian yang saya tandai dengan italic di atas (soal versi skema XSD, akurasi OCR vendor, dan status sertifikasi ISO 27001) sengaja saya tulis jujur apa adanya karena itu justru poin yang paling mudah membuat proposal kalian dianggap kredibel oleh juri yang teknis — overclaiming di area-area itu jauh lebih berisiko daripada mengakuinya sebagai roadmap.

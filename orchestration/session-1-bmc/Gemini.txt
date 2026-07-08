@@ -1,0 +1,80 @@
+Berikut adalah 2 ide bisnis *fresh*, relevan dengan lanskap tahun 2026, dan dirancang khusus agar tim dengan komposisi **1 SI + 3 Manajemen** bisa mengeksplorasi potensi maksimal mereka dalam sisa waktu 2 hari.
+
+---
+
+## IDE 1: EcoLedger.ai
+
+**Automated CBAM & ESG Compliance Engine for SEA Exporters**
+
+### 1. Sub-Tema × Kategori
+
+* **Sub-Theme A (Sustainable Future) × Category 1 (Tech-Based)**
+* **Alasan:** Menggunakan keunggulan teknologi (AI & Data Integration) untuk menyelesaikan isu keberlanjutan global yang regulasinya bersifat memaksa (*regulatory-driven market*).
+
+### 2. Masalah Konkret (Indonesia/SEA)
+
+Eksportir skala menengah di Indonesia dan Asia Tenggara (seperti tekstil, manufaktur komponen, komoditas) kini terancam kehilangan pasar Eropa dan global akibat regulasi ketat seperti **CBAM (Carbon Border Adjustment Mechanism)**. Mereka diwajibkan menyerahkan laporan jejak karbon yang teraudit. Masalahnya, menyewa konsultan ESG *Big Four* terlalu mahal ($30k–$100k), sementara mereka tidak punya infrastruktur data internal untuk melacak emisi Scope 1, 2, dan 3 secara akurat.
+
+### 3. Solusi & Peran Teknologi (Dex/CTO)
+
+Platform B2B SaaS yang mengotomatisasi kalkulasi emisi dan pembuatan laporan kepatuhan regulasi internasional.
+
+* **Peran Teknologi (Dex):** Mengembangkan arsitektur integrasi data (API) yang terhubung ke ERP lokal perusahaan (misal: Odoo, SAP, atau database internal), menggunakan AI Agents (LLM berbasis ekstraksi dokumen) untuk memparsing tagihan listrik, manifes logistik, dan data vendor, lalu mengonversinya menjadi metrik emisi sesuai standar protokol GHG.
+
+### 4. Sinergi Tim (SI + Manajemen)
+
+* **Dex (SI/CTO):** Merancang *data pipeline*, skema integrasi database, dan *mockup interface* dasbor kepatuhan karbon.
+* **Imel (CEO) & Keren (CMO):** Menyusun strategi penetapan posisi pasar (*market positioning*) B2B, menganalisis lanskap regulasi CBAM, dan merancang strategi akuisisi korporat (*Go-To-Market*).
+* **Adriel (CFO):** Struktur finansial sangat klise namun solid untuk kompetisi bisnis: Model langganan B2B SaaS tiering berdasarkan volume data/omset perusahaan. Finansialnya terprediksi dan disukai juri.
+
+### 5. Potensi Menang: 8.5 / 10
+
+* **Alasan:** Topik ini sangat "International Business Plan" karena membahas perdagangan lintas batas dan regulasi global nyata di tahun 2026. Juri akademis menyukai topik ESG yang memiliki dasar hukum internasional yang jelas.
+
+### 6. Feasibility Nulis dalam 2 Hari: 8.5 / 10
+
+* **Sangat Layak.** Template finansial SaaS B2B sangat melimpah dan polanya jelas (CAC, LTV, MRR). Struktur analisis risiko berfokus pada perubahan regulasi, yang mudah diriset lewat *whitepaper* yang sudah ada. Dex tidak perlu pusing memikirkan perangkat keras fisik, murni fokus pada arsitektur perangkat lunak.
+
+---
+
+## IDE 2: Parametrix AI
+
+**Parametric Climate Micro-Insurance for SEA Smallholders**
+
+### 1. Sub-Tema × Kategori
+
+* **Sub-Theme B (Digital Innovation) × Category 1 (Tech-Based)**
+* **Alasan:** Mendigitalisasi sektor asuransi konvensional yang kaku menjadi berbasis data *real-time* untuk melindungi sektor agrikultur/akuakultur.
+
+### 2. Masalah Konkret (Indonesia/SEA)
+
+Petani dan pembudidaya rumput laut/perikanan skala kecil di Indonesia paling rentan terkena dampak perubahan iklim (Anomali El Niño/La Niña). Asuransi pertanian tradisional gagal total di Indonesia karena proses klaimnya lambat, biayanya mahal, dan membutuhkan verifikator fisik untuk datang ke remote area guna memeriksa kerusakan. Akibatnya, saat gagal panen, modal mereka habis dan terjebak utang.
+
+### 3. Solusi & Peran Teknologi (Dex/CTO)
+
+Platform asuransi mikro parametrik berbasis data satelit. Asuransi ini *tidak* membayar berdasarkan kerugian fisik yang diperiksa manual, melainkan berdasarkan **data parameter cuaca**. Jika curah hujan atau suhu laut melewati batas ekstrem tertentu yang terekam satelit, dana klaim cair otomatis ke rekening petani dalam 1x24 jam tanpa perlu mengajukan klaim.
+
+* **Peran Teknologi (Dex):** Merancang arsitektur sistem yang mengintegrasikan API data cuaca satelit (seperti NOAA/Copernicus) dengan *automated payment gateway*. Menggunakan *rule-based engine* atau *smart logic* untuk mendeteksi trigger klaim otomatis jika parameter terlampaui.
+
+### 4. Sinergi Tim (SI + Manajemen)
+
+* **Dex (SI/CTO):** Menjelaskan bagaimana sistem data satelit ditarik, divalidasi agar bebas manipulasi, dan didistribusikan ke aplikasi atau SMS-gateway petani.
+* **Imel (CEO) & Keren (CMO):** Merancang model kolaborasi (B2B2C) dengan koperasi desa, kelompok tani, atau agritech besar (seperti eFishery/TaniHub) sebagai jalur distribusi produk.
+* **Adriel (CFO):** Ini tantangannya. Adriel harus memodelkan *pooling* risiko finansial, struktur premi murah (misal Rp 20rb/bulan), dan bagaimana reasuransi bekerja di belakangnya.
+
+### 5. Potensi Menang: 9.0 / 10
+
+* **Alasan:** Tingkat keunikan (*uniqueness*) sangat tinggi. Juri di Bali (Poltek Negeri Bali) umumnya sangat menyukai isu agrikultur, maritim, dan pemberdayaan komunitas lokal yang dikemas dengan teknologi mutakhir.
+
+### 6. Feasibility Nulis dalam 2 Hari: 7.0 / 10
+
+* **Menantang.** Ide ini sangat kuat di komponen *Recommended Solution* (25%) dan *Expected Outcome* (15%). Namun, komponen *Financial Overview* akan menguras waktu Adriel karena pemodelan aktuaria asuransi mikro membutuhkan logika manajemen risiko yang lebih rumit daripada SaaS biasa. Analisis risikonya juga membutuhkan pemahaman tentang regulasi OJK (Fintech/Insurtech).
+
+---
+
+## Rekomendasi Jujur untuk Eksekusi 2 Hari
+
+> **Pilihlah EcoLedger.ai (Ide 1)** jika kalian ingin bermain **aman, taktis, dan selesai tepat waktu** dengan kualitas dokumen yang rapi. Beban penulisan untuk tim Manajemen jauh lebih terukur, dan Dex bisa membuat arsitektur sistem informasi yang meyakinkan tanpa risiko salah logika bisnis yang fatal.
+> **Pilihlah Parametrix AI (Ide 2)** jika kalian siap **bergadang penuh** demi mengejar poin keunikan radikal untuk memikat juri. Ide ini punya daya kejut lebih tinggi di kompetisi internasional, tetapi risikonya ada pada detail model finansial yang berpotensi bolong jika Adriel tidak familier dengan model *risk-pooling*.
+
+Mana dari kedua arah ini yang paling realistis dengan kapasitas energi tim kalian saat ini?

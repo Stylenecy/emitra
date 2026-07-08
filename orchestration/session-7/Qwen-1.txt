@@ -1,0 +1,70 @@
+# 📄 BRIEFING DOCUMENT: EMITRA (BMC #12 Grand Final)
+**Dokumen Rahasia Tim Inti — Wajib Dibaca & Dipahami Sebelum Presentasi**
+
+---
+
+### 1. PREMIS SINGKAT
+**Emitra** adalah platform SaaS bertenaga AI yang mengotomatiskan kepatuhan pajak karbon (CBAM) Uni Eropa bagi eksportir besi, baja, dan aluminium Indonesia. Kami menyelesaikan krisis di mana eksportir nasional terancam kehilangan pasar Eropa karena ketiadaan data emisi terverifikasi, yang memaksa *buyer* menggunakan "nilai default" tertinggi. Emitra sangat penting karena melindungi devisa ekspor senilai **USD 757,7 juta** dan memastikan kelangsungan rantai pasok global industri manufaktur nasional.
+
+### 2. KATEGORI & TEMA YANG DIPILIH
+*   **Tema Utama:** *Advancing Future Business Leaders Toward Strategic Innovation and Sustainable Global Competitiveness*
+*   **Sub-Theme:** *Innovating Global Business Strategies for a Sustainable Future*
+*   **Category:** *Sustainable Business & Green Innovation*
+*   **Kecocokan:** Emitra adalah perwujudan nyata dari strategi bisnis global (menembus/mempertahankan pasar UE) yang diinovasikan melalui pendekatan keberlanjutan (dekarbonisasi & pelaporan ESG).
+
+### 3. MENGAPA KATEGORI INI DIPILIH?
+*   **Hubungan Sub-Theme:** Regulasi CBAM adalah hambatan dagang global baru. Emitra adalah "strategi inovatif" agar UMKM Indonesia tetap kompetitif di panggung global.
+*   **Hubungan Category:** Inti nilai (core value) Emitra adalah transisi hijau (*green innovation*)—mengubah beban pajak karbon menjadi peluang akses ke *Green Financing* (KUR Hijau).
+*   **Kenapa bukan Digital Transformation?** Karena teknologi (AI/OCR) hanyalah *enabler* (alat bantu). Juri akan menilai bahwa masalah intinya adalah **penyelamatan ekonomi dari tarif karbon dan kepatuhan lingkungan**, bukan sekadar mendigitalkan dokumen pabrik.
+
+### 4. POIN-POIN PENTING YANG HARUS DIHAFAL (Data Kritis)
+1.  **Deadline CBAM:** Sertifikat karbon pertama wajib dibeli oleh *importir* UE pada **Februari 2027**.
+2.  **Ancaman Finansial:** Beban tarif penuh di 2034 = **€383 Juta** (€390/ton baja). Eksposur 2026 = €9.75/ton.
+3.  **Pasar (TAM/SAM/SOM):** TAM USD 1.2B (ASEAN) ➔ SAM 3.200 entitas (ID) ➔ SOM 100 klien (Year 3).
+4.  **Pricing:** *Setup Fee* **IDR 30-50 Juta** + *Annual SaaS* **IDR 50-80 Juta**.
+5.  **Penghematan Klien (ROI):** **45%** di Tahun 1, dan **67%** di Tahun 2 (dibanding konsultan manual Rp 200jt).
+6.  **Proyeksi Revenue:** Y1 Rp 950 Juta ➔ Y2 Rp 3,95 Miliar ➔ Y3 Rp 8,6 Miliar.
+7.  **Unit Economics:** LTV Rp 270 Juta vs CAC < Rp 45 Juta (**Rasio LTV:CAC = 6:1**).
+8.  **Tech Moat:** AI OCR untuk *dirty data* (struk basah/tulisan tangan) + *Deterministic Rule Engine* (bukan *black-box* AI, bisa diaudit).
+9.  **Limitation of Liability:** Emitra = *Software Provider*. Verifikasi akhir & stempel hukum = **Sucofindo/SGS**.
+
+### 5. YANG BISA DIBANTU TIM MANUSIA (Persiapan Q&A)
+*   **Adriel (CFO):** Siapkan jawaban untuk *cashflow* bulan ke-1 s/d ke-10. Hafalkan asumsi retensi klien (85%) dan margin kotor (70% ➔ 77%). Pastikan siap ditanya: *"Kapan BEP dan bagaimana jika sales cycle B2B molor dari 6 bulan?"*
+*   **Imeldya (CEO):** Kuasai narasi **"Export Continuity Insurance"**. Hafal peta regulasi (Perpres 98/2021, POJK 14 & 18/2023). Siapkan *pitch* lobi B2G ke KADIN dan Kemendag.
+*   **Keren Tiara (CMO):** Siapkan strategi detail akuisisi 5 klien pilot di Cikarang. Kuasai *funnel* pemasaran dan jawaban untuk: *"Bagaimana meyakinkan pemilik pabrik tua yang skeptis pada AI?"*
+*   **SEMUA TIM (Termasuk Dex):** Latihan jawaban serempak untuk pertanyaan: *"Bagaimana keamanan data rahasia pabrik?"* (Jawab: *Single-tenant encryption, row-level isolation, ISO 27001 alignment*).
+
+### 6. OUTPUT YANG HARUS DIKUMPUL (Checklist Final)
+*   **Format:** PDF, Times New Roman 12, Spasi 1.5
+*   **Margin:** Kiri 4 cm | Kanan 3 cm | Atas 3 cm | Bawah 3 cm
+*   **Halaman:** 10-20 halaman (Tidak termasuk Cover, Daftar Isi, Lampiran)
+*   **File Name:** `International Business Plan_Dex Bennett_Politeknik Negeri Bali_Emitra.pdf`
+*   **Link Submit:** [https://bit.ly/PaperSubmission-BMC12-International2026](https://bit.ly/PaperSubmission-BMC12-International2026)
+*   **Deadline:** **9 Juli 2026** (Jangan mepet *server down*!)
+
+### 7. STRENGTHS & DIFFERENTIATORS (Kekuatan Proposal)
+*   **The Hook:** *"Menyelamatkan USD 757,7 Juta devisa negara dari tarif karbon Eropa."* (Narasi makro-ekonomi yang seksi untuk juri).
+*   **Realistis & Jujur:** Mengakui realitas *"dirty data"* pabrik Indonesia dan menyelesaikannya dengan *Human-in-the-Loop* (HITL), bukan klaim AI ajaib yang berlebihan.
+*   **Moat Hukum yang Kuat:** Pemisahan tanggung jawab yang jelas antara *software* (Emitra) dan *verifier* (Sucofindo/SGS) melindungi startup dari tuntutan denda UE.
+*   **Visi Skalabilitas:** Roadmap yang jelas dari *Compliance Tool* ➔ *Green Financing Gateway* (Akses pinjaman bunga murah dari Bank BUMN).
+
+### 8. PREDIKSI PERTANYAAN JURI (Grand Final)
+1.  *"Jika Emitra salah hitung dan klien kalian didenda bea cukai Eropa, siapa yang menanggung kerugian finansialnya?"*
+2.  *"Konsumsi energi adalah rahasia dapur pabrik. Kenapa mereka mau mengunggah data sensitif ini ke server cloud startup?"*
+3.  *"Pabrik sudah punya software akuntansi (Jurnal/Accurate). Kenapa mereka harus repot-repot scan struk pakai OCR Emitra?"*
+4.  *"Sales cycle B2B enterprise itu 6-12 bulan. Bagaimana kalian bisa dapat 10 klien di Tahun 1?"*
+5.  *"Scope 3 (emisi dari supplier tambang) itu sangat rumit. Kapan Emitra bisa menyelesaikannya?"*
+6.  *"Apa bedanya Emitra dengan konsultan lingkungan yang sudah ada di Jakarta?"*
+7.  *"Bagaimana jika Uni Eropa tiba-tiba mengubah metodologi perhitungan emisi di tengah jalan?"*
+
+### 9. TALKING POINTS UNTUK PRESENTASI (10 Menit)
+1.  **Opening (The Nightmare):** "Bayangkan besok pagi, kontainer baja Indonesia ditolak di pelabuhan Rotterdam. Bukan karena kualitas buruk, tapi karena tidak ada data emisi."
+2.  **Data Wow (The Urgency):** "Tahun 2034, tarif karbon akan memakan €383 Juta dari ekspor kita. Deadline pertama untuk membelinya adalah Februari 2027."
+3.  **The Gap (The Problem):** "Tools global seperti Persefoni harganya Rp 1 Miliar/tahun dan butuh SAP. Tools lokal cuma fokus jual kredit karbon, bukan urus bea cukai."
+4.  **The Solution (Emitra):** "Emitra. AI yang bisa membaca struk BBM yang basah dan robek, lalu mengubahnya menjadi laporan XML standar Eropa dalam hitungan jam."
+5.  **Business Model (The Money):** "Setup fee menutupi biaya akuisisi, SaaS tahunan memberikan margin kotor 77%. Klien hemat 67% di tahun kedua."
+6.  **The Vision (The Future):** "Kami bukan sekadar alat pelapor pajak. Data kami adalah kunci bagi UMKM untuk mendapatkan KUR Hijau dan pinjaman bunga murah."
+7.  **Closing (The Mic Drop):** "Emitra. Karena masa depan ekspor Indonesia, tidak boleh berhenti di bea cukai Eropa."
+
+---
+*“Kalian punya data yang valid, teknologi yang masuk akal, dan model bisnis yang menghasilkan uang. Masuklah ke ruangan itu, tatap mata jurinya, dan tunjukkan bahwa kalian bukan sekadar mahasiswa yang menulis makalah, tapi pendiri startup yang siap menyelamatkan devisa negara. Bring home the trophy!”* 🏆

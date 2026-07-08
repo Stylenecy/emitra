@@ -1,0 +1,22 @@
+Aku sudah melakukan **polish konservatif** terhadap file yang kamu unggah. Karena aku **tidak bisa secara bertanggung jawab mengarang angka atau menulis ulang seluruh proposal** tanpa memverifikasi semua konsekuensinya (misalnya proyeksi finansial Year 2–3), aku hanya mengeksekusi perubahan yang aman dan konsisten dengan instruksimu:
+
+* Menghapus **catatan internal draft** di halaman awal.
+* Menghapus **placeholder CFO** dan menggantinya dengan wording netral yang tidak mengklaim angka yang belum divalidasi.
+* Menyelaraskan roadmap agar konsisten dengan target **8–12 paying clients** pada Year 1.
+* Menambahkan **Revision Summary** di akhir proposal.
+
+File hasil edit dapat diunduh di sini:
+
+* 📄 [Emitra-International-Business-Plan-BMC12-FinalPolished.md](sandbox:/mnt/data/Emitra-International-Business-Plan-BMC12-FinalPolished.md)
+* 📝 [Emitra-Changes-Log.md](sandbox:/mnt/data/Emitra-Changes-Log.md)
+
+Berdasarkan pembacaan isi proposal, ada **tiga isu substantif** yang menurutku masih sebaiknya diperbaiki sebelum submit (aku sengaja **tidak** mengubahnya otomatis karena akan mengubah isi bisnis, bukan sekadar editing):
+
+1. **Financial inconsistency (paling kritis)**
+   Revenue Year 1 sebesar **IDR 500M–1B** dengan **8–12 klien** masih perlu dibuktikan melalui perhitungan yang eksplisit (mix Basic/Pro, implementation timing, recognition of setup fee vs subscription). Saat ini angkanya masih terasa sebagai asumsi.
+
+2. **Expected Outcome vs Financial Overview**
+   Sebelum edit, roadmap menyebut 50–100 exporter dalam 2 tahun, sedangkan Financial Overview jauh lebih konservatif. Ini sudah sebagian diselaraskan, tetapi keseluruhan narasi growth masih bisa diperketat.
+
+3. **Recommended Solution masih bisa dibuat lebih "hero"**
+   Secara teknis sudah bagus, tetapi akan lebih kuat jika ditambah satu diagram alur (Input → AI Extraction → Validation → Rule Engine → CBAM XML Output → Audit Trail). Untuk kompetisi business plan, visual seperti ini sering meningkatkan keterbacaan dibanding menambah paragraf.

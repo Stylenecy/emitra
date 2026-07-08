@@ -1,0 +1,70 @@
+**BRIEFING DOCUMENT UNTUK TIM EMITRA — BMC #12**  
+**Persiapan Presentasi Grand Final (20 Agustus 2026)**
+
+### 1. PREMIS SINGKAT
+**Emitra** adalah **AI-powered SaaS platform** yang mengotomatisasi kepatuhan CBAM (Carbon Border Adjustment Mechanism) Uni Eropa untuk eksportir Indonesia di sektor besi, baja, dan aluminium (Tier-2/3).  
+
+Masalah utama: Eksportir harus menyediakan data emisi terverifikasi atau EU importer pakai “default values” mahal → rugi kompetitif + biaya manual audit IDR 150-250 jt/tahun (14% laba). Emitra kasih solusi affordable, audit-ready XML report + integrasi Green Financing (KUR Hijau).  
+
+Target: UKM eksportir di Jawa (Cikarang, Karawang, Cilegon) yang terdampak USD 757,7 juta ekspor ke EU. Ini penting karena deadline sertifikat CBAM Februari 2027 — tanpa tool ini, banyak UKM kehilangan pasar Eropa.
+
+### 2. KATEGORI & TEMA YANG DIPILIH
+- **Sub-Theme**: Innovating Global Business Strategies for a Sustainable Future  
+- **Category**: Sustainable Business & Green Innovation  
+
+**Kenapa pas?** Emitra gabungkan **digital innovation** (AI OCR + deterministic engine) dengan **sustainable impact** (kurangi emisi reporting burden, buka akses green loan, lindungi ekspor RI). Langsung dukung NDC Indonesia dan green transition industri manufaktur.
+
+### 3. MENGAPA KATEGORI INI DIPILIH
+Emitra bukan sekadar compliance tool, tapi **enabler sustainable global competitiveness** — bantu UKM naik kelas jadi Green Exporter.  
+
+Kenapa bukan pure Digital Transformation? Karena core value-nya adalah **sustainability outcome** (emission transparency, green financing, decarbonization data), bukan teknologi semata. Juri suka yang punya dampak nyata ke planet & ekonomi.
+
+### 4. POIN-POIN PENTING YANG HARUS DIHAFAL
+- **CBAM**: Phase-in 2.5% (2026), full 2034; sertifikat €75.36/tCO₂; deadline Feb 2027.
+- **Market**: TAM USD 1.2B (SEA) → SAM 3.200 entities (ID) → SOM Year 3: 100 clients (Java) → Year 5: 320 (ASEAN).
+- **Pricing**: Hybrid — Setup IDR 30-50 jt + Annual IDR 50-80 jt/tahun (40-70% hemat vs manual audit).
+- **Client Target**: 10 (Y1) → 45 (Y2) → 100 (Y3).
+- **Revenue**: IDR 950 jt (Y1) → 3.95M (Y2) → 8.6M (Y3); Gross Margin 70-77%.
+- **Competitive Edge**: AI OCR + HITL untuk dokumen “dirty”, deterministic engine (auditable), dual compliance (EU+RI), Green Financing Gateway.
+- **Fitur Unggulan**: Scope 1&2 MVP, XML CBAM-ready, audit trail click-through, ROI payback <6 bulan.
+
+### 5. YANG BISA DIBANTU TIM MANUSIA
+- **Adriel (CFO)**: Validasi final revenue projection, CAC/LTV calculation, sensitivity analysis (best/base/worst case).
+- **Imeldya (CEO)**: Kuasai narasi vision, partnership strategy (asosiasi + bank), jawab “why now?” & scalability ASEAN.
+- **Keren Tiara (CMO)**: Siapkan visual slide (diagram architecture, market funnel, ROI table), case study CV Logam Mulia, competitor matrix.
+- **SEMUA TIM**: Latihan Q&A 15 menit presentasi + 5 menit jawab (fokus data, risk mitigation, technical feasibility). Hafal angka kunci & flow Green Financing Gateway.
+
+### 6. OUTPUT YANG HARUS DIKUMPUL
+- **Format**: PDF, Times New Roman 12, 1.5 spacing.  
+- **Margin**: Kiri 4 cm, Kanan 3 cm, Atas/Bawah 3 cm.  
+- **Halaman**: 10-20 (exclude cover, ToC, appendix).  
+- **File name**: `International_Business_Plan_Dex_Bennett_Politeknik_Negeri_Bali_Emitra.pdf`.  
+- **Submit**: https://bit.ly/PaperSubmission-BMC12-International2026  
+- **Deadline**: **9 Juli 2026** (sekarang tinggal final review & export PDF).
+
+### 7. STRENGTHS & DIFFERENTIATORS
+- **Hook kuat**: “Export Continuity Insurance” + deadline Feb 2027 yang urgent.  
+- Local moat (harga terjangkau + dokumen Indonesia “dirty” + dual compliance).  
+- Technical credibility (deterministic engine + HITL + audit trail).  
+- Holistic impact (compliance + green financing + regional ASEAN).  
+- Financial realism (konservatif + ROI jelas).
+
+### 8. PREDIKSI PERTANYAAN JURI
+1. Bagaimana Emitra handle perubahan regulasi CBAM mendadak?  
+2. Apa bedanya dengan Persefoni/Watershed untuk UKM Indonesia?  
+3. Bagaimana akurasi AI OCR dengan dokumen pabrik yang jelek?  
+4. Detail teknis Green Financing Gateway & partnership bank?  
+5. Apa risiko liability kalau data salah & EU kena denda?  
+6. Proyeksi revenue Year 1 terlalu optimis? Justifikasi akuisisi client?  
+7. Scalability ke ASEAN — apa tantangan utamanya?
+
+### 9. TALKING POINTS UNTUK PRESENTASI (10 menit)
+1. **Opening (1 menit)**: Hook CBAM crisis + cerita CV Logam Mulia.  
+2. **Problem & Market (2 menit)**: Angka USD 757.7M + deadline 2027.  
+3. **Solution (3 menit)**: Architecture diagram + HITL demo flow (mudah dipahami).  
+4. **Business Model (2 menit)**: Pricing, revenue, ROI eksportir.  
+5. **Traction & Roadmap (1 menit)**: Pilot, Green Financing, ASEAN.  
+6. **Risk & Mitigation (30 detik)**: Matrix singkat.  
+7. **Closing (30 detik)**: “Emitra bukan cuma compliance tool, tapi partner sustainable future eksportir Indonesia di panggung global.”
+
+**Tim, ini proposal solid dengan hook timely dan diferensiasi lokal yang kuat.** Fokus execute presentasi dengan percaya diri, data akurat, dan visual jelas. Kita bisa bawa pulang juara! Gaspol, Dex 2.0! 💪

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CbamDeclaration>
+  <EmitterID>EMITRA-1</EmitterID>
+  <CompanyName>CV Logam Mulia Sejahtera</CompanyName>
+  <ReportingPeriod>2026</ReportingPeriod>
+  <EmbeddedEmissions>
+    <Scope1Direct>32.16</Scope1Direct>
+    <Scope2Indirect>38.25</Scope2Indirect>
+    <TotalProductionTonnes>451.35</TotalProductionTonnes>
+    <EmbeddedEmissionsIntensity>0.156</EmbeddedEmissionsIntensity>
+    <CbamCertificateExposureEur>11.76</CbamCertificateExposureEur>
+  </EmbeddedEmissions>
+  <Methodology>EU-CBAM-2026-V1</Methodology>
+  <GeneratedAt>2026-07-08T08:18:18.172Z</GeneratedAt>
+</CbamDeclaration>

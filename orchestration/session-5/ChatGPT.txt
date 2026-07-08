@@ -1,0 +1,48 @@
+Aku bisa melakukan audit seperti yang kamu minta, **tetapi aku belum bisa membaca proposalnya** karena file **`Emitra-International-Business-Plan-BMC12.md`** tidak ada di percakapan ini maupun di environment yang bisa kuakses. Jadi aku tidak bisa mengaudit struktur, redundansi, atau kejelasan tanpa melihat dokumennya.
+
+Silakan unggah file **`Emitra-International-Business-Plan-BMC12.md`** (atau paste isinya di chat). Setelah itu aku akan memberikan audit dengan format persis berikut:
+
+```text
+## PREMIS
+(3–5 kalimat tentang kondisi proposal saat ini)
+
+## TEMUAN
+- Executive Summary, paragraf 2 → ...
+- Project Description, bagian 3.1 → ...
+- Recommended Solution → ...
+(dst.)
+
+## REKOMENDASI
+
+### Critical
+- ...
+
+### Important
+- ...
+
+### Nice-to-have
+- ...
+
+## VERDICT
+Finalize
+atau
+Revise Required
+
+## APA YANG BISA AKU PERBAIKI?
+- Checklist perubahan konkret yang bisa langsung diterapkan sebelum submit.
+```
+
+Audit yang akan kulakukan bukan sekadar proofreading, tetapi sebagai sudut pandang juri *International Business Plan*. Aku akan mengecek:
+
+* Apakah alur membaca terasa natural (problem → market → solution → business → finance → risk → impact).
+* Apakah setiap section benar-benar menjawab rubrik penilaian BMC #12.
+* Apakah ada informasi yang muncul 2–4 kali di section berbeda.
+* Apakah Executive Summary benar-benar merangkum proposal, bukan mengulang Company Profile.
+* Apakah Recommended Solution menjadi "hero section" sesuai bobot 25%.
+* Apakah Financial Overview cukup konkret dan konsisten dengan pricing serta TAM/SAM/SOM.
+* Apakah Risk Analysis benar-benar menganalisis risiko bisnis, bukan hanya daftar ancaman.
+* Apakah Expected Outcome berisi outcome yang terukur (KPI), bukan visi yang abstrak.
+* Apakah Business Model Canvas konsisten dengan isi proposal.
+* Apakah transisi antar section mulus sehingga proposal bisa dibaca sekali dan langsung dipahami oleh juri internasional.
+
+Setelah file diunggah, aku akan memberikan audit yang jujur dan kritis—kalau ada bagian yang menurutku berpotensi mengurangi skor, aku akan bilang secara eksplisit beserta alasan dan usulan perbaikannya.

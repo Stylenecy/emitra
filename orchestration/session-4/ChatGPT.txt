@@ -1,0 +1,67 @@
+Berikut draft yang sudah disusun agar terdengar seperti proposal *International Business Plan*—lebih akademis daripada marketing copy, tetapi tetap persuasif.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# SECTION 1 — Executive Summary
+
+The implementation of the European Union's Carbon Border Adjustment Mechanism (CBAM) marks a significant shift in international trade by requiring carbon emissions transparency for imported products. Indonesian exporters in carbon-intensive industries, particularly iron, steel, and aluminum, are increasingly required to provide verified emissions data to maintain access to the European market. However, existing carbon accounting solutions are predominantly designed for large multinational corporations, making them prohibitively expensive and operationally complex for small and medium-sized exporters. This market gap creates an opportunity for a localized, affordable, and intelligent compliance platform tailored to the needs of Southeast Asian manufacturers.
+
+**Emitra** is an AI-powered Software-as-a-Service (SaaS) platform that automates carbon compliance and export intelligence for Indonesian exporters. The platform streamlines the CBAM reporting process by utilizing artificial intelligence to extract production and emissions-related data from operational documents, calculate embedded emissions based on standardized methodologies, and generate compliance-ready reports with complete audit trails. Unlike global enterprise platforms, Emitra is specifically designed for Southeast Asian exporters, offering an affordable, user-friendly, and scalable solution that minimizes compliance costs while improving reporting accuracy. Beyond regulatory compliance, the platform is envisioned as the digital infrastructure that enables manufacturers to prepare for future environmental regulations, ESG reporting requirements, and sustainable international trade.
+
+Market analysis indicates a highly targeted and rapidly emerging opportunity. Approximately 1,500–2,000 Indonesian exporters are expected to be directly affected by CBAM requirements, representing an estimated export value of approximately USD 757.7 million to the European Union. In addition to regulatory obligations, European buyers have increasingly begun requesting verified emissions information from suppliers as part of procurement and sustainability due diligence. Emitra will enter this market through strategic partnerships with industrial associations, including IISIA, ALFI, and KADIN, alongside collaborations with industrial estates that serve manufacturing exporters. The business adopts a hybrid revenue model consisting of a one-time implementation fee to support onboarding and system configuration, followed by an annual subscription that provides continuous compliance services, software updates, and technical support.
+
+Operationally, Emitra combines technological innovation with practical business execution through a multidisciplinary founding team consisting of Information Systems and Management students. The technology division is responsible for developing the AI-powered platform, cloud infrastructure, emissions calculation engine, and user experience, while the business team focuses on strategic management, finance, marketing, customer acquisition, and partnership development. This interdisciplinary structure enables the company to translate complex regulatory requirements into an accessible digital solution while maintaining commercial viability and customer-centric service delivery.
+
+Financially, Emitra adopts a business model designed for long-term recurring revenue. Clients are charged a one-time implementation fee ranging from IDR 25 million to IDR 50 million depending on deployment complexity, followed by an annual subscription fee between IDR 30 million and IDR 50 million for continuous platform access and compliance support. Compared with conventional manual carbon auditing, which can impose substantially higher recurring costs on manufacturers, Emitra offers a significantly more affordable and scalable alternative. By positioning itself as the first AI-powered carbon compliance platform purpose-built for Southeast Asian exporters, Emitra aims to accelerate regulatory readiness, strengthen export competitiveness, and become a key enabler of sustainable industrial transformation in the region.
+
+# SECTION 2 — Company Profile
+
+## 2.1 Business Overview
+
+Emitra is an AI-powered Carbon Compliance and Export Intelligence platform established to help Indonesian exporters navigate the increasing complexity of international environmental regulations. The company's primary focus is to automate compliance with the European Union's Carbon Border Adjustment Mechanism (CBAM) while reducing the financial and operational burden traditionally associated with carbon accounting.
+
+The platform leverages artificial intelligence, intelligent document processing, and cloud-based analytics to simplify emissions data collection, automate carbon calculations, and generate compliance-ready reports supported by transparent audit trails. Rather than functioning solely as a reporting tool, Emitra serves as a digital compliance infrastructure that enables manufacturers to integrate sustainability into their operational workflows. The company is initially focused on exporters in the iron, steel, and aluminum industries before expanding toward broader carbon compliance, ESG reporting, and sustainable finance solutions across Southeast Asia.
+
+## 2.2 Vision and Mission
+
+### Vision
+
+To become Southeast Asia's leading AI-powered carbon compliance platform, empowering exporters to compete globally through transparent, efficient, and sustainable trade.
+
+### Mission
+
+* To simplify international carbon compliance through intelligent automation.
+* To provide affordable and accessible carbon accounting solutions for small and medium-sized exporters.
+* To improve the competitiveness of Southeast Asian manufacturers in global markets.
+* To support sustainable industrial transformation by enabling transparent environmental reporting.
+* To continuously innovate digital solutions that bridge regulatory compliance, business intelligence, and sustainable growth.
+
+## 2.3 Management Team
+
+Emitra is founded by a multidisciplinary team that combines technological expertise with business strategy, ensuring balanced execution across product development and commercialization.
+
+**Chief Executive Officer (CEO) – Imel**
+
+Responsible for corporate strategy, business development, strategic partnerships, customer relations, and organizational leadership.
+
+**Chief Technology Officer (CTO) – Dex**
+
+Responsible for software architecture, artificial intelligence development, cloud infrastructure, cybersecurity, product innovation, and overall technology strategy.
+
+**Chief Financial Officer (CFO) – Adriel**
+
+Responsible for financial planning, budgeting, investment strategy, pricing models, revenue management, and financial sustainability.
+
+**Chief Marketing Officer (CMO) – Keren**
+
+Responsible for market research, branding, customer acquisition, digital marketing, strategic communications, and go-to-market execution.
+
+Together, the founding team combines complementary expertise in Information Systems and Business Management, enabling Emitra to address both technological challenges and commercial opportunities within the rapidly evolving carbon compliance market.
+
+## 2.4 Legal Structure
+
+Emitra is planned to operate as a **Perseroan Terbatas (PT)** under Indonesian corporate law. This legal structure provides the flexibility required to establish strategic partnerships with manufacturing companies, government agencies, financial institutions, and international stakeholders while supporting future investment and regional expansion. The PT structure also strengthens corporate governance, enhances credibility among enterprise clients, and facilitates long-term business scalability.
+
+## 2.5 Business Location
+
+The company's operational headquarters will be established in **Yogyakarta, Indonesia**, leveraging the city's growing digital innovation ecosystem, skilled technology talent, and competitive operational costs. While product development, software engineering, and administrative operations will be centralized in Yogyakarta, customer engagement and implementation activities will prioritize Indonesia's major industrial regions, including manufacturing clusters in Java and other strategic industrial estates. This hybrid operational model enables efficient technology development while maintaining close relationships with export-oriented manufacturers across the country.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Kalau masih ada waktu sebelum deadline, aku menyarankan satu perubahan strategis: **kurangi klaim "AI-powered" dan lebih banyak tekankan "compliance automation with explainable AI."** Untuk juri business plan, frasa seperti *audit trail*, *traceability*, *regulatory methodology*, dan *continuous compliance* biasanya terdengar lebih kredibel daripada sekadar menyebut AI berkali-kali. Itu akan memperkuat persepsi bahwa Emitra adalah solusi bisnis yang layak dijalankan, bukan hanya proyek teknologi.

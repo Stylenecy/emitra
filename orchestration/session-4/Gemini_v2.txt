@@ -1,0 +1,133 @@
+## SECTION 1: Market Research / Project Description
+
+### 1.1 CBAM EU Regulatory Context
+
+Regulasi *Carbon Border Adjustment Mechanism* (CBAM) oleh Uni Eropa telah resmi bergeser dari fase transisi (2023–2025) ke **fase definitif per 1 Januari 2026** (*European Commission, 2025*). Pada fase transisi sebelumnya, eksportir hanya diwajibkan melaporkan volume emisi tanpa konsekuensi finansial. Namun, mulai tahun 2026, mekanisme *phase-in* tarif finansial mulai diberlakukan sebesar **2.5%** dan akan terus meningkat secara linear hingga mencapai penegakan penuh (*full enforcement*) sebesar 100% pada tahun 2034 (*European Parliament, 2024*).
+
+Sektor hulu komoditas yang menjadi target utama fase ini meliputi **besi, baja, aluminium, semen, dan pupuk**. Berdasarkan data pasar *European Energy Exchange (EEX)* per 2026, harga sertifikat CBAM berfluktuasi di kisaran **€75.36 per ton CO2** (€75.36/tCO2). Kewajiban finansial ini bersifat mutlak di mana importir di Uni Eropa wajib membeli sertifikat CBAM pertama mereka paling lambat pada **Februari 2027** untuk mengakomodasi emisi yang melekat (*embedded emissions*) pada produk impor sepanjang tahun fiskal 2026.
+
+Dampak regulasi ini terhadap eksportir Indonesia bersifat tidak langsung namun destruktif. Otoritas Uni Eropa menetapkan aturan ketat: jika eksportir tidak mampu menyajikan data emisi riil yang terverifikasi secara akurat melalui sistem informasi yang akuntabel, importir Uni Eropa akan dipaksa menggunakan **"Default Value"** (nilai emisi standar terburuk berdasarkan rata-rata produsen beremisi tertinggi). Penggunaan *default value* ini berimplikasi pada lonjakan biaya pembelian sertifikat CBAM yang dibebankan kepada produk ekspor Indonesia, sehingga menurunkan daya saing harga secara radikal di pasar Eropa.
+
+---
+
+### 1.2 Indonesia Export Landscape & Exposure
+
+Berdasarkan data Badan Pusat Statistik (BPS) dan Kementerian Perdagangan RI, total nilai ekspor seluruh sektor dari Indonesia ke Uni Eropa mencapai **USD 21,5 miliar** (*BPS, 2025*). Dari total nilai tersebut, porsi ekspor komoditas yang langsung terkena dampak penyaringan CBAM (khususnya sektor besi, baja, dan aluminium) bernilai sebesar **USD 757,7 juta** (*Kementerian Perdagangan RI, 2025*).
+
+```
+Total Ekspor RI ke Uni Eropa: USD 21,5 Miliar (Semua Sektor)
+└── Sektor Terdampak CBAM: USD 757,7 Juta (Besi, Baja, Aluminium)
+    └── Estimasi Beban Sertifikat Sektor Baja: ~€383 Juta / €390 per Ton
+
+```
+
+*Indonesian Iron and Steel Industry Association* (IISIA) mencatat bahwa volume ekspor baja nasional ke Uni Eropa mencakup sekitar **4% dari total ekspor baja global Indonesia** (*IISIA, 2025*). Tanpa adanya sistem mitigasi data ekspor, estimasi total beban pembelian sertifikat CBAM yang harus ditanggung oleh rantai pasok ekspor baja nasional mencapai kurang lebih **€383 juta**, atau setara dengan beban tambahan **€390 per ton baja** (*IISIA, 2025*). Tekanan regulasi ini berdampak langsung pada **1.500 hingga 2.000 pelaku industri manufaktur** dari skala hulu hingga hilir di Indonesia yang terikat dalam ekosistem ekspor tersebut.
+
+---
+
+### 1.3 Micro-Level Case Study: CV Logam Mulia Sejahtera (Ceper, Klaten)
+
+Guna memahami dampak riil operasional di tingkat produsen, dilakukan studi kasus pada **CV Logam Mulia Sejahtera** yang berlokasi di pusat pengecoran logam Ceper, Klaten, Jawa Tengah.
+
+* **Profil Bisnis:** Perusahaan merupakan produsen aluminium cor skala menengah dengan volume ekspor ke Jerman dan Italia senilai **USD 1,2 juta per tahun**.
+* **Friksi Pasar:** Sejak kuartal ketiga tahun 2024, para pembeli (*buyers*) di Uni Eropa telah mewajibkan lampiran data emisi per unit produk sebagai prasyarat perpanjangan kontrak pengadaan.
+* **Beban Finansial Pemenuhan Kepatuhan:** Akibat ketiadaan sistem pencatatan emisi internal yang terintegrasi, perusahaan terpaksa menggunakan jasa konsultan lingkungan pihak ketiga untuk melakukan audit emisi manual. Biaya audit berkisar antara **IDR 150 juta hingga IDR 250 juta per tahun**.
+* **Kompresi Margin:** Mengingat margin keuntungan bersih industri pengecoran logam Tier-2/3 berada di angka yang tipis yaitu **8% hingga 10%**, biaya audit manual tersebut menguras hingga **14% dari total laba bersih tahunan** perusahaan. Kasus ini merepresentasikan kegagalan struktural UKM manufaktur akibat tingginya biaya pemenuhan regulasi lingkungan (*cost of compliance*).
+
+---
+
+### 1.4 Competitor Analysis
+
+| Dimensi Analisis | Pemain Global (Persefoni, Watershed, Sweep) | Agregator Lokal (Jejak.in, Fairatmos) | **Emitra (Our Platform)** |
+| --- | --- | --- | --- |
+| **Target Pasar & Harga** | Perusahaan skala *Fortune 500*; Biaya **USD 15.000 - USD 80.000/tahun** (*Gartner, 2025*). | Korporasi domestik; skema monetisasi berbasis komisi transaksi *carbon offset*. | **UKM Eksportir Tier-2/3; Setup Fee IDR 30-50jt + Subskripsi Tahunan IDR 50-80jt.** |
+| **Fokus Solusi** | Pelaporan ESG korporat bersifat umum (Scope 1, 2, 3 secara makro). | Perdagangan karbon sukarela (*voluntary market*) dan reboisasi. | **Kepatuhan Perdagangan Internasional & CBAM Trade Intelligence.** |
+| **Output Teknis** | Laporan PDF standar keberlanjutan global (GRI, SASB). | Sertifikat klaim penyerapan karbon lokal. | **Formulir Pelaporan XML spesifik untuk CBAM Transitional Registry Uni Eropa.** |
+
+---
+
+### 1.5 SWOT Analysis
+
+* **Strengths (Kekuatan):**
+* Struktur harga lokal yang kompetitif bagi UKM manufaktur dengan efisiensi biaya hingga 70% dibanding konsultan manual.
+* Mesin pemrosesan data berbasis AI yang mampu melakukan ekstraksi otomatis terhadap dokumen logistik tidak terstruktur di Indonesia.
+* Kapabilitas *Dual-Compliance Output* yang menghasilkan pelaporan sinkron untuk regulasi Uni Eropa (CBAM) sekaligus regulasi domestik (SKK/IDXCarbon).
+
+
+* **Weaknesses (Kelemahan):**
+* Produk Minimum Teruji (MVP) masih memerlukan validasi lapangan skala luas pada klaster industri berat.
+* Belum tersertifikasinya platform pada standar tata kelola keamanan informasi ISO/IEC 27001.
+
+
+* **Opportunities (Peluang):**
+* Tenggat waktu wajib beli sertifikat CBAM pada Februari 2027 memicu lonjakan permintaan solusi digital instan.
+* Tren *Green Financing* perbankan nasional yang mewajibkan audit emisi sebagai syarat likuiditas modal usaha.
+
+
+* **Threats (Ancaman):**
+* Strategi penetapan harga agresif (*predatory pricing*) dari kompetitor global yang melakukan lokalisasi fitur di Asia Tenggara.
+* Ketidakstabilan regulasi dagang global atau perubahan metodologi kalkulasi emisi Uni Eropa secara mendadak.
+
+
+
+---
+
+### 1.6 Market Segmentation & Target Market
+
+Emitra mengarahkan fokus penetrasi pasarnya secara spesifik pada segmen yang belum terlayani secara optimal:
+
+```
+[TAM: USD 1,2 Miliar] ── Seluruh Industri Manufaktur Logam Eksportir di Asia Tenggara
+   └── [SAM: 3.200 Emiten] ── UKM Manufaktur Logam Terdampak CBAM di Indonesia
+       └── [SOM: 320 Pabrik] ── UKM Besi/Baja/Aluminium Tier-2/3 di Kawasan Industri Jawa (3 Tahun)
+
+```
+
+Target utama operasi awal difokuskan pada klaster industri manufaktur logam berskala menengah (Tier-2 dan Tier-3) yang beroperasi di tiga kawasan industri utama di Pulau Jawa: **Cikarang, Karawang, dan Cilegon**. Karakteristik wilayah ini memiliki konsentrasi pabrik komponen besi/baja penunjang ekspor yang tinggi, dengan target perolehan pasar (*Serviceable Obtainable Market* - SOM) sebanyak **320 perusahaan** dalam kurun waktu 3 tahun eksekusi.
+
+---
+
+## SECTION 2: Expected Outcome & Scalability Roadmap
+
+### 2.1 Fase Eksperimen & Validasi Pasar (Tahun 1–2)
+
+Dua tahun pertama operasional ditargetkan untuk membangun traksi fundamental di pasar domestik Indonesia.
+
+```
+Tahun 1: Peluncuran Pilot Program (5 Perusahaan) + Onboarding 50 Eksportir Awal
+Tahun 2: Scale-up Komersial di Koridor Jawa + Onboarding hingga 100 Eksportir Aktif
+
+```
+
+* **Mekanisme Penetrasi GTM:** Emitra akan meluncurkan program percontohan (*Pilot Program*) gratis selama 3 bulan pertama khusus untuk 5 perusahaan manufaktur logam pertama di kawasan industri Cikarang guna melakukan kalibrasi algoritma AI Parser.
+* **Target Onboarding:** Mengakuisisi **50 hingga 100 eksportir aktif** dalam jangka waktu 24 bulan.
+* **Arus Pendapatan (Revenue Stream):** Monetisasi dicapai melalui kombinasi *Setup Fee* komparatif (IDR 30.000.000 – IDR 50.000.000) untuk pemetaan data awal, ditambah dengan biaya subskripsi tahunan (*Annual Subscription* sebesar IDR 50.000.000 – IDR 80.000.000/tahun) untuk pemeliharaan akses dasbor dan kuota penyerahan file XML CBAM.
+
+---
+
+### 2.2 Fase Integrasi Keuangan Hijau (Tahun 3–4)
+
+Pada Fase 2, Emitra melakukan ekspansi vertikal dengan membangun **Green Financing Gateway**, mengubah fungsi platform dari sekadar instrumen kepatuhan regulasi ekspor menjadi pengungkit finansial strategis (*financial enabler*).
+
+* **Koridor Regulasi:** Pemanfaatan regulasi Otoritas Jasa Keuangan melalui **POJK No. 14/2023** tentang Perdagangan Karbon dan **POJK No. 18/2023** tentang Penerapan Keuangan Berkelanjutan (*OJK, 2023*).
+* **Mekanisme Kemitraan:** Data emisi historis milik eksportir yang telah terverifikasi akurat dan berstatus *audit-ready* di dalam sistem Emitra akan diintegrasikan langsung dengan sistem penilaian kredit (*credit underwriting*) perbankan BUMN (Target Mitra: **Bank Mandiri dan BNI**).
+* **Dampak Likuiditas:** Laporan emisi Emitra menjadi prasyarat validasi untuk mempermudah UKM eksportir mengakses fasilitas **Kredit Usaha Rakyat (KUR) Hijau** atau *Sustainability-Linked Loans* (SLL). Perusahaan yang mampu menunjukkan tren penurunan emisi karbon pada dasbor Emitra akan mendapatkan insentif penurunan suku bunga pinjaman modal kerja, memperkuat struktur finansial internal mereka.
+
+---
+
+### 2.3 Fase Ekspansi Regional ASEAN (Tahun 5)
+
+Memasuki tahun kelima, Emitra mengadopsi strategi replikasi model bisnis lintas batas ke negara-negara tetangga di Asia Tenggara yang memiliki kemiripan profil risiko ekspor terhadap CBAM, dengan fokus utama pada **Vietnam dan Malaysia**.
+
+* **Justifikasi Ekspansi:** Vietnam dan Malaysia merupakan basis manufaktur komponen logam hulu terbesar di ASEAN setelah Indonesia dengan nilai ketergantungan ekspor yang tinggi ke Uni Eropa.
+* **Skalabilitas Teknis:** Karena arsitektur perangkat lunak Emitra dikembangkan oleh divisi IT (Dex) sebagai platform berbasis *cloud-native SaaS*, ekspansi regional tidak memerlukan pembangunan infrastruktur fisik baru. Pembaruan sistem hanya berfokus pada sinkronisasi faktor emisi *grid* listrik lokal masing-masing negara (seperti bauran energi EVN di Vietnam).
+* **Target Akumulatif:** Menjaring **320 klien korporat aktif** secara regional, memposisikan Emitra menguasai **10% pangsa pasar** dari total nilai SAM (3.200 eksportir) di Asia Tenggara.
+
+---
+
+### 2.4 Social, Economic, & Environmental Impact
+
+Implementasi Emitra diproyeksikan memberikan dampak *multiplier* yang masif pada skala ekonomi makro dan mikro nasional:
+
+* **Transformasi UKM Naik Kelas (*Green Exporter*):** Memutus siklus tingginya biaya konsultan lingkungan dengan menyediakan akses teknologi murah. UKM daerah mampu bertransformasi dari industri tradisional beremisi tinggi menjadi entitas *Green Exporter* modern yang memiliki posisi tawar tinggi di rantai pasok global premium.
+* **Kontribusi Target NDC Indonesia:** Platform ini mendukung target *Nationally Determined Contributions* (NDC) Indonesia untuk pengurangan emisi GRK secara mandiri (*Kementerian Lingkungan Hidup dan Kehutanan RI, 2024*). Melalui akurasi data Emitra, sektor industri manufaktur memiliki pijakan data konkret untuk merancang strategi dekarbonisasi operasional secara riil dan terukur.

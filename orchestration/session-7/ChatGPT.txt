@@ -1,0 +1,454 @@
+# **BRIEFING DOCUMENT — EMITRA**
+
+### *Business Management Competition (BMC) #12 2026 – International Business Plan*
+
+---
+
+# 1. PREMIS SINGKAT
+
+**Apa itu Emitra?**
+
+Emitra adalah **platform SaaS berbasis AI** yang membantu eksportir Indonesia memenuhi regulasi **EU Carbon Border Adjustment Mechanism (CBAM)** secara otomatis. Platform ini mengubah proses pelaporan emisi yang selama ini dilakukan secara manual dan mahal menjadi proses digital yang cepat, terstandarisasi, dan siap diaudit.
+
+Target utama Emitra adalah **eksportir besi, baja, dan aluminium skala Tier-2/Tier-3** yang belum mampu membeli solusi enterprise global seperti Persefoni atau Watershed.
+
+Emitra penting karena **CBAM bukan lagi isu lingkungan, tetapi isu akses pasar internasional**. Tanpa data emisi yang valid, produk Indonesia berisiko kehilangan daya saing di pasar Uni Eropa.
+
+---
+
+# 2. KATEGORI & TEMA YANG DIPILIH
+
+### **Sub-Theme**
+
+**Innovating Global Business Strategies for a Sustainable Future**
+
+### **Category**
+
+**Sustainable Business & Green Innovation**
+
+### Kenapa cocok?
+
+Karena Emitra bukan sekadar software.
+
+Produk ini membantu perusahaan:
+
+* memenuhi regulasi internasional
+* mempertahankan akses ekspor
+* meningkatkan transparansi karbon
+* mempercepat transformasi industri berkelanjutan
+
+Sustainability menjadi **core value**, sedangkan AI hanyalah enabler.
+
+---
+
+# 3. MENGAPA KATEGORI INI DIPILIH
+
+## Hubungan dengan Sub-Theme
+
+CBAM merupakan kebijakan perdagangan global yang memaksa perusahaan mengintegrasikan keberlanjutan ke dalam strategi bisnis internasional.
+
+Emitra membantu eksportir beradaptasi terhadap perubahan tersebut.
+
+Dengan kata lain:
+
+> **Global regulation → Digital compliance → Sustainable competitiveness**
+
+Itulah inti sub-theme yang dipilih.
+
+---
+
+## Hubungan dengan Category
+
+Emitra berkontribusi pada:
+
+* carbon transparency
+* environmental compliance
+* sustainable export
+* green industrial transformation
+
+Produk ini menghasilkan dampak keberlanjutan yang terukur, bukan sekadar digitalisasi proses.
+
+---
+
+## Kenapa bukan Digital Transformation?
+
+Karena nilai utama Emitra bukan AI atau OCR.
+
+Yang dijual adalah:
+
+> **kepatuhan karbon (carbon compliance)**
+
+Teknologi hanyalah alat.
+
+Dampak keberlanjutan adalah nilai bisnis utamanya.
+
+---
+
+# 4. POIN PENTING YANG HARUS DIHAFAL
+
+Semua anggota tim sebaiknya hafal angka berikut:
+
+### Regulasi
+
+* CBAM Definitive Phase mulai **2026**
+* Financial phase-in **2,5% pada 2026**
+* Full implementation **2034**
+* First certificate settlement **Februari 2027**
+* Harga CBAM certificate sekitar **€75.36/tCO₂**
+
+---
+
+### Indonesia
+
+* Total ekspor RI ke EU:
+  **USD 21.5 miliar**
+
+* Ekspor yang langsung terdampak CBAM:
+  **USD 757.7 juta**
+
+* Steel export ke EU:
+  **±4%** dari total ekspor baja Indonesia
+
+---
+
+### Market
+
+* **TAM:** USD 1.2B (heavy industry exporters di Asia Tenggara)
+* **SAM:** 3.200 perusahaan
+* **SOM:** 100 client sites (Year 3)
+* **Regional target:** 320 client sites (Year 5)
+
+---
+
+### Pricing
+
+* Setup Fee:
+  **IDR 30–50 juta**
+
+* Annual Subscription:
+  **IDR 50–80 juta**
+
+---
+
+### Target Bisnis
+
+* Year 1:
+  **10 klien**
+  Revenue:
+  **IDR 950 juta**
+
+* Break-even:
+  **Month 10**
+
+---
+
+### Competitive Advantage
+
+* AI document extraction
+* CBAM-ready XML output
+* Human-in-the-loop verification
+* Harga jauh lebih murah daripada solusi global
+* Fokus khusus Asia Tenggara
+
+---
+
+# 5. YANG BISA DIBANTU TIM MANUSIA
+
+## Adriel (CFO)
+
+Harus memastikan:
+
+* semua angka revenue konsisten
+* pricing masuk akal
+* break-even bisa dijelaskan
+* LTV:CAC 6:1 bisa dipertanggungjawabkan
+* margin 70–77% masuk akal
+
+Kalau juri bertanya angka, CFO harus menjawab.
+
+---
+
+## Imeldya (CEO)
+
+Harus menguasai:
+
+* problem statement
+* market opportunity
+* kenapa sekarang (Why Now?)
+* strategi ekspansi
+* business model
+* competitor positioning
+
+CEO harus bisa menjelaskan proposal tanpa membuka slide.
+
+---
+
+## Keren Tiara (CMO)
+
+Harus memahami:
+
+* target customer
+* customer acquisition
+* partnership strategy
+* value proposition
+* positioning
+* alasan memilih IISIA, ALFI, dan KADIN
+
+---
+
+## Dex (CTO)
+
+Harus siap menjelaskan:
+
+* AI OCR
+* emission calculation engine
+* audit trail
+* XML generation
+* Human-in-the-Loop
+* keamanan data
+* alasan AI diperlukan
+
+---
+
+## Semua Tim
+
+Latihan menjawab:
+
+* Why Emitra?
+* Why now?
+* Why AI?
+* Why not Excel?
+* Why not consultants?
+* Why not Persefoni?
+
+Jawaban harus konsisten.
+
+---
+
+# 6. OUTPUT YANG HARUS DIKUMPUL
+
+**Format**
+
+* PDF
+
+**Font**
+
+* Times New Roman 12
+
+**Spacing**
+
+* 1.5
+
+**Margin**
+
+* Kiri: 4 cm
+* Kanan: 3 cm
+* Atas: 3 cm
+* Bawah: 3 cm
+
+**Panjang**
+
+* 10–20 halaman
+  *(tidak termasuk cover, daftar isi, lampiran)*
+
+**Nama File**
+
+> International Business Plan_Dex Bennett_Politeknik Negeri Bali_Emitra
+
+**Submit**
+
+[https://bit.ly/PaperSubmission-BMC12-International2026](https://bit.ly/PaperSubmission-BMC12-International2026)
+
+**Deadline**
+
+**9 Juli 2026**
+
+---
+
+# 7. STRENGTHS & DIFFERENTIATORS
+
+## 1. Masalah nyata dan sedang terjadi
+
+CBAM bukan prediksi.
+
+Sudah berlaku.
+
+---
+
+## 2. Timing sangat tepat
+
+2026 adalah awal financial phase-in.
+
+2027 pembayaran pertama.
+
+Urgensi tinggi.
+
+---
+
+## 3. Gap pasar jelas
+
+Global software:
+
+* mahal
+* enterprise-only
+
+Lokal:
+
+* fokus offset
+* bukan compliance
+
+Emitra berada tepat di tengah.
+
+---
+
+## 4. AI bukan gimmick
+
+AI dipakai untuk:
+
+* OCR
+* document extraction
+* anomaly detection
+* audit preparation
+
+Bukan sekadar chatbot.
+
+---
+
+## 5. Roadmap berkembang
+
+Dimulai dari:
+
+CBAM
+
+↓
+
+ESG
+
+↓
+
+Green Financing
+
+↓
+
+Regional Expansion
+
+Artinya bisnis tidak berhenti setelah CBAM matang.
+
+---
+
+# 8. PREDIKSI PERTANYAAN JURI
+
+### 1.
+
+Mengapa perusahaan tidak memakai Excel saja?
+
+---
+
+### 2.
+
+Mengapa mereka harus memilih Emitra dibanding Persefoni atau Watershed?
+
+---
+
+### 3.
+
+Bagaimana AI memastikan akurasi data emisi?
+
+---
+
+### 4.
+
+Apa yang terjadi jika regulasi CBAM berubah?
+
+---
+
+### 5.
+
+Bagaimana memperoleh 10 pelanggan pertama?
+
+---
+
+### 6.
+
+Mengapa UKM mau membayar hingga puluhan juta rupiah per tahun?
+
+---
+
+### 7.
+
+Apa hambatan terbesar ketika implementasi di pabrik?
+
+---
+
+# 9. TALKING POINTS UNTUK PRESENTASI
+
+## 1. Opening
+
+"Carbon compliance is no longer an environmental issue—it is a market access requirement."
+
+---
+
+## 2. Data yang menarik perhatian
+
+* CBAM sudah memasuki fase definitif.
+* Pembayaran pertama dimulai Februari 2027.
+* Eksportir tanpa data emisi berisiko kehilangan daya saing di pasar Uni Eropa.
+
+---
+
+## 3. Problem
+
+Eksportir Indonesia masih mengandalkan audit manual yang mahal dan lambat.
+
+---
+
+## 4. Solution
+
+Emitra mengotomatisasi seluruh proses mulai dari dokumen pabrik hingga laporan CBAM yang siap dikirim.
+
+---
+
+## 5. Business Model
+
+Hybrid:
+
+* setup fee
+* annual subscription
+
+Memberikan pendapatan berulang sekaligus mendanai implementasi awal.
+
+---
+
+## 6. Why Emitra
+
+Affordable.
+
+AI-powered.
+
+Built specifically for Southeast Asian exporters.
+
+---
+
+## 7. Closing
+
+"Emitra is not just helping companies comply with regulations—we are helping Southeast Asian exporters remain competitive in a decarbonizing global economy."
+
+---
+
+## ⚠️ Catatan penting yang perlu diperbaiki sebelum Grand Final
+
+Saat membaca proposal, aku menemukan **satu inkonsistensi** yang sebaiknya segera diperbaiki. Di halaman awal proposal masih tertulis:
+
+> **Category: Sub-Theme A (Sustainable Future) × Category 1 (Digital Transformation)**
+
+Sementara konteks lomba yang kamu berikan untuk briefing ini menyebut:
+
+> **Sub-Theme: Innovating Global Business Strategies for a Sustainable Future**
+>
+> **Category: Sustainable Business & Green Innovation**
+
+Pastikan **proposal, slide presentasi, dan narasi lisan menggunakan kategori yang sama**. Inkonsistensi seperti ini mudah ditemukan juri dan bisa mengurangi kesan profesional.
+
+---
+
+**Selamat berjuang, tim Emitra!** Kekuatan proposal kalian bukan pada AI-nya, tetapi pada kemampuan menunjukkan bahwa Emitra menyelesaikan masalah bisnis yang nyata, mendesak, dan bernilai bagi eksportir Indonesia di tengah perubahan perdagangan global.

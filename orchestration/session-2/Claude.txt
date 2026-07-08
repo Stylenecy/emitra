@@ -1,0 +1,42 @@
+Gue cross-check dulu angka-angka kunci dari CBAM sebelum masuk ke debat — dan nemu beberapa gap yang penting banget buat diketahui sebelum ini masuk proposal final. Ini jawaban lengkapnya:
+
+## 1. KRITIK — kelemahan terbesar
+
+**Angka TAM kemungkinan overstated, dan ini yang paling berisiko kena bantah juri.**
+
+Saya cek data resmi/pers Indonesia soal CBAM, dan angka USD 21,5 miliar itu jauh di atas yang saya temukan. Data dari Kementerian Perdagangan (dikutip dalam diskusi panel CBAM di Trade Expo Indonesia) menyebut nilai ekspor RI yang benar-benar terdampak CBAM sekitar US$757,7 juta, atau sekitar 4,54% dari total ekspor Indonesia ke Uni Eropa di tahun 2023. Rincian per komoditas dari sumber yang sama malah tidak konsisten satu sama lain — estimasi biaya CBAM untuk aluminium sekitar US$20,69 juta, besi-baja US$319,82 juta, dan pupuk US$724,9 juta (kalau dijumlah aja udah beda dari angka total US$757,7 juta yang disebut di kalimat sebelumnya — jadi bahkan sumber Indonesia sendiri saling tidak sinkron). Data IISIA (asosiasi baja) menyebut nilai ekspor baja RI ke UE hanya sekitar USD1,05 miliar atau 4% dari total ekspor baja nasional, dengan estimasi biaya sertifikat sekitar €383 juta atau €390 per ton produk baja kalau CBAM diterapkan penuh.
+
+Saya tidak yakin dari mana Gemini dapat angka USD 21,5 miliar — kemungkinan itu mencampur "total ekspor RI ke UE semua sektor" dengan "ekspor sektor yang kena CBAM." **Ini harus dicek ulang ke sumber primer** (situs resmi Kemendag/BKPerdag atau European Commission Taxation & Customs Union) sebelum dikunci di financial section — kalau juri yang paham trade nanya sumbernya, ini bisa jatuh kredibilitas seluruh bagian finansial (bobot 15%).
+
+**Masalah kedua, lebih struktural:** urgensi "harus bayar EUR 80-100/ton mulai 2026" itu terlalu dilebih-lebihkan. Faktanya:
+- Sertifikat CBAM baru **wajib dibeli mulai Februari 2027** (bukan sekarang) untuk emisi yang tertanam di barang yang diimpor sepanjang 2026.
+- Untuk tahun 2026, faktor phase-in cuma 2,5%, karena 97,5% alokasi gratis EU ETS masih berlaku — jadi eksposur biaya riil di 2026 jauh lebih kecil dari perhitungan "penuh." Faktor ini naik bertahap sampai penuh di 2034.
+- Harga aktual Q1 2026 yang sudah dipublikasikan resmi adalah €75,36/tCO2 — bukan €80-100. Bisa saja naik ke rentang itu nanti, tapi klaim "EUR 80-100" untuk 2026 belum akurat berdasarkan data resmi terbaru.
+- Dan yang paling penting: **secara teknis, yang wajib beli sertifikat itu importir di UE, bukan eksportir Indonesia.** Eksportir RI kena dampak *tidak langsung* — lewat negosiasi harga, karena kalau data emisi mereka nggak terverifikasi, importir pakai default value yang lebih mahal, bikin produk RI kalah kompetitif. Ini nuance yang harus jelas di positioning: produk kalian bukan "bayar pajak karbon buat kamu," tapi "kasih data emisi terverifikasi biar buyer UE-mu nggak kena default value yang lebih mahal."
+
+Ide ini tetap valid, tapi angka dan urgensinya perlu dikoreksi biar nggak terkesan sales-y/salah data di depan juri.
+
+## 2. REFINE
+
+- **Target:** Fokus ke besi-baja & aluminium dulu — bukan cuma karena nilai ekspornya terbesar, tapi karena ekspor RI ke UE di sektor ini tumbuh CAGR 30-34% per tahun, jadi ada dorongan riil buat exporter yang serius mau scale ke EU. Saya tidak menemukan konfirmasi untuk angka "1.500-2.000 eksportir terdampak" — worth ditanya lagi sumbernya ke Gemini atau dicek langsung dari asosiasi sektor (IISIA untuk baja, dsb) sebelum dipakai di TAM.
+- **Pricing:** Kompetitor global (Persefoni/Watershed) di kisaran $15-80K/tahun — saya belum verifikasi angka pasti ini, tapi kalau benar, itu jauh di luar jangkauan SME seperti CV Logam Mulia Sejahtera yang biaya audit manualnya "cuma" IDR150-250jt/tahun. Saran: banding harga sedikit di bawah biaya manual mereka sekarang tapi cukup tinggi buat margin sehat — misal IDR 30-80jt/tahun, jauh di bawah kompetitor global.
+- **MVP vs nice-to-have:** MVP harus cuma 1 hal — kalkulator embedded emission per instalasi sesuai metodologi resmi EU (pakai actual data pabrik vs default value EU) + output report format yang match dengan format deklarasi CBAM. Dashboard analytics fancy, marketplace verifier, dsb itu nice-to-have buat fase berikutnya, jangan dipaksa masuk MVP demi "kelihatan lengkap."
+- **Positioning:** Persefoni/Watershed itu enterprise ESG suite global — general purpose, mahal. Jejak.in/Fairatmos (saya belum verifikasi detail produk mereka terbaru) katanya fokus ke carbon offset/trading domestik, bukan compliance ekspor. Gap yang kosong: belum ada pemain lokal yang spesifik ke embedded-emission calculator + reporting format buat SME eksportir sektor CBAM. Itu positioning yang jelas dan defensible — tapi harus divalidasi lagi kalau memang belum ada yang masuk niche ini.
+
+## 3. NAMA
+
+1. **Emisia** — pendek, evokes "emisi", terdengar modern & bisa dipakai global (gaya nama SaaS internasional)
+2. **Zerin** — dari "zero" + sufiks gaya startup SEA (mirip Jejak.in, Fairatmos), techy dan mudah diingat
+3. **Karbonik** — main dari "karbon" + sufiks "-ik", lebih lokal/relatable, cocok kalau mau positioning "buatan anak bangsa buat masalah anak bangsa"
+
+## 4. RISIKO PALING KRITIS
+
+**Willingness-to-pay rendah, justru karena urgensi 2026 lebih kecil dari yang diasumsikan.** Ini turunan langsung dari temuan di poin 1: kalau faktor phase-in cuma 2,5% di 2026 dan sertifikat baru mulai dibeli Feb 2027, SME eksportir dengan margin tipis (kasus CV Logam Mulia Sejahtera: biaya audit manual = 14% laba) mungkin merasa "belum genting, tunggu aja dulu" — apalagi kalau mereka bisa terus pakai audit manual yang walau mahal, sudah jalan.
+
+**Antisipasi:** Jangan jual "compliance darurat sekarang," jual **"future-proofing + competitive edge sekarang, biaya makin mahal tiap tahun sampai 2034."** Plus, diversifikasi revenue biar nggak 100% gantung ke satu regulasi EU — masuk juga ke compliance domestik (pajak karbon UU 7/2021, POJK 18/2023, IDXCarbon) sebagai use-case tambahan. Ini juga mitigasi risiko sekunder: ada tekanan politik di internal UE buat melunakkan ETS/CBAM demi kompetitivitas industri — kalau itu terjadi, produk yang cuma bergantung ke CBAM jadi rentan.
+
+## 5. DEBAT TERBUKA
+
+Saya setuju arah ini masih solid dan **saya nggak akan menyarankan ganti ide lagi** dengan sisa waktu segini — risikonya lebih besar dari upsidenya. Masalah fragmentasi compliance emisi buat eksportir SME itu nyata dan gap-nya kelihatan belum terisi lokal.
+
+Tapi saya mau jujur: kalau angka TAM dan urgensi timeline nggak dikoreksi ke sumber primer sebelum submit, ini proposal rentan kena "gotcha" dari juri yang sempat googling CBAM lima menit. Prioritas 1,5 hari ke depan: Adriel cek ulang angka export value & jumlah eksportir langsung dari sumber resmi (Kemendag/BKPerdag, IISIA, atau situs European Commission Taxation & Customs Union), lalu reframe narasi dari "darurat bayar pajak karbon" jadi "kompetitivitas ekspor jangka panjang di tengah regulasi yang makin mengetat sampai 2034." Itu versi yang lebih akurat, dan sebenarnya juga lebih persuasif — karena nggak overselling.

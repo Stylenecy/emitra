@@ -1,0 +1,44 @@
+**Dex, ini audit kritis aku sebagai juri BMC #12 yang galak.** Aku baca "proposal" dari semua konteks + history kita (karena file Emitra-International-Business-Plan-BMC12.md belum exist di workspace). Ini bukan sweet-talk — proposal ini **belum siap menang**, masih di tahap "bisa lolos semifinal kalau beruntung". 
+
+## PREMIS
+Kalian tim (Dex SI/CTO, Imel CEO, Adriel CFO, Keren CMO) sedang menyusun International Business Plan untuk Emitra — SaaS AI CBAM compliance + green financing gateway untuk eksportir besi/baja/aluminium Indonesia. Sudah converge dari brainstorming sebelumnya, pakai sub-theme A Sustainable Future × Category 1 Tech-Based. Proposal digabung dari 5 AI, deadline 9 Juli (tinggal ~1,5 hari efektif). Dari yang ada, ini terlalu "PowerPoint slide jadi dokumen" — kurang kedalaman akademik dan punch internasional.
+
+## TEMUAN KRITIS
+- **Recommended Solution (bobot 25%) — paling lemah**: Terlalu high-level. Flow integrasi KUR Hijau bagus di konsep, tapi tidak ada technical architecture detail (stack, data pipeline, AI model), demo MVP mockup, atau timeline development yang credible. Juri praktisi akan tanya "gimana lo handle real-time EU regulation change?" Dampak: bagian terberat ini terasa generik.
+- **Project Description & Executive Summary**: Masih terlalu Indonesia-centric, kurang "International" Business Plan. CBAM angle bagus, tapi cerita global collaboration lemah.
+- **Financial Overview**: Proyeksi Year 1 15-20 clients terlalu optimis tanpa sales pipeline konkret atau competitor benchmark conversion rate. Hybrid pricing oke, tapi belum ada churn assumption atau detailed CAC calculation.
+- **Risk Analysis**: Masih checklist standar, kurang quantitative (probability x impact matrix).
+- **Overall**: Proposal terasa "AI-generated compilation" — repetitif, kurang narasi kohesif, dan uniqueness Emitra belum tajam.
+
+## ASUMSI YANG BERISIKO
+- Asumsi adopsi cepat 15-20 clients Year 1 di tengah sales cycle enterprise 3-6 bulan + UKM yang biasanya ogah bayar setup fee mahal.
+- Asumsi bank partnership untuk KUR Hijau gateway langsung jalan (realitanya butuh MoU formal yang lama).
+- Emission data accuracy 100% otomatis tanpa human verification (CBAM EU ketat banget soal ini).
+- Market size $757M terdampak langsung translate ke willingness-to-pay tinggi.
+- Retensi tinggi tanpa proof dari pilot.
+
+## REKOMENDASI PERBAIKAN
+**Critical (harus hari ini)**:
+- Perkuat **Recommended Solution**: Tambah system architecture diagram (layers: data ingestion → AI engine → compliance & financing gateway), tech stack detail (Python FastAPI, PostgreSQL, ML model), dan MVP scope dengan Gantt sederhana 6 bulan.
+- Revisi **Executive Summary** jadi 1 halaman tajam: problem → solution → uniqueness → traction potential.
+- Tambah **Competitive Matrix** tabel (Emitra vs Persefoni vs Jejak.in vs manual) di Recommended Solution.
+
+**Important**:
+- **Financial**: Tambah sensitivity analysis (best/base/worst case) dan jelas asumsi (misal conversion rate 5-10% dari lead). Turunkan Year 1 target jadi 8-12 clients biar believable.
+- **Risk**: Buat matrix 5x5 (probability vs impact), tambah risiko regulasi CBAM delay/change dan cybersecurity data breach.
+- **International Angle**: Tambah section kecil di Project Description tentang ekspansi ASEAN (Vietnam/Malaysia CBAM impact) dan potential EU partner.
+
+**Nice-to-have**:
+- Tambah 1 case study fiktif tapi realistis dengan calculation ROI detail.
+- Visuals: Lebih banyak diagram, kurangi teks padat.
+
+## VERDICT: Revise Required
+Belum finalize. Kalau submit sekarang, kemungkinan menang rendah (5-6/10). Uniqueness Emitra sedang (banyak carbon tool), financial agak hype, solution kurang deep. Tapi potensi tinggi kalau direvise — tema Sustainable Future + CBAM timely banget.
+
+## APA YANG BISA AKU PERBAIKI?
+- **Hari ini**: Buat file Emitra-International-Business-Plan-BMC12.md kalau belum, lalu rewrite **Recommended Solution** full (aku bisa kasih draft kerangka detail). Tambah competitive matrix dan risk matrix.
+- Turunkan ekspektasi revenue Year 1 & tambah justification berdasarkan data real adopsi SaaS di Indonesia.
+- Hapus klaim "pioneer" atau "first in Indonesia" kalau belum diverifikasi — ganti jadi "salah satu yang paling terjangkau & localized".
+- Tambah **Traction & Validation** subsection kecil (mention pilot plan + feedback dari CV Logam Mulia-like company).
+
+Dex, ini saatnya brutal edit, bukan polish. Mau aku langsung draft ulang section Recommended Solution atau Financial yang direvise sekarang? Atau kasih list edit spesifik per section? Kita masih punya waktu, tapi jangan buang untuk overthinking — action.

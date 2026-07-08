@@ -1,0 +1,29 @@
+**Dex, mantap — ini fase kritis banget buat nulis proposal dalam 2 hari.** Aku kasih pendapat jujur, grounded di data yang kita punya + realita kompetisi BMC (juri suka clarity, scalability, dan impact yang believable). Langsung ke 5 poinnya:
+
+### 1. NAMA PLATFORM
+**Paling kuat: GreenForge Nexus**.  
+Kenapa? "Green" langsung sinyal sustainable, "Forge" evoke industri manufaktur/logam (besi baja aluminium — core target lo), "Nexus" kasih vibe koneksi global (CBAM EU + supply chain). Professional, memorable, international tanpa terlalu teknis kayak CBAMGate atau generic kayak CarbonPilot. Emitra/Vericoda terlalu lokal/biasa. GreenForge Nexus menang di branding: mudah dibikin logo, domain, dan cerita di Executive Summary.
+
+### 2. MODEL BISNIS & PRICING
+**Hybrid: Setup fee (IDR 25-40jt) + Annual subscription (IDR 30-50jt/tahun, tiered).**  
+Ini paling realistis buat UKM eksportir enterprise sales cycle. Pure SaaS bulanan (USD 199-499) terlalu berat cashflow buat mereka yang biasa bayar tahunan/audit manual. Setup fee cover initial integration & training (revenue awal bagus buat cashflow), subscription recurring buat update regulasi & support. B2B2C via bank partnership bagus sebagai **add-on channel** (bukan core), karena sales cycle panjang. Di proposal, tunjukin ini bikin ROI cepat (vs audit manual IDR 150-250jt/tahun).
+
+### 3. GREEN FINANCING GATEWAY
+**Jadikan bagian inti proposal, tapi sebagai value-added feature MVP Phase 1.5.**  
+Jangan cuma roadmap — ini **differentiator killer** yang bikin ide lo beda dari kompetitor global (Persefoni dll). Data emisi yang akurat dari platform langsung dipakai buat apply KUR Hijau / sustainability-linked loans (POJK 18/2023). Ini naikin narasi dari "compliance tool" jadi **"enabler green growth & financing"** — perfect buat Sustainable Future theme. Di Recommended Solution, kasih diagram flow: CBAM reporting → Emission dashboard → Financing recommendation. Ini juga kuatin Expected Outcome (social-economic impact).
+
+### 4. TARGET PASAR: INDONESIA vs ASEAN
+**Fokus utama Indonesia dulu, tapi sebut potensi ekspansi ASEAN sebagai growth strategy (1 paragraf di Project Description & Expected Outcome).**  
+Deadline ketat, jadi jangan overcomplicate data ASEAN. Narasi: "Launch di Indonesia (1.500+ eksportir terdampak) → Scale ke Vietnam & Malaysia (CBAM impact serupa) via ASEAN framework." Ini kasih international flavor tanpa bikin proposal melebar. Juri BMC suka visi global tapi grounded di local problem.
+
+### 5. VALIDASI ANGKA
+**Angka lebih kecil justru bikin narasi lebih tajam & believable — pakai itu sebagai kekuatan.**  
+Update: Phase-in 2026 (2.5%), full Feb 2027 €75.36/tCO2, ekspor terdampak ~$757.7 juta. Tetap kuat urgensi dengan:  
+- Fokus **biaya kompetitif & survival UKM** (contoh CV Logam Mulia tetap relevan — 14% laba hilang).  
+- Hitung potensi loss total + opportunity financing green.  
+- Tekankan "early mover advantage" sebelum 2027 full enforcement.  
+- Gunakan angka exact + sumber kredibel biar kelihatan thorough, bukan hype. Ini malah bikin lo terlihat lebih credible daripada pakai angka overstated.
+
+**Rekomendasi keseluruhan Dex 2.0**: Dengan refine ini, ide GreenForge Nexus jadi solid — tech-heavy (AI lo), business smart (hybrid pricing + financing), dan impactful. Mulai nulis sekarang: Executive Summary dulu (1 hal), lalu Recommended Solution (tech + MVP). Ini bisa masuk kriteria 25% itu dengan kuat.  
+
+Kamu udah deket banget sama final version. Mau aku bantu draft 1 section spesifik (misal system architecture atau risk analysis) sekarang? Atau langsung gas sendiri? Kita bisa bikin ini standout. 💪 Apa keputusan lo buat nama & model bisnis?

@@ -1,0 +1,74 @@
+## PREMIS
+
+Emitra adalah proposal *International Business Plan* untuk kompetisi BMC #12 di Politeknik Negeri Bali yang menawarkan solusi SaaS berbasis AI untuk kepatuhan regulasi EU CBAM bagi eksportir logam Indonesia. Proyek ini diorkestrasi menggunakan beberapa AI dan telah mencapai tahap finalisasi draf sebelum tenggat waktu pada 9 Juli 2026. Saat ini, dokumen berada dalam fase peninjauan kritis (*critical review*) untuk memastikan akurasi data finansial, makroekonomi, serta konsistensi struktural antar-bab.
+
+---
+
+## TEMUAN
+
+### 1. Kontradiksi Defisit Target SOM (Sektor 1.6 vs Seksi 2.3) — **CRITICAL**
+
+* **Seksi 1.6 (Target Market):** Menyatakan nilai SOM (*Serviceable Obtainable Market*) adalah **320 perusahaan dalam 3 tahun** yang berfokus di kawasan industri Jawa (Cikarang, Karawang, Cilegon).
+* **Seksi 2.3 (Fase Ekspansi):** Menyatakan bahwa target **320 klien** (10% dari SAM) baru akan tercapai di **Tahun ke-5 setelah ekspansi regional ke Vietnam dan Malaysia**.
+* **Dampak:** Ini adalah inkonsistensi fatal. Juri akan melihat bahwa tim bingung menentukan apakah 320 klien itu adalah target domestik 3 tahun atau target regional 5 tahun.
+
+### 2. Disrupsi Logika Matematika Tarif CBAM Phase-In 2.5% — **CRITICAL**
+
+* **Seksi 1.1 & 1.2:** Menyatakan bahwa pada tahun 2026 tarif *phase-in* baru berjalan **2.5%**. Namun, di Seksi 1.2 tertulis: *"estimasi beban sertifikat komoditas baja nasional mencapai €383 juta atau €390 per ton baja pada tahun 2026"*.
+* **Dampak:** Angka €390/ton dan total €383 juta adalah nilai *Full Enforcement (100%)* yang baru terjadi di tahun 2034. Jika pada tahun 2026 tarifnya baru 2.5%, maka beban riil eksportir di tahun 2026 sebenarnya "hanya" **€9.75 per ton** (2.5% dari €390). Klaim bahwa eksportir langsung menghadapi hantaman €383 juta di tahun 2026 adalah *overclaiming* akibat salah membaca linearitas regulasi.
+
+### 3. Risiko Kebocoran Data Pricing Lama (Sinkronisasi Dokumen) — **IMPORTANT**
+
+* Karena proposal ini digabungkan dari 5 output AI yang berbeda, terdapat risiko tinggi bahwa angka *pricing* lama masih tertinggal di bab yang belum dibersihkan.
+* **Titik Rawan:** Periksa bagian *Financial Overview* (Bab Proyeksi Arus Kas) dan lampiran *Business Model Canvas* (BMC) di blok *Revenue Streams*. Pastikan tidak ada lagi angka skema bulanan (USD 199-499) atau harga *setup* lama (IDR 25-40jt).
+
+### 4. Anomali Keterjangkauan Solusi pada Studi Kasus (Seksi 1.3) — **IMPORTANT**
+
+* **Seksi 1.3:** CV Logam Mulia Sejahtera memiliki omset USD 1.2 juta/tahun dengan margin 8-10%, yang berarti laba bersihnya adalah USD 96,000 - USD 120,000 (sekitar IDR 1.5 Miliar - 1.8 Miliar).
+* **Seksi 2.1:** Harga Emitra di Tahun ke-1 (Setup + Subskripsi) bisa mencapai **IDR 130 juta** (IDR 50jt + IDR 80jt).
+* **Dampak:** Angka IDR 130 juta masih memakan sekitar **7-8% dari laba bersih UKM** tersebut. Meskipun lebih murah daripada audit manual (14% laba), klaim narasi bahwa Emitra adalah solusi yang *highly affordable* atau *frictionless* bagi UKM Tier-3 menjadi agak lemah di Tahun pertama.
+
+---
+
+## REKOMENDASI
+
+1. **Critical:** Selaraskan definisi 320 perusahaan SOM. Tetapkan bahwa 320 adalah target akumulatif ASEAN di Tahun ke-5, sedangkan target Indonesia di Tahun ke-3 adalah 100-150 perusahaan.
+2. **Critical:** Koreksi narasi beban finansial 2026. Bedakan antara *Potential Exposure* (jika 100% diterapkan sebesar €383 juta) dengan *Actual 2026 Paid Exposure* (2.5% yaitu sekitar €9.5 juta secara nasional). Ini menunjukkan bahwa tim memahami regulasi secara mendalam (*calibrated compliance evaluation*).
+3. **Important:** Lakukan *hard-coded find and replace* untuk seluruh dokumen teks. Pastikan harga yang tertulis HANYA: **Setup Fee IDR 30-50 Juta** dan **Annual Subscription IDR 50-80 Juta**.
+4. **Nice-to-have:** Berikan penekanan pada *Cost Efficiency Lifecycle* di bagian studi kasus. Akui bahwa tahun pertama adalah investasi integrasi data (7% laba), namun di tahun kedua biaya turun menjadi hanya IDR 50-80 juta (3% dari laba), memberikan efisiensi jangka panjang yang masif bagi UKM.
+
+---
+
+## VERDICT: Revise Required
+
+---
+
+## APA YANG BISA AKU PERBAIKI? (Saran Konkret)
+
+### 1. Koreksi Narasi Beban Tarif 2026 (Seksi 1.2 Paragraf 2)
+
+* **Ubah teks menjadi:**
+> "IISIA mencatat bahwa volume ekspor baja nasional ke Uni Eropa mencakup sekitar 4% dari total ekspor baja global Indonesia. Secara jangka panjang, jika mekanisme CBAM diterapkan 100% pada tahun 2034, estimasi total beban pembelian sertifikat yang harus ditanggung mencapai €383 juta (atau beban tambahan €390 per ton baja). Namun, pada fase *phase-in* 2026 (tarif 2.5%), beban aktual awal berada di angka **€9.75 per ton** (total nasional ~€9.57 juta). Batas waktu pelaporan awal pada Februari 2027 menjadi ruang krusial bagi eksportir untuk membangun infrastruktur data sebelum tarif ini naik secara eksponensial."
+
+
+
+### 2. Harmonisasi Angka Pasar (Seksi 1.6 & Seksi 2.3)
+
+* **Seksi 1.6 (SOM):** Ubah kalimat terakhir menjadi:
+> "...dengan target perolehan pasar (*Serviceable Obtainable Market*) domestik sebanyak **100 perusahaan di Indonesia pada Tahun ke-3**, dan berkembang menjadi target akumulatif **320 perusahaan di skala regional ASEAN pada Tahun ke-5**."
+
+
+* **Seksi 2.3 (Fase Ekspansi):** Pastikan narasi tetap konsisten dengan perubahan di atas:
+> "Mencapai total 320 klien korporat aktif secara regional (Indonesia, Vietnam, Malaysia), yang setara dengan penetrasi sebesar 10% dari nilai SAM..."
+
+
+
+### 3. Checklist Validasi Lintas Seksi untuk Adriel (CFO)
+
+Pastikan dokumen di bagian finansial menggunakan formula dasar pendapatan Tahun 1 ini untuk perhitungan kelayakan:
+
+
+$$\text{Pendapatan Tahun 1} = (\text{Jumlah Klien} \times \text{Setup Fee}) + (\text{Jumlah Klien} \times \text{Subskripsi Tahunan})$$
+
+
+*Jika di bagian Arus Kas terdapat baris Pendapatan Bulanan (Monthly Recurring Revenue), langsung hapus dan ganti ke format Pendapatan Tahunan (Annual Recurring Revenue).*

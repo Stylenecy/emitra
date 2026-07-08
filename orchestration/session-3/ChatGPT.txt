@@ -1,0 +1,283 @@
+Menurutku, lima keputusan ini lebih penting daripada nambah fitur. Proposal business plan biasanya menang karena **ceritanya konsisten**, bukan karena fiturnya paling banyak.
+
+---
+
+# 1. Nama Platform
+
+Dari daftar yang kamu kasih, ini rankingku:
+
+## 🥇 1. CarbonPilot ⭐⭐⭐⭐⭐
+
+Masih favoritku.
+
+Kenapa?
+
+* Langsung menjelaskan domain bisnis.
+* "Pilot" memberi kesan membantu navigasi regulasi yang kompleks.
+* Mudah diucapkan oleh orang Indonesia maupun internasional.
+* Tidak mengunci diri pada CBAM saja.
+* Sangat cocok kalau nanti berkembang ke ESG, ISSB, ETS, dll.
+
+Tagline yang menurutku kuat:
+
+> *Navigate Carbon Compliance with Confidence.*
+
+---
+
+## 🥈 2. ClearPort AI ⭐⭐⭐⭐☆
+
+Ini menarik karena ada dua makna:
+
+* port = pelabuhan / ekspor
+* clear = clearance / kepatuhan
+
+Tapi kelemahannya, asosiasi "port" lebih kuat daripada "carbon". Orang yang pertama kali dengar belum tentu tahu produknya apa.
+
+---
+
+## 🥉 3. CarbonLedger ⭐⭐⭐⭐☆
+
+Professional.
+
+Terasa enterprise.
+
+Minusnya:
+
+"Ledger" sekarang sangat identik dengan blockchain/akuntansi sehingga sedikit generik.
+
+---
+
+## Yang kurang kusuka
+
+### GreenForge Nexus
+
+Terlalu panjang.
+
+Terdengar seperti perusahaan konsultasi, bukan SaaS.
+
+---
+
+### CBAMGate
+
+Aku justru menghindari ini.
+
+Kalau 5 tahun lagi CBAM berubah?
+
+Nama kalian ikut "kedaluwarsa".
+
+---
+
+### Emitra
+
+Nama bagus.
+
+Tapi terlalu abstrak.
+
+Kalau aku lihat logo Emitra, aku bisa mengira:
+
+* fintech
+* HR software
+* kesehatan
+* apa saja.
+
+Brand awal startup B2B sebaiknya cukup eksplisit.
+
+---
+
+### Vericoda
+
+Menurutku paling lemah.
+
+Aku bahkan tidak bisa menebak produknya.
+
+Brand boleh unik, tetapi jangan mengorbankan kejelasan.
+
+---
+
+# 2. Model bisnis
+
+Menurutku **Hybrid** paling realistis.
+
+Kenapa?
+
+Kalian menjual software enterprise.
+
+Masalah enterprise bukan software-nya.
+
+Masalahnya onboarding.
+
+Misalnya perusahaan harus:
+
+* mapping data
+* training
+* import supplier
+* setup faktor emisi
+* validasi proses
+
+Semua itu ada biaya.
+
+Kalau hanya SaaS bulanan, kalian kehilangan revenue yang justru paling masuk akal di awal.
+
+Model yang akan kupilih:
+
+> **Implementation Fee + Annual SaaS**
+
+Contoh:
+
+* Setup: IDR 30 juta
+* Annual Subscription: IDR 42 juta
+* Additional Plant/User/API: add-on
+
+Narasinya juga lebih kuat:
+
+> "Masih jauh lebih murah daripada audit manual Rp150–250 juta per tahun."
+
+---
+
+B2B2C bank?
+
+Belum.
+
+Menurutku terlalu jauh.
+
+Kalian bahkan belum punya traction.
+
+Bank partnership lebih cocok sebagai strategi distribusi tahun ke-3 atau ke-4.
+
+---
+
+# 3. Green Financing Gateway
+
+Menurutku **roadmap**, bukan inti.
+
+Ini penting.
+
+Kalau dijadikan core proposal, ceritanya berubah.
+
+Sekarang kalian sedang menjual:
+
+> compliance software.
+
+Kalau tiba-tiba:
+
+> financing platform
+
+> ESG platform
+
+> loan marketplace
+
+Juri bisa bertanya:
+
+"Sebetulnya startup kalian mau jadi apa?"
+
+Aku justru akan membuat roadmap yang rapi:
+
+Year 1
+
+CBAM Automation
+
+↓
+
+Year 2
+
+ESG Reporting
+
+↓
+
+Year 3
+
+Green Financing Gateway
+
+↓
+
+Year 4
+
+Carbon Marketplace
+
+Narasi seperti ini jauh lebih meyakinkan.
+
+---
+
+# 4. Target Indonesia vs ASEAN
+
+Aku akan melakukan keduanya, tetapi dengan porsi berbeda.
+
+Proposal tetap:
+
+## Fokus operasi
+
+Indonesia.
+
+Karena:
+
+* ada data,
+* ada regulasi,
+* customer discovery lebih realistis.
+
+Tetapi di bagian Growth Strategy:
+
+> Expand to Vietnam and Malaysia.
+
+Kenapa?
+
+Karena mereka juga menghadapi CBAM dan memiliki basis manufaktur ekspor yang besar.
+
+Jangan terlalu banyak membahas angka ASEAN jika belum sempat divalidasi. Cukup jelaskan bahwa arsitektur platform dirancang agar dapat diadaptasi ke regulasi negara lain.
+
+---
+
+# 5. Validasi angka
+
+Menurutku ini justru **membuat proposal lebih kredibel**.
+
+Jangan takut angkanya mengecil.
+
+Yang membuat investor atau juri ragu justru angka yang terdengar dibesar-besarkan.
+
+Yang berubah adalah cara membangun urgensi.
+
+Dulu narasinya:
+
+> "Pasarnya besar."
+
+Sekarang ubah menjadi:
+
+> **"Regulasinya pasti."**
+
+Itu jauh lebih kuat.
+
+Aku bahkan akan menulis seperti ini:
+
+> Although the financial obligation during the initial implementation phase remains limited, the definitive CBAM mechanism will progressively increase compliance requirements. Exporters who delay building carbon accounting capabilities today risk facing substantially higher compliance costs, reporting complexity, and market access barriers as the regulation reaches full implementation.
+
+Artinya:
+
+Bukan karena biaya sekarang besar.
+
+Tetapi karena perusahaan perlu mulai membangun sistem sebelum semuanya menjadi wajib.
+
+Regulasi memberi *lead time*, bukan berarti masalahnya kecil.
+
+---
+
+# Satu hal yang menurutku masih kurang
+
+Kalau aku menjadi juri, pertanyaan terakhirku adalah:
+
+> **"Mengapa pelanggan mau membeli dari startup kalian, bukan menyewa konsultan?"**
+
+Ini menurutku harus dijawab secara eksplisit.
+
+Jawaban yang menurutku kuat bukan:
+
+> "Lebih murah."
+
+Tetapi:
+
+> **Continuous compliance.**
+
+Konsultan menghasilkan satu laporan.
+
+Platform kalian menjadi sistem operasional yang terus memantau data emisi, memperbarui laporan sesuai perubahan produksi, menyimpan audit trail, dan mempersiapkan perusahaan menghadapi regulasi berikutnya. Begitu perusahaan mengintegrasikan prosesnya, biaya berpindah (*switching cost*) menjadi tinggi.
+
+Kalau proposal berhasil menyampaikan bahwa kalian bukan "alat pembuat laporan CBAM", melainkan **lapisan digital kepatuhan karbon** (*carbon compliance infrastructure*) bagi eksportir Asia Tenggara, menurutku peluangnya jauh lebih kuat. Itu juga menjawab kekhawatiran bahwa bisnis akan selesai ketika CBAM sudah "normal"—karena yang dijual adalah infrastruktur kepatuhan jangka panjang, bukan satu fitur regulasi.

@@ -1,0 +1,51 @@
+Sebelum jawab, saya cek ulang satu regulasi yang mau dipakai di poin 3 — dan nemu koreksi penting. Ini jawaban lengkapnya:
+
+## 1. NAMA PLATFORM
+
+Pendapat jujur saya, dari yang kamu sebutkan:
+
+**Terkuat: Vericoda atau Emitra.**
+- *Vericoda* — "veri" (verified) + "coda" terdengar profesional, scalable secara internasional, dan langsung menyiratkan "verified data/code" tanpa perlu jelasin panjang.
+- *Emitra* — "emisi" + "mitra" (partner). Ada makna ganda yang bagus dalam Bahasa Indonesia: "emission partner." Terasa lebih hangat/lokal, cocok kalau positioning kalian mau "kami bantu eksportir, bukan cuma jual software."
+
+**Hati-hati dengan "ClearPort AI"** — pun "port" (pelabuhan ekspor) itu pintar dan relevan, tapi kata "AI" di nama bisa jadi bumerang kalau MVP kalian sebenarnya cuma kalkulator emisi berbasis formula/lookup table (yang memang itu MVP paling realistis untuk 2 hari). Juri yang kritis bisa tanya "AI-nya di mana?" — dan kalau nggak ada jawaban solid, itu justru menurunkan kredibilitas, bukan menaikkan. Kalau memang belum ada komponen ML/AI yang nyata, saya sarankan drop kata "AI" dari nama.
+
+**CarbonLedger dan GreenForge Nexus** terasa generik — banyak startup climate-tech global pakai pola nama serupa ("Carbon-something," "Green-something Nexus/Hub"), jadi kurang distinctive di mata juri yang mungkin sudah lihat banyak pitch sejenis.
+
+**CBAMGate** — clear & langsung, tapi mengikat brand 100% ke satu regulasi. Kalau nanti roadmap kalian mau expand ke domestik/ASEAN (lihat poin 4), nama ini jadi kurang lentur.
+
+*Catatan: saya tidak bisa memastikan status ketersediaan trademark/domain untuk nama-nama ini — itu perlu dicek manual sebelum benar-benar dipakai, tapi untuk keperluan proposal kompetisi ini bukan blocker.*
+
+## 2. MODEL BISNIS & PRICING
+
+**Rekomendasi: Hybrid (setup fee + annual subscription) sebagai model inti tahun pertama.**
+
+Alasannya bukan cuma soal angka, tapi soal *buyer behavior*: target kalian adalah pemilik UKM manufaktur besi/baja/aluminium — biasanya bisnis keluarga, konservatif, dan sudah terbiasa bayar fee tahunan untuk jasa audit (seperti kasus CV Logam Mulia Sejahtera). Model subscription bulanan dalam USD itu terasa asing dan berisiko buat cash flow planning mereka — switching cost secara psikologis lebih rendah kalau model barunya *mirip* dengan yang sudah mereka jalani (annual fee), bukan model baru yang belum familiar (recurring foreign-currency SaaS).
+
+Setup fee juga penting secara naratif: itu menyiratkan onboarding yang high-touch/concierge (mengumpulkan data instalasi pabrik, kalibrasi metodologi emisi) — cocok untuk positioning "pengganti audit manual," bukan "software generik."
+
+**B2B2C via bank partnership** — saya nggak sarankan jadi model GTM inti tahun 1. Negosiasi partnership perbankan biasanya butuh waktu berbulan-bulan dan sulit dibuat kredibel sebagai *core* revenue channel dalam proposal yang ditulis 2 hari tanpa bukti diskusi awal dengan bank manapun. Tapi ini nyambung sempurna ke poin 3 di bawah — jadikan **roadmap fase 2**, bukan model inti sekarang.
+
+## 3. GREEN FINANCING GATEWAY
+
+**Masukkan sebagai roadmap/future direction di bagian Recommended Solution, bukan bagian inti MVP.** Idenya kuat dan menunjukkan visi jangka panjang (bagus buat kriteria "Expected Outcome"), tapi kalau diklaim sebagai fitur inti yang "sudah bisa jalan," itu overclaiming — kalian belum punya bukti partnership bank apapun, dan itu bisa ditanya juri.
+
+**Koreksi penting:** saya cek ulang, dan **POJK 18/2023 sebenarnya bukan tentang KUR Hijau** — itu adalah "Penerbitan dan Persyaratan Efek Bersifat Utang dan Sukuk Berlandaskan Keberlanjutan" (aturan soal penerbitan obligasi/sukuk berkelanjutan), sedangkan perdagangan karbon lewat bursa karbon (IDXCarbon) itu diatur di **POJK 14/2023**, bukan 18/2023. POJK 18/2023 memang relevan untuk konteks *sustainability-linked bonds/sukuk*, tapi kalau mau bicara **KUR Hijau** spesifik, itu biasanya program pembiayaan bersubsidi dari pemerintah/perbankan (bukan langsung di bawah POJK 18/2023) — saya rekomendasikan Adriel/Imel cek ulang regulasi mana yang paling tepat dikutip sebelum dikunci di proposal, karena ini detail yang mudah salah dan gampang ketahuan kalau juri paham regulasi keuangan.
+
+## 4. TARGET PASAR: Indonesia vs ASEAN
+
+**Fokus Indonesia untuk MVP dan financial modeling** (biar angka tetap defensible dan sederhana dalam 2 hari), tapi **sebutkan potensi ekspansi ASEAN (Vietnam, Malaysia) sebagai 1 paragraf visi/roadmap** di bagian Project Description atau Expected Outcome. Ini punya manfaat ganda: nggak nambah beban riset berat, tapi memperkuat narasi "Global Collaboration" kalau itu masih relevan dengan tema kompetisi.
+
+*Catatan: saya belum verifikasi angka spesifik soal seberapa besar ekspor Vietnam/Malaysia yang kena dampak CBAM — kalau mau menyebut angka konkret di paragraf itu, sebaiknya dicek dulu, jangan asumsi angkanya mirip Indonesia.*
+
+## 5. VALIDASI ANGKA — reframe urgensi
+
+Tiga pergeseran framing yang saya sarankan:
+
+**a) Jangan jual "krisis sekarang," jual "kurva biaya yang pasti naik."** Faktor phase-in CBAM itu terjadwal resmi dan naik bertahap sampai 100% di 2034 — ini bukan tren yang bisa berubah sewaktu-waktu, ini timeline yang sudah dipublikasikan Komisi Eropa. Narasi yang lebih kuat: "biaya kepatuhan carbon accounting makin mahal tiap tahun, dan membangun rekam jejak data emisi terverifikasi butuh waktu — mulai sekarang berarti siap saat biayanya benar-benar terasa, bukan tergagap di 2028."
+
+**b) Turunkan level bukti dari makro ke mikro.** Angka nasional yang beragam dan nggak konsisten antar sumber (seperti yang saya temukan) itu rentan dibantah. Kasus CV Logam Mulia Sejahtera — biaya audit manual IDR150-250jt/tahun, setara 14% laba — itu jauh lebih persuasif dan gampang diverifikasi karena itu data primer kalian sendiri, bukan agregat media.
+
+**c) Pakai estimasi sektoral yang lebih tervalidasi sebagai ilustrasi "apa yang terjadi kalau nggak siap"** — misalnya estimasi dari asosiasi industri baja yang menyebut CBAM bisa menambah beban biaya signifikan terhadap harga ekspor baja Indonesia. Ini tetap perlu dicek ke sumber utamanya langsung (bukan dikutip berlapis dari media), tapi levelnya lebih kredibel dibanding klaim makro USD21,5 miliar yang saya nggak temukan basisnya.
+
+Intinya: angka yang lebih kecil dan akurat itu **lebih kuat**, bukan lebih lemah — karena defensible di depan juri. Angka besar yang goyah kalau ditanya sumbernya justru jauh lebih berbahaya buat skor kalian daripada angka kecil yang solid.

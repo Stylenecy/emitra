@@ -1,0 +1,258 @@
+.dashboard {
+  position: relative;
+  min-height: 100%;
+  background:
+    radial-gradient(ellipse at 10% 0%, rgba(10, 135, 84, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 30%, rgba(10, 135, 84, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 100%, rgba(245, 166, 35, 0.04) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(26, 46, 74, 0.10) 0%, transparent 60%),
+    linear-gradient(180deg, #080b14 0%, #0a0f1a 30%, #0c1220 70%, #080b14 100%);
+}
+
+.dashboard .d-grain {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+.dashboard .d-pattern {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(10, 135, 84, 0.3) 0%, transparent 1px),
+    radial-gradient(circle at 70% 60%, rgba(10, 135, 84, 0.2) 0%, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(245, 166, 35, 0.2) 0%, transparent 1px);
+  background-size: 80px 80px, 100px 100px, 60px 60px;
+}
+
+.dashboard .d-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+}
+
+/* ─── Section identifiers ─── */
+.dashboard .d-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #0A8754;
+}
+
+.dashboard .d-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #f4f4f5;
+}
+
+.dashboard .d-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #71717a;
+}
+
+/* ─── Fade-up animation ─── */
+.dashboard .d-fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 800ms cubic-bezier(.22, 1, .36, 1), transform 800ms cubic-bezier(.22, 1, .36, 1);
+  will-change: transform, opacity;
+}
+.dashboard .d-fade-up.is-in { opacity: 1; transform: none; }
+.dashboard .d-fade-up.d1 { transition-delay: 80ms; }
+.dashboard .d-fade-up.d2 { transition-delay: 160ms; }
+.dashboard .d-fade-up.d3 { transition-delay: 240ms; }
+.dashboard .d-fade-up.d4 { transition-delay: 320ms; }
+
+/* ─── Glass card (shared) ─── */
+.dashboard .glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: all 500ms cubic-bezier(.22, 1, .36, 1);
+}
+.dashboard .glass-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+/* ─── Empty state ─── */
+.dashboard .empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.dashboard .empty-state svg {
+  opacity: 0.2;
+  margin-bottom: 1rem;
+  width: 48px;
+  height: 48px;
+  color: #71717a;
+}
+.dashboard .empty-state p {
+  color: #71717a;
+}
+.dashboard .empty-state p:first-of-type {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #a1a1aa;
+}
+
+/* ─── Inline stats inside cards ─── */
+.dashboard .stat-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.dashboard .stat-inline:last-child {
+  border-bottom: none;
+}
+.dashboard .stat-inline__label {
+  font-size: 0.85rem;
+  color: #71717a;
+}
+.dashboard .stat-inline__value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f4f4f5;
+}
+.dashboard .stat-inline__value.accent {
+  color: #0A8754;
+}
+.dashboard .stat-inline__value.warn {
+  color: #F5A623;
+}
+
+/* ─── Progress bar ─── */
+.dashboard .progress-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.dashboard .progress-bar__fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1000ms var(--ease-quiet);
+}
+
+/* ─── Status dot ─── */
+.dashboard .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.dashboard .status-dot--success { background: #0A8754; box-shadow: 0 0 8px rgba(10, 135, 84, 0.4); }
+.dashboard .status-dot--warning { background: #F5A623; box-shadow: 0 0 8px rgba(245, 166, 35, 0.3); }
+.dashboard .status-dot--error { background: #E53E3E; box-shadow: 0 0 8px rgba(229, 62, 62, 0.3); }
+.dashboard .status-dot--pending { background: #71717a; }
+
+/* ─── Cost comparison chip ─── */
+.dashboard .cost-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid;
+  transition: all 300ms var(--ease-quiet);
+}
+.dashboard .cost-chip--without {
+  background: rgba(229, 62, 62, 0.05);
+  border-color: rgba(229, 62, 62, 0.15);
+}
+.dashboard .cost-chip--with {
+  background: rgba(10, 135, 84, 0.05);
+  border-color: rgba(10, 135, 84, 0.15);
+}
+.dashboard .cost-chip__label {
+  font-size: 0.85rem;
+  color: #71717a;
+}
+.dashboard .cost-chip__value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.dashboard .cost-chip__value--strikethrough {
+  text-decoration: line-through;
+  color: #E53E3E;
+}
+.dashboard .cost-chip__value--save {
+  color: #0A8754;
+}
+
+/* ─── Audit trail modal ─── */
+.dashboard .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.dashboard .modal-box {
+  background: #141416;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 480px;
+  width: calc(100% - 2rem);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── File row ─── */
+.dashboard .file-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  transition: all 300ms var(--ease-quiet);
+}
+.dashboard .file-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Upload drop zone ─── */
+.dashboard .drop-zone {
+  border: 2px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 400ms var(--ease-quiet);
+  cursor: pointer;
+}
+.dashboard .drop-zone:hover {
+  border-color: rgba(10, 135, 84, 0.3);
+  background: rgba(10, 135, 84, 0.03);
+}
+.dashboard .drop-zone.dragging {
+  border-color: #0A8754;
+  background: rgba(10, 135, 84, 0.06);
+}

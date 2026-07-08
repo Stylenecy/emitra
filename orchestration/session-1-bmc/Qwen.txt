@@ -1,0 +1,76 @@
+Halo Tim! 🚀 Ini adalah *golden opportunity*. Kombinasi tim SI (Dex) dan Manajemen (Imel, Adriel, Keren) adalah **formasi sempurna** untuk komposisi penilaian kompetisi ini. Bobot **Recommended Solution (25%)** adalah ladang emas bagi Dex, sementara 4 kriteria sisanya (Total 75%) adalah panggung bagi tim Manajemen.
+
+Karena *deadline* hanya 2 hari, kita butuh ide yang **model bisnisnya jelas (mudah dibuatkan laporan keuangan)**, **masalahnya sangat nyata (riset pasar cepat)**, dan **teknologinya masuk akal untuk dibuat MVP-nya (Diagram Arsitektur Sistem)**.
+
+Berikut adalah 2 ide bisnis *fresh*, *high-impact*, dan sangat relevan untuk Bali/Asia Tenggara:
+
+---
+
+### 💡 IDE 1: PlateZero AI (Computer Vision untuk F&B Hotel)
+**Slogan:** *"Turn Buffet Waste into Bottom-line Profit."*
+
+**1. Nama Ide:** PlateZero AI
+**2. Sub-Tema × Kategori:** **A (Sustainable Future) × 1 (Tech-Based)**.
+*Alasan:* Mengonversi masalah lingkungan (sampah makanan) menjadi keuntungan ekonomi sirkular bagi industri perhotelan menggunakan kecerdasan buatan.
+**3. Masalah Konkret (Bali/SEA):**
+Hotel dan resort bintang 4-5 di Asia Tenggara kehilangan hingga 20-30% margin F&B akibat *buffet food waste*. Sisa makanan di TPA menghasilkan gas metana (25x lebih buruk dari CO2). *Head Chef* tidak memiliki data akurat makanan apa yang paling sering dibuang tamu, sehingga *over-purchasing* bahan baku terus terjadi.
+**4. Solusi & Peran Teknologi:**
+Sistem *Smart Bin* menggunakan **Computer Vision (AI)** yang dipasang di area *dish return* dapur hotel. AI secara *real-time* mendeteksi, mengklasifikasikan (misal: nasi, daging, buah), dan mengestimasi berat makanan yang dibuang. Sistem memproses data ini menjadi *dashboard prediktif* untuk memberi tahu Chef: *"Besok kurangi produksi ayam goreng 15% dan perbanyak salad."*
+**5. Kenapa Tim SI + Manajemen Cocok:**
+*   **Dex (SI/CTO):** Merancang arsitektur *Computer Vision* (menggunakan model YOLO/OpenCV) dan API integrasi ke POS (Point of Sale) hotel.
+*   **Adriel (CFO):** Membuat *Cost-Benefit Analysis* yang kuat (berapa Rupiah yang dihemat hotel dari pengurangan belanja bahan baku vs biaya langganan SaaS).
+*   **Imel (CEO):** Memimpin lobi B2B ke PHRI (Perhimpunan Hotel & Restoran Indonesia).
+*   **Keren (CMO):** Membuat *campaign* "Verified Zero-Waste Stay" untuk menarik turis Eropa yang peduli lingkungan.
+**6. Potensi Menang: 9/10**
+*Uniqueness:* Sangat relevan dengan lokasi kompetisi (Bali). Isu lingkungan dikawinkan dengan efisiensi finansial. Metrik keuangannya sangat konkret dan mudah dibuktikan.
+**7. Feasibility Nulis 2 Hari: Sangat Tinggi**
+Model bisnis *Hardware-as-a-Service* (HaaS) + SaaS bulanan sangat mudah diproyeksikan. Dex cukup membuat *mockup* UI dashboard dan *flowchart* sistem AI untuk memenuhi 25% bobot *Recommended Solution*.
+
+---
+
+### 💡 IDE 2: CBAM.ai (Automated Carbon Accounting untuk Eksportir)
+**Slogan:** *"Your AI Co-Pilot to the European Market."*
+
+**1. Nama Ide:** CBAM.ai (TradeGreen OS)
+**2. Sub-Tema × Kategori:** **C (Global Collaboration) × 1 (Tech-Based)**.
+*Alasan:* Menjembatani kesenjangan regulasi lingkungan antara Uni Eropa (Global) dan eksportir ASEAN melalui otomatisasi teknologi.
+**3. Masalah Konkret (Indonesia/SEA):**
+Mulai 2026, regulasi **CBAM (Carbon Border Adjustment Mechanism)** Uni Eropa mewajibkan pajak dan pelaporan emisi karbon ketat untuk produk impor (tekstil, furnitur, kerajinan). UMKM Eksportir Indonesia terancam kehilangan kontrak karena tidak sanggup membayar konsultan ESG (ratusan juta rupiah) untuk menghitung *Scope 1-3 emission* mereka.
+**4. Solusi & Peran Teknologi:**
+Platform SaaS *Automated Carbon Accounting*. Terintegrasi dengan *software* akuntansi lokal (Jurnal/Accurate). **AI (NLP & OCR)** mengekstrak data tagihan listrik, pembelian bahan mentah, dan logistik, lalu secara otomatis men-generate laporan emisi standar CBAM yang siap diaudit.
+**5. Kenapa Tim SI + Manajemen Cocok:**
+*   **Dex (SI/CTO):** Membangun *pipeline* ekstraksi data (OCR) dan algoritma kalkulasi standar ISO.
+*   **Imel (CEO):** Strategi kemitraan B2G dengan Kementerian Perdagangan / KADIN dan *EU-ASEAN Business Council*.
+*   **Adriel (CFO):** Skema *Freemium SaaS* (Kalkulator gratis, bayar untuk laporan resmi & *matchmaking* dengan buyer Eropa).
+*   **Keren (CMO):** Edukasi pasar B2B via webinar ekspor dan *lead generation*.
+**6. Potensi Menang: 9.5/10**
+*Uniqueness:* Isu *hyper-relevant* dan *urgent* (berlaku 2026). Skala makro-ekonomi besar (menyelamatkan ekspor nasional). Juri internasional akan sangat terkesan dengan *awareness* tim terhadap regulasi global.
+**7. Feasibility Nulis 2 Hari: Tinggi**
+Murni B2B SaaS. *Financial overview* mudah dibuat dengan asumsi konservatif. *Risk Analysis* sangat jelas (risiko adopsi teknologi UMKM -> mitigasi: *freemium* & pendampingan).
+
+---
+
+### ⏱️ ACTION PLAN 48 JAM (Strategi Menang 10-20 Halaman)
+
+Agar proposal 10-20 halaman format akademik selesai tepat waktu, bagi tugas berdasarkan **Kriteria Penilaian**:
+
+1.  **Dex (Fokus: Recommended Solution - 25% & Risk Analysis - 15%)**
+    *   *Task:* Buat Diagram Arsitektur Sistem, *Flowchart* AI, *Mockup* UI/UX, dan *Tech Stack* yang digunakan. (Ini akan memakan 4-6 halaman dan mengamankan nilai tertinggi).
+    *   *Risk:* Tulis mitigasi risiko teknis (keamanan data, *downtime* server).
+2.  **Adriel (Fokus: Financial Overview - 15% & Risk Analysis - 15%)**
+    *   *Task:* Buat Tabel Proyeksi Laba/Rugi 3-5 tahun, *Break-Even Point* (BEP), dan *Cashflow*.
+    *   *Risk:* Buat Matriks Risiko (Probabilitas vs Dampak) untuk risiko finansial & operasional.
+3.  **Keren (Fokus: Project Description - 15% & Expected Outcome - 15%)**
+    *   *Task:* Riset Market Size (TAM, SAM, SOM), Analisis Kompetitor, Strategi Marketing (4P), dan dampak sosial/lingkungan (*Expected Outcome*).
+4.  **Imel (Fokus: Executive Summary - 15% & Project Description - 15%)**
+    *   *Task:* Menjadi "Editor in Chief". Tulis *Executive Summary* (ini ditulis **terakhir** setelah semua bab selesai). Imel juga meriset latar belakang masalah makro dan menyatukan gaya bahasa akademis dari semua anggota tim.
+
+**💡 Tips Format Akademik:**
+*   Gunakan *Chart/Grafik* untuk data keuangan dan *Diagram UML* untuk sistem IT. Ini membuat PDF terlihat profesional, "mahal", dan cepat memenuhi target halaman.
+*   Gunakan *footnote* dan sitasi jurnal terkait *Sustainable Tourism* atau *Global Carbon Tax* untuk memperkuat argumen.
+
+**Rekomendasi Pilihan:**
+Jika kalian ingin ide yang **paling seksi secara visual dan emosional** (karena juri dari Bali), pilih **IDE 1 (PlateZero AI)**.
+Jika kalian ingin ide yang **paling kuat secara makro-ekonomi dan prestise internasional**, pilih **IDE 2 (CBAM.ai)**.
+
+Pilih satu, bagi tugas malam ini, dan mulai kerjakan besok pagi. *Good luck, bawa pulang pialanya!* 🏆

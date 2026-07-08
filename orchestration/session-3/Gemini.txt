@@ -1,0 +1,67 @@
+## 1. NAMA PLATFORM: ClearPort AI atau Vericoda
+
+Lupakan nama-nama generik seperti *CarbonPilot* atau *GreenForge Nexus*—nama-nama itu terdengar seperti proyek *carbon offset* sukarela yang tidak memiliki urgensi hukum. Untuk platform kepatuhan dagang internasional, kamu membutuhkan nama yang memancarkan otoritas hukum dan kesiapan audit.
+
+* **Pilihan Terbaik: ClearPort AI**
+* **Alasan:** Kata **"Port"** dan **"Clear"** langsung mengarah pada proses bea cukai, logistik, dan perdagangan lintas batas. Nama ini memberi kesan bahwa software kalian adalah kunci jangkar agar barang eksportir bisa "lolos" masuk ke pelabuhan Uni Eropa. Ini sangat cocok untuk juri kompetisi *International Business Plan*.
+
+
+* **Pilihan Alternatif: Vericoda (Verification + Carbon + Data)**
+* **Alasan:** Terdengar sangat korporat, premium, dan berfokus pada penyelesaian masalah utama yang dikritik sebelumnya: validitas data (*audit-ready*).
+
+
+
+---
+
+## 2. MODEL BISNIS & PRICING: Hybrid Model
+
+Untuk sektor industri berat (besi/baja/aluminium) dengan skala kerah biru (*smelter* dan pabrik), **Pure SaaS Bulanan (USD 199-499) pasti gagal**. Perusahaan manufaktur tidak membayar sistem kepatuhan struktural menggunakan kartu kredit bulanan, dan mereka membutuhkan kustomisasi awal karena sistem pencatatan internal mereka pasti berantakan.
+
+Pilihlah **Hybrid Model**, dengan detail struktur sebagai berikut:
+
+* **Setup/Onboarding Fee (IDR 30.000.000 - 50.000.000):** Dibayar sekali di depan. Ini esensial untuk membiayai beban kerja Dex dalam melakukan integrasi data awal, pemetaan pipa data ERP mereka, serta pelatihan staf pabrik.
+* **Annual Subscription (IDR 50.000.000 - 80.000.000/tahun):** Ditagih per tahun (*annual upfront*) untuk akses platform, pembaruan faktor emisi regulasi EU secara otomatis, dan kuota penerbitan laporan kepatuhan *CBAM-Ready*.
+
+> **Catatan Taktis:** Simpan *Bank Partnership* (B2B2C) murni sebagai **Strategi Distribusi (Go-To-Market)** untuk menekan biaya akuisisi pelanggan (CAC), bukan sebagai struktur utama *pricing* agar model finansial Adriel tidak rumit dan membingungkan juri.
+
+---
+
+## 3. GREEN FINANCING GATEWAY: Fitur Inti Solusi, tapi Roadmap untuk Finansial
+
+Fitur ini harus masuk sebagai **Komponen Inti dalam Bab *Recommended Solution* (25%)**, karena ini adalah *value proposition* sekunder yang sangat seksi bagi juri. Namun, fitur ini **cukup diletakkan sebagai *Future Roadmap* dalam proyeksi finansial Adriel**.
+
+* **Cara Mengemasnya:** Jangan buat model pendapatan baru dari bank di tahun pertama. Tuliskan di proposal bahwa data emisi tersertifikasi yang dihasilkan oleh platform kalian secara otomatis memenuhi syarat pengajuan insentif hijau sesuai **POJK 18/2023**.
+* **Dampaknya:** Ini mengubah posisi produk kalian di mata eksportir: dari yang awalnya dianggap sebagai *"biaya kepatuhan yang merugikan"* menjadi *"alat pengungkit untuk mendapatkan modal murah (SLL/KUR Hijau) dari perbankan"*.
+
+---
+
+## 4. TARGET PASAR: Fokus Indonesia, ASEAN sebagai Roadmap Ekspansi
+
+Dengan sisa waktu 2 hari, **fokus total pada eksportir Indonesia untuk analisis pasar utama (TAM/SAM/SOM).** Jangan mencoba membagi fokus riset untuk menganalisis regulasi domestik dan rantai pasok Vietnam atau Malaysia secara mendalam; dokumen kalian akan menjadi dangkal dan kehilangan konteks lokal.
+
+| Bagian Proposal | Cakupan Geografis | Strategi Penulisan (2 Hari) |
+| --- | --- | --- |
+| **Project Description & Market Analysis** | 100% Fokus Indonesia | Masukkan data 1.500-2.000 eksportir terdampak dan studi kasus lokal secara tajam. |
+| **Expected Outcome & Scaling Roadmap** | Ekspansi ke ASEAN (Vietnam & Malaysia) | Tuliskan ini di bab akhir (Tahun ke-3 hingga ke-5) sebagai bukti bahwa bisnis ini memiliki skalabilitas internasional yang tinggi. |
+
+---
+
+## 5. VALIDASI ANGKA: Mengubah Narasi Urgensi
+
+Koreksi angka ini (dari USD 21.5 Miliar menjadi USD 757.7 Juta) sekilas menurunkan skala masalah, tetapi sebenarnya membuat proposal kalian **jauh lebih kredibel dan realistis** di mata juri yang melakukan pemeriksaan fakta (*fact-checking*).
+
+Cara mempertahankan narasi urgensi agar tetap kuat di proposal:
+
+### A. Ubah dari Makro ke Mikro (Margin Compression)
+
+Meskipun nilai total pasar terdampak "hanya" USD 757.7 juta, bagi perusahaan individu seperti CV Logam Mulia Sejahtera, tarif karbon sebesar **€75.36 per ton CO2** adalah pemotong margin keuntungan yang sangat mematikan. Industri besi/baja bekerja dengan margin bersih yang tipis (seringkali di bawah 10%). Pajak karbon ini bisa langsung mengubah bisnis mereka dari untung menjadi merugi total.
+
+### B. "The Onboarding Runway Problem" (Urgensi Waktu)
+
+Meskipun kewajiban pembelian sertifikat baru dimulai penuh pada Februari 2027, fase pelaporan transisi sudah berjalan sekarang. Eksportir tidak bisa membeli sertifikat dengan benar jika data historis emisi mereka di tahun 2026 kosong atau salah hitung.
+
+> Integrasi sistem informasi dan pembersihan data *supply chain* membutuhkan waktu 6 hingga 12 bulan. **Artinya, eksportir yang tidak mulai menggunakan platform kalian di tahun 2026 dipastikan akan gagal melewati sensor bea cukai Uni Eropa pada Februari 2027.**
+
+### C. Justifikasi Target SOM yang Kuat
+
+Penurunan angka pasar ini justru membuat target SOM kalian (320 target perusahaan dari total ~3.200 SAM) menjadi sangat logis dan dapat dicapai dalam waktu 3 tahun, meningkatkan nilai kelayakan bisnis (*business feasibility*) di mata juri.

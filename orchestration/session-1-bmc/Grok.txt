@@ -1,0 +1,41 @@
+**Oke Dex, mari kita gas pol buat BMC #12 ini.** Deadline cuma 2 hari, tim campur SI + Manajemen yang solid (lo CTO-nya, Imel CEO, Adriel CFO, Keren CMO), jadi kita fokus ide yang **fresh**, punya uniqueness tinggi, tech component kuat yang lo bisa handle, tapi feasible buat ditulis proposal akademik 10-20 halaman dalam waktu super ketat.
+
+Aku brainstorm dari scratch, grounded di masalah real Indonesia/SEA 2026: plastic waste massive, digital divide, aging population + cultural preservation, climate action, dan gap infrastructure digital di rural/coastal areas. Ide-nya international angle (bisa scale ke ASEAN atau global collab), sustainable + tech blend, biar match sub-tema.
+
+### Ide 1: **EcoTrace Nexus** (atau **PlasTrack AI** – catchy version)
+
+1. **Nama ide**: **EcoTrace Nexus** – Platform AI-Driven Circular Economy untuk Waste Management berbasis komunitas + traceability blockchain.
+
+2. **Sub-Tema × Kategori**: **A: Sustainable Future × 1: Tech-Based** (atau hybrid dengan 2). Alasan: Langsung address climate action & marine plastic pollution (Indonesia kontributor top global), pakai tech sebagai core solution. International karena bisa connect supply chain ASEAN ke buyer global eco-conscious.
+
+3. **Masalah konkret**: Indonesia produksi ~7-8 juta ton plastic waste/tahun, 60%+ mismanaged, banyak ke sungai & laut (kontribusi ~10% global marine plastic). Rural/coastal communities kurang akses collection, sorting jelek, traceability supply chain lemah → recycler & brand global susah verifikasi "green" material. Digital divide bikin petani/nelayan kecil excluded dari ekonomi circular.
+
+4. **Solusi + peran teknologi**: App mobile/web yang pakai **AI computer vision** (lo bisa prototype pake Python/OpenCV/TensorFlow) buat scan & sort waste via kamera HP, **blockchain** untuk traceability end-to-end (dari collector → recycler → brand), IoT bin smart di komunitas coastal/rural. Integrasi marketplace untuk jual recycled material ke buyer internasional. Gamification + reward (crypto/token atau voucher) buat dorong partisipasi. MVP: AI sorting + dashboard analytics buat pemerintah/brand. Scale via Global Collaboration dengan partner ASEAN & EU green funds.
+
+5. **Kenapa tim SI+Manajemen cocok**: Lo (SI) handle MVP tech (AI, sistem, database), Imel vision & ops, Adriel financial modeling (revenue dari subscription brand + commission transaction + grant), Keren marketing komunitas & B2B. Campuran perfect buat execution + business model.
+
+6. **Potensi menang**: **8.5/10**. Uniqueness tinggi (AI + blockchain lokal kontekstual), align banget sama kriteria (Recommended Solution 25% tech-heavy, Risk & Outcome kuat, Sustainable Future hot). Fresh tapi feasible, beda dari ide generik "app daur ulang".
+
+7. **Feasibility nulis 2 hari**: **Sangat feasible**. Data banyak public (World Bank, gov reports), lo bisa mockup simple AI/system diagram cepat, financial projection standar (Adriel), risk matrix gampang. Executive Summary & Project Desc bisa ditulis paralel. Prioritaskan Recommended Solution.
+
+### Ide 2: **LarasLink** (atau **MentorLaras** – inspired Javanese cultural roots)
+
+1. **Nama ide**: **LarasLink** – AI-Powered Intergenerational & Cross-Cultural Mentorship Platform (fokus elderly wisdom + youth digital skills).
+
+2. **Sub-Tema × Kategori**: **C: Global Collaboration × 1: Tech-Based** (dengan elemen Sustainable di social impact). Alasan: Promote cultural exchange & knowledge transfer antar generasi & negara ASEAN/global, address aging population + digital divide + cultural preservation. International collab via virtual sessions dengan diaspora atau partner uni.
+
+3. **Masalah konkret**: Aging population Indonesia cepat (elderly care gap besar, banyak isolated), youth kehilangan akses wisdom lokal (bahasa daerah, budaya Jawa/Bali/Medan dll), digital divide di rural + language barrier. Di SEA, opportunity besar buat cross-border learning (misal bahasa & skill exchange). Banyak elderly punya knowledge tapi kurang platform monetize/share-nya.
+
+4. **Solusi + peran teknologi**: Platform matchmaking AI (recommendation system pake ML) antara elderly mentors (wisdom/culture/language) & mentees (youth/professional). Fitur: video call terintegrasi translation real-time (Hokkien/Javanese support?), AR/VR simple untuk cultural immersion (lo bisa design prototype), progress tracking dashboard. Monetize: subscription premium, corporate CSR packages, grant social impact. Tie-in ke SOWAN experience lo – ini reframe bagus dari feedback semifinal kemarin (lebih ke social-impact/CSR channel).
+
+5. **Kenapa tim cocok**: Dex SI/CTO bangun AI matching & sistem (Python, REST API, DB), tim manajemen handle business model, keuangan (Adriel hitung social ROI), marketing ke komunitas & global partner (Keren). Personal relevance lo (Medan roots, cultural) bikin authentic.
+
+6. **Potensi menang**: **7.5/10**. Uniqueness medium-high (cultural + AI intergenerational), kuat di Global Collaboration & Expected Outcome (social impact measurable). Kurang "tech flashy" dibanding Ide 1, tapi emotional & relevant banget sama Indonesia. Bagus buat differentiator.
+
+7. **Feasibility nulis 2 hari**: **Feasible banget**. Lo udah punya pengalaman SOWAN, reuse insight post-mortem. Konten lebih narrative + case study, tech desc lebih high-level (diagram system). Financial via social enterprise model gampang dihitung.
+
+**Rekomendasi Dex 2.0**: Pilih **EcoTrace Nexus** sebagai utama – lebih aligned sustainable/tech, uniqueness & wow factor lebih tinggi buat juri international, plus potensi skalabilitas bisnis kuat. Cadangkan LarasLink kalau mau angle personal/social lebih dalam. 
+
+Kita bisa refine satu ide dulu hari ini: lo mau aku bantu outline full proposal structure, mock financials, atau system architecture detail buat lo? Atau langsung gas tulis bagian yang lo handle (Recommended Solution + tech)? 
+
+Jangan overthink terlalu dalam, tim lo solid, 2 hari ini fokus "good enough + unique execution". Ini kesempatan bagus buat Dex 2.0 sharpen leadership under pressure. Gas! 💪 Apa next step?
