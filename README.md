@@ -1,10 +1,10 @@
-# <picture><source media="(prefers-color-scheme: dark)" srcset="https://emitra-frontend.vercel.app/logo-white.svg"><img alt="Emitra" src="https://emitra-frontend.vercel.app/logo.svg" height="40"></picture> Emitra
+# <picture><source media="(prefers-color-scheme: dark)" srcset="https://emitra-app.vercel.app/logo-white.svg"><img alt="Emitra" src="https://emitra-app.vercel.app/logo.svg" height="40"></picture> Emitra
 
 ### AI-Powered Carbon Compliance & Export Intelligence
 
 **Emitra** is an AI-native SaaS platform purpose-built for Indonesian SME exporters facing the EU Carbon Border Adjustment Mechanism (CBAM). It converts raw factory documents — invoices, PLN electricity bills, BBM logs, production reports — into EU-registry-ready XML declarations with full audit trail transparency.
 
-[**Visit Live Demo →**](https://emitra-frontend.vercel.app)
+[**Visit Live Demo →**](https://emitra-app.vercel.app)
 
 ---
 
@@ -111,4 +111,4 @@ Proud participant of **BMC #12 — International Business Plan Competition**
 
 *"Ekspor ke Eropa Tetap Jalan. Urusan CBAM, Serahkan ke Emitra."*
 
-[**Live Demo →**](https://emitra-frontend.vercel.app) | [**GitHub →**](https://github.com/Stylenecy/emitra)
+[**Live Demo →**](https://emitra-app.vercel.app) | [**GitHub →**](https://github.com/Stylenecy/emitra)
