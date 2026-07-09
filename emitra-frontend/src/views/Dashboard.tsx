@@ -24,67 +24,110 @@ function StatCard({ value, label, icon: Icon, color, delay }: {
   value: string; label: string; icon: React.ElementType; color: string; delay: string
 }) {
   return (
-    <div className={`d-fade-up ${delay} glass-card p-6 flex items-start gap-4`}>
-      <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: `${color}15` }}>
+    <div className={`d-fade-up ${delay} glass-card p-6 flex items-start gap-4 border-white/[0.03] hover:border-white/10 transition-all duration-300`}>
+      <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 border border-white/[0.04]" style={{ background: `linear-gradient(135deg, ${color}20, transparent)`, boxShadow: `0 0 20px ${color}10` }}>
         <Icon className="w-5 h-5" style={{ color }} />
       </div>
       <div className="min-w-0">
-        <p className="text-2xl font-heading font-semibold text-white leading-none mb-1">{value}</p>
-        <p className="text-sm text-zinc-400">{label}</p>
+        <p className="text-3xl font-heading font-bold leading-none mb-1.5" style={{ color: '#ffffff', textShadow: `0 0 12px ${color}40` }}>{value}</p>
+        <p className="text-[10px] uppercase tracking-widest font-bold text-zinc-500">{label}</p>
       </div>
     </div>
   );
 }
 
-function CompanyCard({ company, isSelected, onClick }: {
+const COMPANY_STYLES = [
+  {
+    theme: 'emerald',
+    color: '#10b981',
+    bg: 'from-emerald-500/10 to-transparent',
+    textGlow: 'text-emerald-400 drop-shadow-[0_0_6px_rgba(16,185,129,0.3)]',
+  },
+  {
+    theme: 'amber',
+    color: '#f59e0b',
+    bg: 'from-amber-500/10 to-transparent',
+    textGlow: 'text-amber-400 drop-shadow-[0_0_6px_rgba(245,158,11,0.3)]',
+  },
+  {
+    theme: 'cyan',
+    color: '#06b6d4',
+    bg: 'from-cyan-500/10 to-transparent',
+    textGlow: 'text-cyan-400 drop-shadow-[0_0_6px_rgba(6,182,212,0.3)]',
+  },
+  {
+    theme: 'violet',
+    color: '#8b5cf6',
+    bg: 'from-violet-500/10 to-transparent',
+    textGlow: 'text-violet-400 drop-shadow-[0_0_6px_rgba(139,92,246,0.3)]',
+  },
+  {
+    theme: 'rose',
+    color: '#f43f5e',
+    bg: 'from-rose-500/10 to-transparent',
+    textGlow: 'text-rose-400 drop-shadow-[0_0_6px_rgba(244,63,94,0.3)]',
+  }
+];
+
+function CompanyCard({ company, isSelected, onClick, index }: {
   company: ReturnType<typeof useEmitra>['companies'][0];
   isSelected: boolean;
   onClick: () => void;
+  index: number;
 }) {
+  const style = COMPANY_STYLES[index % COMPANY_STYLES.length];
   return (
     <div
       onClick={onClick}
       className={`group cursor-pointer rounded-xl border transition-all duration-500 p-5 ${
         isSelected
-          ? 'border-emeraldc/30 bg-emeraldc/5 shadow-[inset_0_1px_0_rgba(10,135,84,0.1)]'
-          : 'glass-card'
+          ? `bg-gradient-to-br ${style.bg}`
+          : 'glass-card hover:border-white/10'
       }`}
+      style={{
+        borderColor: isSelected ? style.color : undefined,
+        boxShadow: isSelected ? `0 0 25px ${style.color}15, inset 0 1px 0 rgba(255,255,255,0.05)` : undefined
+      }}
     >
       <div className="flex items-start justify-between mb-3">
-        <div className="w-9 h-9 rounded-lg bg-emeraldc/10 flex items-center justify-center shrink-0">
-          <Factory className="w-4 h-4 text-emeraldc" />
+        <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0" style={{ background: `${style.color}15` }}>
+          <Factory className="w-4 h-4" style={{ color: style.color }} />
         </div>
-        <Badge status={company.complianceStatus === 'NON_COMPLIANT' ? 'REJECTED' : 'VERIFIED'}>
-          {company.complianceStatus === 'NON_COMPLIANT' ? 'Not Compliant' : 'Compliant'}
-        </Badge>
+        <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider ${
+          company.complianceStatus === 'NON_COMPLIANT' 
+            ? 'bg-amber-500/10 text-amber-400 border border-amber-500/20' 
+            : 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
+        }`}>
+          {company.complianceStatus === 'NON_COMPLIANT' ? 'Action Required' : 'Compliant'}
+        </span>
       </div>
 
-      <h3 className="font-heading font-semibold text-base text-white leading-tight mb-1 group-hover:text-emeraldc transition-colors duration-300">
+      <h3 className="font-heading font-bold text-base text-white leading-tight mb-1 group-hover:text-[#10b981] transition-colors duration-300">
         {company.name}
       </h3>
-      <p className="text-xs text-zinc-500 mb-3">
+      <p className="text-xs text-zinc-500 mb-3 font-medium">
         {company.location} · {company.sector}
       </p>
 
       <div className="grid grid-cols-2 gap-2 pt-3 border-t border-white/[0.04]">
         <div>
-          <p className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium">Export</p>
-          <p className="text-sm font-medium text-zinc-200 flex items-center gap-1">
+          <p className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Export Value</p>
+          <p className="text-sm font-bold text-white flex items-center gap-1 mt-0.5">
             ${(company.exportVolumeUsd / 1_000_000).toFixed(1)}M
             <Globe className="w-3 h-3 text-zinc-600" />
           </p>
         </div>
         <div>
-          <p className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium">CO₂</p>
-          <p className="text-sm font-medium text-zinc-200 flex items-center gap-1">
+          <p className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">CO₂ Footprint</p>
+          <p className={`text-sm flex items-center gap-1 mt-0.5 font-bold ${style.textGlow}`}>
             {company.results.totalEmissions.toFixed(0)} t
-            <Cloud className="w-3 h-3 text-emeraldc" />
+            <Cloud className="w-3 h-3" style={{ color: style.color }} />
           </p>
         </div>
       </div>
 
-      <div className="mt-3 flex items-center gap-1 text-emeraldc opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <span className="text-xs font-medium">Buka detail</span>
+      <div className="mt-3 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ color: style.color }}>
+        <span className="text-xs font-bold">Buka detail</span>
         <ArrowUpRight className="w-3 h-3" />
       </div>
     </div>
@@ -108,9 +151,9 @@ export function Dashboard() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-        <StatCard value={`${companies.length}`} label="Active Clients" icon={Factory} color="#0A8754" delay="d1" />
-        <StatCard value={`${totalCO2.toFixed(0)} t`} label="Total CO₂ Tracked" icon={Cloud} color="#0A8754" delay="d2" />
-        <StatCard value={`${avgSavings}%`} label="Avg Cost Savings" icon={TrendingUp} color="#F5A623" delay="d3" />
+        <StatCard value={`${companies.length}`} label="Active Clients" icon={Factory} color="#10b981" delay="d1" />
+        <StatCard value={`${totalCO2.toFixed(0)} t`} label="Total CO₂ Tracked" icon={Cloud} color="#0ea5e9" delay="d2" />
+        <StatCard value={`${avgSavings}%`} label="Avg Cost Savings" icon={TrendingUp} color="#f59e0b" delay="d3" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -143,6 +186,7 @@ export function Dashboard() {
               company={c}
               isSelected={selectedCompanyId === c.id}
               onClick={() => selectCompany(c.id)}
+              index={i}
             />
           </div>
         ))}

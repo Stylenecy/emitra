@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Emitra">
+  <rect width="64" height="64" rx="14" fill="#0A8754"/>
+  <g transform="translate(10,10) scale(0.6875)" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="32,4 56.25,18 56.25,46 32,60 7.75,46 7.75,18" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="32" y1="54" x2="32" y2="24" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M32 11 L23 24 L41 24 Z" fill="#FFFFFF"/>
+  </g>
+</svg>

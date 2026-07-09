@@ -1,0 +1,1384 @@
+===== PAGE 1 =====
+EEMMIITTRRAA
+ANTM's Strategic Pivot to
+Integrated Downstream
+Value Creation
+EEMMIITTRRAA | Platform Pembelajaran
+Lintas Generasi
+Inovator by ( Makosan Team )
+Dex Bennett | Adriel Christian | Imeldya Mawartika |
+Karen Tiara
+UUNNIIVVEERRSSIITTAASS KKRRIISSTTEENN DDUUTTAA WWAACCAANNAA
+22002266
+===== PAGE 2 =====
+TTAABBLLEEttj aOOjjjFFsb CCgsOOjgNNsiTTEENNTT
+Cover & Title i 03
+Deskripsi Usaha
+Table of Content ii
+Model Bisnis 11
+Executive Summary 1
+Model Pendapatan 11
+01
+Introduction
+Market Size (TAM SAM SOM) 12
+Background 2
+Rencana Pemasaran Produk Usaha 12
+Vision & Mission 3
+Peluang Pasar (SWOT Matrics) 14
+02
+Analisis Pesaing 15
+Company Profile
+AIDA Model 16
+Business Overview 4
+Sumber Daya Manusia 18
+Konsep Geronteknologi & UI/UX 4
+Arus Kas 19
+Detail Fitur Utama 5 Laba (Rugi) Usaha 23
+Arsitektur Teknologi 8 Penutup 24
+Alur Penggunaan 9 Daftar Pustaka 24
+===== PAGE 3 =====
+EEXXEECCUUtTTtjIIajVVjjsEEb gSSsUUjgsMMi MMAARRYY
+SSOOWWAANN merupakan platform digital berbasis intergenerational mentorship yang
+menghubungkan lansia Indonesia dengan pengguna global melalui pembelajaran
+bahasa yang berakar pada nilai sosial dan pengalaman hidup nyata. Platform ini
+dirancang sebagai two-sided marketplace yang memungkinkan lansia berperan sebagai
+mentor percakapan bahasa sekaligus sumber pengetahuan sosial yang autentik. SSOOWWAANN
+menggunakan pendekatan interaksi berbasis video call, yang menjadikan proses
+pembelajaran tidak hanya berfokus pada aspek linguistik formal, tetapi juga pada konteks
+sosial yang membentuk cara manusia berkomunikasi.
+Berbeda dengan platform pembelajaran bahasa konvensional yang mengandalkan tutor
+profesional atau sistem berbasis kecerdasan buatan, SSOOWWAANN mengedepankan
+pendekatan human-centered learning yang menempatkan pengalaman hidup lansia
+sebagai medium utama dalam proses pembelajaran. Lansia yang bergabung dalam
+platform ini berperan sebagai mentor yang membagikan wawasan sosial, pengalaman
+hidup, serta perspektif komunikasi yang berkembang dalam masyarakat. Melalui model
+ini, SSOOWWAANN tidak hanya menghadirkan pengalaman belajar yang lebih personal dan
+kontekstual bagi pengguna, tetapi juga membuka ruang produktivitas baru bagi
+lansia dalam ekosistem ekonomi digital.
+SOWAN Menjawab Tantangan Sustainability
+Pembelajaran Membuka Peluang Memperluas
+Partisipasi Kelompok
+Bahasa Ekonomi Produktif
+Lansia dalam
+yang Inklusif Bagi Lansia Ekonomi Digital.
+SSOOWWAANN juga dirancang sebagai solusi yang memberikan dampak sosial yang nyata
+dengan mendukung Sustainable Development Goals (SDGs), khususnya SDG 4
+(Quality Education) melalui pembelajaran bahasa yang inklusif, SDG 8 (Decent Work
+and Economic Growth) dengan membuka peluang ekonomi produktif bagi lansia, serta
+SDG 10 (Reduced Inequalities) dengan memperluas partisipasi kelompok usia lanjut
+dalam ekonomi digital.
+Target Pasar
+Pengguna global yang memiliki kebutuhan tinggi terhadap pembelajaran
+bahasa berbasis konteks sosial, seperti mahasiswa internasional, ekspatriat
+yang bekerja di Indonesia, wisatawan jangka panjang, serta profesional
+global yang membutuhkan kemampuan komunikasi lintas budaya.
+Target Pasar Utama SSOOWWAANN adalah warga negara asing yang memiliki kebutuhan
+tinggi terhadap pembelajaran bahasa berbasis konteks sosial.
+Proses Kurasi Lansia Distribusi SOWAN SOWAN Siap Digunakan
+Dengan model bisnis yang skalabel dan relevansi sosial yang kuat, SSOOWWAANN siap
+menjadi platform pembelajaran bahasa yang tidak hanya menciptakan nilai ekonomi,
+tetapi juga memperkuat hubungan antar generasi dalam ekosistem digital yang
+inklusif dan berkelanjutan.
+2
+===== PAGE 4 =====
+IINNTTtRRtjaOOjjDDjsbUUgsCCjgTTsiIIOONN
+Background
+Fig. 1 - Indonesia's Export Exposure Indonesia stands at a critical juncture in its trade relationship
+to the EU
+with the European Union, with approximately USD 19.28
+Source: BPS & Kemen Perdagangan, 2025
+billion in total exports to the EU in 2025, of which carbon-
+intensive commodities are particularly iron, steel, and
+66,,55%%
+aluminum account for USD 757.7 million. However, the
+European Union's Carbon Border Adjustment Mechanism
+ooff IInnddoonneessiiaa''ss ttoottaall eexxppoorrttss aarree
+berat kering
+ccoonnttrriibbuutteedd bbyy tthhee EEuurrooppeeaann (CBAM), which entered its definitive phase on January 1,
+kulit buah naga
+UUnniioonn,, aammoouunnttiinngg ttoo
+adalah serat
+2026, has fundamentally altered the competitive landscape
+UUSSDD 1199..2288 bbiilllliioonn
+iinn 22002255
+for Indonesian exporters by requiring EU importers to
+Fig. 2 - CBAM-Affected Indonesian
+Exports to the EU purchase carbon certificates equivalent to the embedded
+Source: BPS, 2025
+emissions of imported goods. Without verified actual
+CBAM enforcement
+could increase export emission data, EU importers are forced to apply punitive
+costs for steel products
+by 5–20% "default values" which the emission averages calculated from
+By 2034, total CBAM the world's highest-emitting producers resulting in
+2034
+Indo
+c
+n
+e
+e
+r
+s
+ti
+i
+f
+a
+i
+'
+c
+s
+a
+s
+t
+t
+e
+e
+b
+el
+u
+s
+r
+u
+d
+p
+e
+p
+n
+l y
+fo
+c
+r
+hain significantly higher certificate costs that erode Indonesia's
+could reach
+€383 million
+price competitiveness. The Indonesian Iron and Steel Industry
+Association (IISIA) estimates that full CBAM enforcement
+Fig. 3 - Relative CBAM Cost Burden
+Source: ITC Trademap, 2022
+could increase export costs for steel products by 5-20%, with
+1100..99%%
+11%
+10% total certificate costs projected to reach approximately €383
+99..11%%
+9%
+8% 55..55%% million by 2034 for Indonesia's steel supply chain alone,
+7%
+55..99%%
+6% %%
+5% 44..55%% while EU importers face their first hard financial settlement
+4% 11..66%%
+3% deadline in February 2027, creating an immediate mandate
+11..88%% 00..55%%
+2%
+11..22%% 00..44%%
+1% for exporters to build emissions data infrastructure that most
+0%
+Ru
+S
+s
+o
+ia
+u
+In th d i A a frica U T . K urke B y ra
+S
+z
+o
+C i
+u
+l h th in K a or C e a a nada U. J S apan Tier-2 and Tier-3 manufacturers currently lack.
+The compliance challenge is not merely technical but
+Fig. 4 - The Compliance Gap: A
+Structural Challenge structural, as medium scale manufacturers bear a
+Source: Trading Economics, 2022
+disproportionately heavy burden. The European Union (EU)
+remains a significant export destination for Indonesia,
+Indicator Viet Ina Thai Mas
+ranking as the 5th largest covering approximately 7.4% of
+EU's Ranking
+as Export #3 #5 #4 #4 Indonesian exports. Among these exports to the EU,
+Destination
+% of EU Export approximately 6.2% are subjected to CBAM, where the most
+(Among 2022 14.4% 7.4% 10% 7.9%
+Total Export) impacted sectors are iron & steel and fertilizers (Trading
+% of Export
+Economic, 2022). Furthermor, A case study of CV Logam
+under CBAM
+5% 6.2% 1.49% 7.9%
+(Among EU
+Mulia Sejahtera, a medium-scale aluminum foundry in
+Export)
+Most Impacted Iron & Iron & Iron &Iron & Central Java exporting USD 1.2 million annually to Germany
+Sector Steel Steel Steel Steel
+and Italy, illustrates this reality since Q3 2024.
+2
+===== PAGE 5 =====
+IINNTTtRRtjaOOjjDDjsbUUgsCCjgTTsiIIOONN
+Background
+Fig. 5 - EU buyers have required EU buyers have required emission data per unit as a
+emission data
+Source: Europa.EU, 2026 prerequisite for contract renewal, forcing the company to
+EU buyers have required resort to third-party environmental consultants for manual
+eemmiissssiioonn ddaattaa per unit as
+a prerequisite for audits costing IDR 150-250 million per year, which
+contract renewal
+consumes up to 14% of annual net profit given margins of
+% forcing companies to for
+-14
+spending around IDR 150–250 only 8-10%. This market gap, combined with the urgent
+million per year for
+environmental consultant
+consumes up to 14% February 2027 CBAM deadline, creates a compelling
+of annual net profit
+opportunity for a purpose-built solution.
+Fig. 6 - Website EEMMIITTRRAA
+Source: Makosan Team EEMMIITTRRAA was founded to address this gap as an AI-powered
+SaaS platform that automates the full CBAM compliance
+cycle from raw factory document ingestion to EU-registry
+ready XML declaration at pricing specifically designed for
+Southeast Asian SME exporters, delivering 40-50% cost
+savings versus manual consultants in Year 1 and rising to 60-
+70% from Year 2 onward. This business plan addresses a
+Fig. 7 - Website EEMMIITTRRAA
+pressing and structural market failure at the intersection of
+Source: Makosan Team
+international trade regulation, environmental sustainability,
+and SME competitivenesswithout intervention, Indonesia
+risks losing USD 757.7 million in annual exports to the EU,
+while the scalable platform architecture offers replication
+potential across Southeast Asia, starting with Vietnam and
+Malaysia.
+Vision & Mission
+VViissssiioonn
+To be the trusted carbon compliance partner for every countries exporter,
+turning regulatory complexity into a competitive advantage.
+MMiissssiioonn
+Simplify international carbon compliance through intelligent automation
+by reducing manual data entry by 80% and accelerating CBAM reporting
+from weeks to hours.
+Provide affordable carbon accounting for SMEs by delivering 40-70% cost
+savings compared to manual environmental audits, making compliance
+accessible to Tier-2 and Tier-3 manufacturers.
+Enable transparent environmental reporting for sustainable industrial
+transformation by supporting dual compliance (EU CBAM and domestic
+regulations).
+2
+===== PAGE 6 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Business Overview
+Fig. 6 - Brand Logo EMITRA About
+Source: Makosan’s Team
+EEMMIITTRRAA is an AI-powered Software-as-a-Service (SaaS)
+platform designed to automate the full CBAM compliance
+cycle for Indonesian exporters from raw factory document
+ingestion to EU-registry-ready XML declaration. The platform
+ingests fragmented factory documents such as electricity bills,
+fuel invoices, production logs, and material receipts using an
+advanced AI-powered OCR engine.
+The system calculates Scope 1 and Scope 2 embedded emissions following official EU
+methodology, then generates CBAM-compliant XML reports ready for EU Customs Registry
+submission, complete with click-through audit trails that trace every calculated number back to
+its source document. Customers will purchase EMITRA because of the urgent February 2027
+CBAM settlement deadline, the platform's 40–70% cost savings compared to manual
+environmental consultants, and its ability to reduce report generation time from weeks to hours
+while protecting exporters from punitive EU "default values" that erode price competitiveness.
+The unique selling point is clear: from raw factory documents to EU-registry-ready CBAM
+reports in hours at less than half the cost of manual audits, with every number traceable to its
+source. The single key advantage is cost efficiency with credibility. EEMMIITTRRAA delivers verified,
+auditable CBAM compliance at a price point accessible to Tier-2 and Tier-3 manufacturers,
+combining AI automation with independent verification partnerships to ensure regulatory
+acceptance.
+Business Model
+EEMMIITTRRAA is an AI-powered SaaS platform that automates the full CBAM compliance cycle for
+Indonesian exporters from raw factory document ingestion to EU-registry-ready XML
+declaration. EMITRA's business model operates as a B2B enterprise SaaS provider that
+integrates AI-powered document processing, deterministic emission calculation engines, and
+independent verification partnerships. Platform development is carried out through an internal
+technology team that builds OCR and AI extraction systems, EU methodology-compliant
+calculation engines, and XML report generators. Client acquisition is conducted through
+industry association partnerships (IISIA, ALFI, KADIN) and direct enterprise sales to
+factory management in industrial estates. Services are then distributed through B2B
+channels such as industrial associations, direct enterprise sales, and inbound marketing.
+2
+===== PAGE 7 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Business Model
+Fig. 17 - Business Model EEMMIITTRRAA
+Source: Makosan’s Team
+Through Industry Pilot Program & B2B Enterprise B2B Partnerships
+Associations (IISIA, Commercial Sales (Direct to (Associations,
+ALFI, KADIN) Launch Factories) Banks)
+Service Distribution
+AI-Powered Client Acquisition Client Onboarding & Compliance
+Platform & Partnerships & Training Reporting
+Development
+Through this system, EEMMIITTRRAA creates a value flow that enables Indonesian exporters to
+achieve CBAM compliance at 40-70% lower cost than manual audits while providing EU
+importers with verified, auditable emissions data that prevents the application of punitive
+"default values" and preserves Indonesia's export competitiveness in the European market.
+Product Description
+LLaannddiinngg HHeerroo
+EEMMIITTRRAA's main landing page featuring a
+3D starfield effect and glassmorphism card
+design. Built to deliver a premium, modern
+first impression to prospective enterprise
+clients in the export industry.
+HHooww IItt WWoorrkkss
+4-step workflow visualization:
+Upload export documents
+AI LayoutLM extracts key data fields
+Human Validator reviews and confirms
+XML report generated and ready for EU Registry submission.
+2
+===== PAGE 8 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Product Description
+DDaasshhbbooaarrdd
+A centralized monitoring panel displaying multi-
+client compliance status, export volumes, and
+recorded CO2 emissions in a single, unified view.
+UUppllooaadd PPaaggee
+A drag-and-drop interface for uploading export
+documents such as invoices and certificates of
+origin. The AI engine automatically processes each
+file and displays real-time progress status.
+VVaalliiddaattee PPaaggee
+Human-in-the-Loop|: Validators can correct
+individual fields when the confidence score falls
+below 90%, ensuring data accuracy before emission
+calculations proceed.
+CCaallccuullaattee PPaaggee
+An emission calculation engine based on the EU
+CBAM methodology: direct emissions, indirect
+emissions from electricity), and total emissions per
+unit of output). Includes a cost comparison
+RReeppoorrtt PPaaggee
+Automated generation of XML reports compliant
+with EU Registry standards. A single click produces a
+downloadable file, ready for immediate submission to
+European Union authorities
+2
+===== PAGE 9 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Emitra Feature Showcase
+1. AI-Powered Document Extraction
+EEMMIITTRRAA transforms physical export documents,
+invoices, certificates of origin, bills of lading — into
+structured digital data automatically. Powered by a
+LayoutLM model specifically trained on international
+trade documents, our system understands not just the
+text, but also the spatial context and relationships
+between fields on each document. What once required
+hundreds of hours of manual data entry per year is now
+completed in seconds.
+2. Human-in-the-Loop Validation
+AI speed without human accuracy is simply a new kind
+of risk. EEMMIITTRRAA implements a Human-in-the-Loop
+mechanism: when the AI's extraction confidence score
+falls below 90%, the document is automatically routed
+to a validator for side-by-side review — the original
+document on one side, the extracted data on the other.
+The validator only needs to correct specific fields, not
+start from scratch.
+The result: 99%+ accuracy without sacrificing speed
+3. EU CBAM Emission Calculation
+EU CBAM regulations demand precise,
+methodological emission data. EEMMIITTRRAA's calculation
+engine computes three core components:
+Scope 1: direct emissions from production processes
+Scope 2: indirect emissions from consumed electricity
+Embedded Intensity (total emissions per unit of output)
+All calculations strictly follow EU methodology,
+producing figures that are not only accurate, but also
+prepared for scrutiny from European Union authorities.
+2
+===== PAGE 10 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Emitra Feature Showcase
+4. Automated XML Report Generation
+The EU Registry emission report format is highly
+specific — a single formatting error can result in
+submission rejection. EEMMIITTRRAA eliminates this risk by
+automatically generating XML files that are 100%
+compatible with EU Registry standards. No manual
+spreadsheet conversion. No incorrect templates.
+Simply click download, and the file is ready to be sent
+to European Union authorities.
+5. Multi-Company Compliance Dashboard
+For environmental consultants managing dozens of
+exporters simultaneously, tracking each client's
+compliance status is a real challenge. EEMMIITTRRAA's
+dashboard presents everything in a single view: each
+company's CBAM compliance status, export volumes,
+total recorded emissions, and submission deadlines.
+Each client card features a progress ring that provides
+an instant overview — no need to open individual
+reports one by one.
+6. Cost Savings Comparison
+Manual emission audit costs range from USD 75,000–
+150,000 per year — not including the risk of human
+error and EU Registry rejection. EEMMIITTRRAA offers a
+solution starting from IDR 30 million per year, with
+equal or greater accuracy thanks to the combination of
+AI processing and human validation. Savings of up to
+67% are not just a number — this is a demonstrable
+ROI that can be presented to every potential client.
+2
+===== PAGE 11 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Management
+As an early-stage startup, EEMMIITTRRAA''ss organizational structure is designed to be lean yet
+functional to support technology development, regulatory compliance, and market expansion.
+This structure emphasizes cross-functional collaboration with a small core team and project-
+based operational support, with the addition of an environmental consultant to ensure
+regulatory credibility.
+Imeldya Mawartika (Chief Executive Officer)
+Dex Bennett Adriel Christian Keren Tiara Environmental &
+(Chief Technology Officer) (Chief Marketing Officer) (Chief Financial Officer) Regulatory Consultant
+Fig. 6 - Makosan’s Team Management
+Source: Makosan’s Team
+EEMMIITTRRAA''ss organizational structure in the early stage adopts a lean startup model with three
+core positions (CEO, CTO, CFO) as strategic decision-makers, supported by a CMO and
+Environmental Consultant to strengthen marketing and regulatory functions. The CEO focuses
+on business direction, strategic partnerships, and investor relations. The CTO is responsible for
+digital platform development, AI/ML architecture, and technology infrastructure. The CFO
+manages financial aspects, pricing models, and business sustainability. The CMO leads
+marketing strategy, market research, and customer acquisition. The Environmental Consultant
+provides emissions methodology guidance, ensures alignment with EU CBAM regulations, and
+connects EMITRA with independent verification institutions such as SUCOFINDO. This
+structure is designed to be flexible to support scalability without burdening initial operational
+costs, with plans to expand the sales team and engineers as user growth increases.
+Legal Structure
+EEMMIITTRRAA will operate as a Perseroan Terbatas (PT), a limited
+Fig. 6 - Legal Structure EEMMIITTRRAA
+Source: Makosan’s Team
+liability company under Indonesian law, chosen for its critical
+Perseoran Terbatas (PT) advantages in protecting founders' personal assets from business
+risks and legal claims, particularly important given the
+Under
+Indonesia regulatory compliance context. The PT structure also supports
+Law
+scalability through future investment rounds, enhances
+credibility with enterprise clients and government partners, and
+is a legal requirement for B2B government contracts and
+banking partnerships.
+2
+===== PAGE 12 =====
+CCOOMMPPttAAjaNNjjjYYsb gPPsjRRgsOOi FFIILLEE
+Risk Assesment
+BBuussiinneessss RRiisskk
+MMAARRKKEETT RRIISSKK
+Very High
+MMRR11:: EEnntteerrpprriissee AAddooppttiioonn FFrriiccttiioonn
+High IInnddoonneessiiaann SSMMEE eexxppoorrtteerrss mmaayy bbee hheessiittaanntt ttoo aaddoopptt nneeww
+ddiiggiittaall ccoommpplliiaannccee ttoooollss dduuee ttoo lliimmiitteedd ddiiggiittaall lliitteerraaccyy,,
+Med sskkeeppttiicciissmm aabboouutt tteecchhnnoollooggyy rreelliiaabbiilliittyy,, oorr pprreeffeerreennccee ffoorr
+ttrraaddiittiioonnaall ccoonnssuullttiinngg mmeetthhooddss.. TThhiiss ffrriiccttiioonn ccoouulldd ssllooww
+Low cclliieenntt aaccqquuiissiittiioonn aanndd ddeellaayy rreevveennuuee ggeenneerraattiioonn..
+MMiittiiggaattiioonn:: LLeevveerraaggee iinndduussttrryy aassssoocciiaattiioonn ppaarrttnneerrsshhiippss
+Very
+Low ((IIIISSIIAA,, AALLFFII,, KKAADDIINN)) ttoo bbuuiilldd ccrreeddiibbiilliittyy aanndd rreedduuccee
+V L e o r w y Low Med High H Ve ig r h y sskkeeppttiicciissmm
+Impact Level
+MMRR22:: GGlloobbaall CCoommppeettiittiioonn aanndd PPrreeddaattoorryy PPrriicciinngg
+GGlloobbaall ccoommppeettiittoorrss ssuucchh aass PPeerrsseeffoonnii aanndd WWaatteerrsshheedd mmaayy iinnttrroodduuccee lloowweerr--ccoosstt ttiieerrss
+ttaarrggeettiinngg SSMMEE eexxppoorrtteerrss oorr llooccaalliizzee tthheeiirr pprriicciinngg ttoo ccoommppeettee ddiirreeccttllyy wwiitthh EEEMMMIIITTTRRRAAA..
+TThhiiss ccoouulldd eerrooddee EEEMMMIIITTTRRRAAA''ss ccoommppeettiittiivvee aaddvvaannttaaggee aanndd mmaarrkkeett sshhaarree..
+MMiittiiggaattiioonn:: BBuuiilldd ssoocciiaall iimmppaacctt nnaarrrraattiivvee aanndd llooccaall cchhaammppiioonn ppoossiittiioonniinngg tthhaatt gglloobbaall
+ccoommppeettiittoorrss ccaannnnoott rreepplliiccaattee
+OOPPEERRAATTIIOONNAALL RRIISSKK
+OORR11:: BBaadd IInnppuutt DDaattaa QQuuaalliittyy ffrroomm FFaaccttoorryy DDooccuummeennttss
+FFaaccttoorryy ddooccuummeennttss iinn IInnddoonneessiiaa oofftteenn iinncclluuddee ffaaddeedd tthheerrmmaall ppaappeerr rreecceeiippttss,, hhaannddwwrriitttteenn
+nnootteess,, aanndd iinnccoonnssiisstteenntt ffoorrmmaattttiinngg.. TThhiiss ddeeggrraaddeess OOCCRR aaccccuurraaccyy aanndd iinnccrreeaasseess mmaannuuaall
+ccoorrrreeccttiioonn eeffffoorrtt,, ppootteennttiiaallllyy aaffffeeccttiinngg pprroocceessssiinngg ssppeeeedd aanndd cclliieenntt ssaattiissffaaccttiioonn..
+MMiittiiggaattiioonn:: HHuummaann--iinn--tthhee--LLoooopp ((HHIITTLL)) sspplliitt--ssccrreeeenn ccoorrrreeccttiioonn iinntteerrffaaccee ffoorr vvaalluueess &&
+DDeevveelloopp ssiimmppllee ddooccuummeenntt pprreeppaarraattiioonn gguuiiddeelliinneess ffoorr cclliieennttss..
+FFIINNAANNCCEE RRIISSKK
+FFRR11:: SSllooww CClliieenntt AAccqquuiissiittiioonn aanndd RReevveennuuee DDeellaayy
+LLoonngg BB22BB ssaalleess ccyycclleess ((33––66 mmoonntthhss)) aanndd cclliieenntt hheessiittaattiioonn mmaayy ddeellaayy rreevveennuuee
+ggeenneerraattiioonn,, ppootteennttiiaallllyy aaffffeeccttiinngg ccaasshh ffllooww aanndd tthhee aabbiilliittyy ttoo ffuunndd ooppeerraattiioonnss..
+MMiittiiggaattiioonn:: LLeevveerraaggee iinndduussttrryy aassssoocciiaattiioonn ppaarrttnneerrsshhiippss ffoorr wwaarrmm iinnttrroodduuccttiioonnss aanndd
+aacccceelleerraatteedd ttrruusstt && ddeeddiiccaatteedd eenntteerrpprriissee ssaalleess tteeaamm wwiitthh ssttrroonngg iinndduussttrryy nneettwwoorrkkss..
+2
+leveL
+ycneuqerF
+Fig. 6 - Risk Mapping EEMMIITTRRAA
+Source: Makosan’s Team
+O1
+M1 F1
+M2 R1
+RREEGGUULLAATTOORRYY RRIISSKK
+RRRR11:: SSuuddddeenn EEUU MMeetthhooddoollooggyy oorr FFoorrmmaatt CChhaannggeess
+EEUU rreegguullaattoorrss mmaayy uuppddaattee eemmiissssiioonn ccaallccuullaattiioonn mmeetthhooddoollooggiieess oorr rreeppoorrttiinngg ffoorrmmaattss,,
+rreeqquuiirriinngg rraappiidd ssyysstteemm mmooddiiffiiccaattiioonnss aanndd ppootteennttiiaallllyy ccrreeaattiinngg ccoommpplliiaannccee ggaappss dduurriinngg
+ttrraannssiittiioonn ppeerriiooddss..
+MMiittiiggaattiioonn:: AAccttiivvee mmoonniittoorriinngg ooff EEUU rreegguullaattoorryy uuppddaatteess tthhrroouugghh ddeeddiiccaatteedd ccoonnssuullttaanntt ,,
+RReegguullaarr eennggaaggeemmeenntt wwiitthh EEUU rreegguullaattoorryy bbooddiieess aanndd iinndduussttrryy aassssoocciiaattiioonnss && BBuuiilldd
+FFlleexxiibbllee XXMMLL ggeenneerraattoorr ssuuppppoorrttiinngg mmuullttiippllee sscchheemmaa vveerrssiioonnss
+===== PAGE 13 =====
+MMAARRKKttjEEajTTjj sRRbEEgsSSjEEgsAAiRRCCHH
+Local Market Overview
+Fig. - Local Market Size Analysis
+Source: Makosan Teams
+CABM-exposed manufactures across ASEAN
+TAM
+1188..000000 ++ 1188..000000 ++
+European Commission CBAM (2025)
+SAM
+33..220000 CCoommppaanniieess Indoneisa Manufactures
+33..220000 IInnddoonneessiiaann CCoommppaanniieess
+SOM Ministry of Trade RI, IISIA, and Team Analysis
+2244 CCoommppaanniieess
+(2026).
+(In 3 Year) Market Size Potential
+00,,7755%% FFrroomm SSAAMM
+(Analysis Capybara’s Team)
+Indonesia represents a highly attractive entry market due to the mandatory implementation of
+the EU Carbon Border Adjustment Mechanism (CBAM). Although approximately 3,200
+Indonesian manufacturers fall within EMITRA's serviceable market, the company
+deliberately adopts a conservative market entry strategy by targeting 24 enterprise clients
+within its first three years, representing approximately 0.75% of the Serviceable Available
+Market (SAM). This focused approach enables Emitra to validate its platform, establish strong
+customer references, and build long-term recurring revenue before expanding to broader
+domestic and ASEAN markets.
+Target Market
+Segmenting & Targeting
+EMITRA segments the market by industry exposure, export orientation, company capability,
+and geographic concentration to identify manufacturers with the highest urgency for CBAM
+compliance. The primary segment consists of small and medium-sized enterprises (SMEs) in
+the iron, steel, and aluminum industries, as these sectors are directly covered by the EU Carbon
+Border Adjustment Mechanism (CBAM) and face immediate regulatory pressure when
+exporting to the European Union. Geographically, the initial market focuses on Cikarang,
+Karawang, Cilegon, and Ceper (Klaten), where Indonesia's metal manufacturing ecosystem is
+highly concentrated. These industrial hubs accommodate a large number of export-oriented
+manufacturers, established supply chains, and industrial associations, enabling Emitra to
+achieve greater customer acquisition efficiency while reducing sales and implementation costs.
+13
+===== PAGE 14 =====
+MMAARRKKttjEEajTTjj sRRbEEgsSSjEEgsAAiRRCCHH
+Local Market Overview
+Fig. - Local Market Size Analysis
+Source: Makosan Teams
+CABM-exposed manufactures across ASEAN
+TAM
+1188..000000 ++ 1188..000000 ++
+European Commission CBAM (2025)
+SAM
+33..220000 CCoommppaanniieess Indoneisa Manufactures
+33..220000 IInnddoonneessiiaann CCoommppaanniieess
+SOM Ministry of Trade RI, IISIA, and Team Analysis
+2244 CCoommppaanniieess
+(2026).
+(In 3 Year) Market Size Potential
+00,,7755%% FFrroomm SSAAMM
+(Analysis Capybara’s Team)
+Indonesia represents a highly attractive entry market due to the mandatory implementation of
+the EU Carbon Border Adjustment Mechanism (CBAM). Although approximately 3,200
+Indonesian manufacturers fall within EMITRA's serviceable market, the company
+deliberately adopts a conservative market entry strategy by targeting 24 enterprise clients
+within its first three years, representing approximately 0.75% of the Serviceable Available
+Market (SAM). This focused approach enables Emitra to validate its platform, establish strong
+customer references, and build long-term recurring revenue before expanding to broader
+domestic and ASEAN markets.
+Target Market
+Segmenting & Targeting
+EMITRA segments the market by industry exposure, export orientation, company capability,
+and geographic concentration to identify manufacturers with the highest urgency for CBAM
+compliance. The primary segment consists of small and medium-sized enterprises (SMEs) in
+the iron, steel, and aluminum industries, as these sectors are directly covered by the EU Carbon
+Border Adjustment Mechanism (CBAM) and face immediate regulatory pressure when
+exporting to the European Union. Geographically, the initial market focuses on Cikarang,
+Karawang, Cilegon, and Ceper (Klaten), where Indonesia's metal manufacturing ecosystem is
+highly concentrated. These industrial hubs accommodate a large number of export-oriented
+manufacturers, established supply chains, and industrial associations, enabling Emitra to
+achieve greater customer acquisition efficiency while reducing sales and implementation costs.
+13
+===== PAGE 15 =====
+MMAARRKKttjEEajTTjj sRRbEEgsSSjEEgsAAiRRCCHH
+Behaviorally, EMITRA prioritizes manufacturers that currently depend on manual reporting,
+spreadsheets, or external consultants to fulfill carbon reporting requirements. These companies
+experience increasing compliance costs and operational inefficiencies while facing growing
+pressure from European buyers to provide transparent and verifiable emissions data.
+Consequently, they are more likely to adopt a specialized compliance platform that reduces
+reporting complexity, shortens processing time, and improves regulatory readiness. By
+concentrating on this segment, Emitra targets customers with both the strongest compliance
+need and the highest potential for long-term subscription retention.
+Positioning
+Fig. XX - Positioning Map EMITRA In terms of positioning, EMITRA
+Sumber: Trio Capybara Gaje’s Team
+positions itself as a specialized
+Enterprise Focused (High
+Cost) CBAM compliance platform for
+Indonesian iron, steel, and
+aluminum manufacturers. Unlike
+General ESG Specialized CBAM
+global ESG platforms such as
+Reporting Compliance
+Persefoni, Watershed, and IBM
+Envizi, which primarily serve large
+enterprises with comprehensive
+SSMMEE FFrriieennddllyy ((AAffffoorrddaabbllee && sustainability reporting,
+EEaassyy ttoo uussee))
+EMITRA delivers an affordable, localized, and regulation-specific solution tailored to the
+operational needs of SMEs. Compared with local sustainability platforms, EMITRA focuses
+specifically on CBAM compliance, providing AI-assisted carbon reporting and EU Registry-
+ready outputs. By combining regulatory specialization, cost efficiency, and ease of
+implementation, EMITRA establishes its brand as Indonesia's trusted CBAM compliance
+partner, enabling manufacturers to maintain export competitiveness while meeting evolving
+European market requirements
+SS TT P
+Firmographics
+• Iron, steel & aluminum Kebutuhan Belajar Bahasa Memberikan pembelajaran
+manufacturers Indonesia & kontekstual berbasis cerita,
+• SMEs & mid-sized enterprises
+bahasa asing dan pengalaman hidup.
+• Export-oriented companies
+• Limited ESG resources Adaptasi budaya Menghadirkan emotional
+& pengenbangn connection yang tidak dapat
+Geografi
+karir digantikan oleh sistem AI.
+Inital focus : Cikarang,
+Karawang, Cilegon, Ceper Pendekatan personal (one-
+Mengutamakan Gaya Hidup Aktif digital on-one / small group).
+Psikografi Global-oriented
+pengalaman autentik
+Adaptif terhadap Mobile learning
+teknologi user
+===== PAGE 16 =====
+MMAARRKKttjEEajTTjj sRRbEEgsSSjEEgsAAiRRCCHH
+Local Market Overview
+Fig. - Local Market Size Analysis
+Sumber: Makosan Teams
+CABM-exposed manufactures across ASEAN
+TAM
+1188..000000 ++ 1188..000000 ++
+European Commission CBAM (2025)
+SAM
+33..220000 CCoommppaanniieess Indoneisa Manufactures
+33..220000 IInnddoonneessiiaann CCoommppaanniieess
+SOM Ministry of Trade RI, IISIA, and Team Analysis
+2244 CCoommppaanniieess
+(2026).
+(In 3 Year) Market Size Potential
+00,,7755%% FFrroomm SSAAMM
+(Analysis Capybara’s Team)
+Indonesia represents a highly attractive entry market due to the mandatory implementation of
+the EU Carbon Border Adjustment Mechanism (CBAM). Although approximately 3,200
+Indonesian manufacturers fall within EMITRA's serviceable market, the company
+deliberately adopts a conservative market entry strategy by targeting 24 enterprise clients
+within its first three years, representing approximately 0.75% of the Serviceable Available
+Market (SAM). This focused approach enables Emitra to validate its platform, establish strong
+customer references, and build long-term recurring revenue before expanding to broader
+domestic and ASEAN markets.
+Target Market
+Segmenting & Targeting
+EMITRA segments the market by industry exposure, export orientation, company capability,
+and geographic concentration to identify manufacturers with the highest urgency for CBAM
+compliance. The primary segment consists of small and medium-sized enterprises (SMEs) in
+the iron, steel, and aluminum industries, as these sectors are directly covered by the EU Carbon
+Border Adjustment Mechanism (CBAM) and face immediate regulatory pressure when
+exporting to the European Union. Geographically, the initial market focuses on Cikarang,
+Karawang, Cilegon, and Ceper (Klaten), where Indonesia's metal manufacturing ecosystem is
+highly concentrated. These industrial hubs accommodate a large number of export-oriented
+manufacturers, established supply chains, and industrial associations, enabling Emitra to
+achieve greater customer acquisition efficiency while reducing sales and implementation costs.
+13
+===== PAGE 17 =====
+MMAARRKKttEEjaTTjjj sRRbgEEsSSjgEEsiAARRCCHH
+SWOT Analysis
+Strength Weakness
+AI-powered
+automation reduces MVP requires intensive
+manual data entry by field validation across
+S 80% compared to heavy industry clusters
+W
+O traditional consulting before full commercial
+T Competitive local
+A
+deployment
+pricing with 40–70%
+n a ISO/IEC 27001
+ly cost savings versus
+s is manual environmental certification is pending,
+SS audits with formal certification
+OO
+WW Dual-compliance targeted for Year 2
+AA output supporting both Limited brand awareness
+NN
+EU CBAM and as a new entrant in the
+External
+domestic regulations carbon compliance space
+Opportunities & (POJK/IDXCarbon)
+Threat
+SO WO
+February 2027 CBAM
+hard settlement
+deadline creates urgent Leverage AI automation Partner with established
+and immediate demand
+and affordable pricing to verification bodies
+for compliance
+capture urgent CBAM (SUCOFINDO, SGS) to
+solutions
+Only 0.28% of demand from underserved fast-track ISO 27001
+Indonesian SME SME segment certification
+exporters currently Use dual-compliance Deploy free 3-month pilot
+have access to capability and green program with anchor
+affordable carbon financing trends to clients to validate and
+compliance tools
+position EMITRA as refine field operations
+Growing green
+strategic financial enabler before scaling
+financing trends in
+national banking Deploy cloud-native Develop simple document
+(POJK No. 14 & architecture and urgent quality guidelines for
+18/2023) require market timing to rapidly clients to improve OCR
+emission audits for scale across Java industrial accuracy and reduce HITL
+credit access corridors corrections
+ST WT
+Aggressive predatory Build social impact
+pricing from global
+narrative and local Build modular architecture
+competitors (Persefoni,
+champion positioning to enabling rapid adaptation to
+Watershed) localizing
+in Southeast Asia differentiate from global regulatory methodology
+Regulatory uncertainty competitors changes
+or changes in CBAM Create modular Publish CBAM
+implementation architecture with isolated whitepapers and host
+timeline config files to enable compliance webinars to
+Competition from
+instant updates when EU build brand and thought
+established
+methodology changes leadership
+environmental
+consultancies Integrate with local Secure industry association
+launching similar accounting software partnerships and
+digital tools (Jurnal.id, Accurate) and verification MoUs before
+PLN APIs to build competitive market entry
+switching costs
+2
+seitinutroppO
+taerhT
+Internal
+Strength & Weakness
+===== PAGE 18 =====
+tFFtjIIaNNjjjAAsbNNgsCCjgEEsi
+Business Capital
+Fig. 30 - Business Capital of EEMMIITTRRAA EEMMIITTRRAA requires a total initial investment of IDR
+Source: Makosan’s Team
+Rp1.628.974.360, which will be allocated for website
+Dana Founder VC Bank development (UI/UX, backend, frontend, and system
+Bank
+10% integration), corporate legality, and the acquisition of
+operational assets. Additionally, the total operational
+cost for the first year amounts to IDR 1,625,174,360.
+VC
+30%
+With a projected first-year revenue of IDR 420,000,000,
+Dana Founder
+60% EEMMIITTRRAA will experience an operational deficit of IDR
+1,205,174,360 in its first year. This total funding will be
+Fig. 31 - Shareholding Structure of EMitra sourced from personal capital (60%), Venture Capital
+Source: Makosan’s Team
+(30%), and the remaining 10% through a People's
+CEO VC CTO CFO Head of Operation Business Credit (KUR) bank loan.EMitra's ownership
+HRD & MC
+CFO 2% structure is backed by the CEO, who holds a 61% stake,
+7.5%
+CTO followed by Venture Capital at 21%, with the remainder
+8%
+owned by the other founders. This structure ensures that
+strategic control remains with the founders, while
+VC
+20% CEO receiving crucial support from investors as significant
+61%
+shareholders to sustain the initial capital requirements.
+Cash Flow Forecast
+INFLOW (IN IDR)
+Revenue Steams Year-1 Year-2 Year-3 Year-4
+Setup fee Basic Rp60.000.000 Rp120.000.000 Rp180.000.000 Rp210.000.000
+Setup fee Pro Rp100.000.000 Rp200.000.000 Rp300.000.000 Rp300.000.000
+Annual
+Rp100.000.000 Rp300.000.000 Rp600.000.000 Rp950.000.000
+Subscription Basic
+Annual
+Rp160.000.000 Rp480.000.000 Rp960.000.000 Rp1.440.000.000
+Subscription Pro
+Total Revenue Rp420.000.000 Rp1.100.000.000 Rp2.040.000.000 Rp2.900.000.000
+===== PAGE 19 =====
+tFFtjIIaNNjjjAAsbNNgsCCjgEEsi
+Cash Flow Forecast
+OUTFLOW (IN IDR)
+Website
+Year-1 Year-2 Year-3 Year-4
+Development Costs
+UI/UX Design
+Rp40.000.000 Rp40.000.000 Rp40.000.000 Rp40.000.000
+Profesional
+Backend
+Rp100.000.000 Rp5.000.000 Rp5.000.000 Rp5.000.000
+Development
+Frontend Web &
+Rp1.800.000
+Mobile
+QA & Testing Rp13.200.000
+Integrasi Payment
+Rp8.674.360
+Gateway
+Setup Video API Rp10.000.000 Rp2.500.000 Rp2.500.000 Rp2.500.000
+Deployement &
+Rp6.000.000
+Security Setup
+Data Center for AI Rp9.000.000 Rp9.000.000 Rp9.000.000 Rp9.000.000
+Annual
+Rp50.000.000 Rp50.000.000 Rp50.000.000 Rp50.000.000
+Subscription for AI
+Komputer (10 Unit) Rp177.000.000
+Meja & Kursi
+Rp35.000.000
+Kantor
+Renovasi Kantor &
+Deposit Kantor Rp45.000.000
+lainnya
+Printer & Scanner Rp4.500.000
+===== PAGE 20 =====
+tFFtjIIaNNjjjAAsbNNgsCCjgEEsi
+Cash Flow Forecast
+OUTFLOW (IN IDR)
+Legality Costs Year-1 Year-2 Year-3 Year-4
+Pendirian PT &
+Rp10.000.000
+Notaris
+HKI & Brand Rp5.000.000
+Perizinan &
+Rp1.000.000
+Konsultasi Hukum
+ISO 27001
+Rp50.000.000 Rp50.000.000
+Certification
+Fixed Cost Year-1 Year-2 Year-3 Year-4
+Sewa Bangunan
+Rp90.000.000 Rp90.000.000 Rp90.000.000 Rp90.000.000
+(Kantor)
+Biaya Internet Rp30.000.000 Rp30.000.000 Rp30.000.000 Rp30.000.000
+Biaya Listrik &
+Rp48.000.000 Rp48.000.000 Rp48.000.000 Rp48.000.000
+Maintenance)
+Gaji CEO Rp180.000.000 Rp180.000.000 Rp180.000.000 Rp180.000.000
+Gaji CTO Rp156.000.000 Rp156.000.000 Rp156.000.000 Rp156.000.000
+Gaji CFO Rp144.000.000 Rp144.000.000 Rp144.000.000 Rp144.000.000
+Gaji Environmental
+& Regulatory Rp240.000.000 Rp240.000.000 Rp240.000.000 Rp240.000.000
+Consultant (2)
+Maintenance
+Rp50.000.000 Rp55.000.000 Rp60.500.000 Rp66.550.000
+Platform
+Administrasi & PR Rp5.000.000 Rp5.000.000 Rp5.000.000 Rp5.000.000
+===== PAGE 21 =====
+tFFtjIIaNNjjjAAsbNNgsCCjgEEsi
+Cash Flow Forecast
+OUTFLOW (IN IDR)
+Variable Cost Year-1 Year-2 Year-3 Year-4
+Cloud Server Rp20.000.000 Rp22.000.000 Rp24.200.000 Rp26.620.000
+Video API Usage Rp13.200.000 Rp13.530.000 Rp13.868.250 Rp14.214.956
+Payment Gateway
+Rp2.600.000 Rp2.665.000 Rp2.731.625 Rp2.799.916
+Fee
+Marketing Digital Rp84.000.000 Rp85.680.000 Rp89.964.000 Rp94.462.200
+TAX (PPh Badan) Rp46.200.000 Rp121.000.000 Rp224.400.000 Rp319.000.000
+Total Outflow Rp1.675.174.360 Rp1.299.375.000 Rp1.415.163.875 Rp1.523.147.072
+Cashflow Analysis
+Analysis Year-1 Year-2 Year-3 Year-4
+NET BENEFIT (Rp1.255.174.360) (Rp199.375.000) Rp624.836.125 Rp1.376.852.928
+DISCOUNT
+0,943 0,890 0,840 0,792
+FACTOR 6 %
+PV/TAHUN (Rp1.184.126.755) (Rp177.443.040) Rp524.624.459 Rp1.090.596.480
+PV
+Rp396.226.415 Rp978.996.084 Rp1.712.823.337 Rp2.297.071.623
+BENEFIT/TAHUN
+PV COST/TAHUN Rp1.580.353.170 Rp1.156.439.124 Rp1.188.198.878 Rp1.206.475.144
+ROI -77,05% -12,24% 38,36% 84,52%
+===== PAGE 22 =====
+tFFtjIIaNNjjjAAsbNNgsCCjgEEsi
+Cash Flow Analysis
+Cashflow Analysis
+Analysis
+NPV Rp18.815.026.497
+IRR 72,00%
+PV POSITIF Rp18.561.375.353
+PV NEGATIF -Rp1.184.126.755
+NET B/C 15,68
+GROSS B/C 2,19
+MEAN PENERIMAAN BERSIH Rp3.038.893.646
+PAYBACK PERIOD 3,25
+PROFITABILITY INDEX 2,19397369
+BEP Harga 500.899.028
+BEP Unit
+Basic : 16
+Basic
+Pro : 10
+Pro
+The cash flow analysis indicates that EMitra is financially viable, yielding a positive NPV
+of IDR 18,815,026,497 and an IRR of 72%, which is well above the 6% discount rate. A
+Net B/C ratio of 15.68 and a Profitability Index of 2.2 further demonstrate that the
+investment generates significant benefits relative to the costs incurred. Additionally, the 3-
+year payback period suggests a relatively slow but steady return on capital against the
+projected increase in profits. Overall, EMitra possesses strong profit potential, making it
+highly attractive for development and investment backing.
+===== PAGE 23 =====
+tFFtjIIaNNjjjAAsbNNgsCCjgEEsi
+Income Statement Projection
+Income Statement In IDR
+Analysis Year-1 Year-2 Year-3 Year-4
+TOTAL REVENUE Rp260.000.000 Rp620.000.000 Rp1.080.000.000 Rp1.460.000.000
+TOTAL VARIABLE
+Rp119.800.000 Rp123.875.000 Rp130.763.875 Rp138.097.072
+COST
+LABA KOTOR Rp140.200.000 Rp496.125.000 Rp949.236.125 Rp1.321.902.928
+TOTAL FIXED
+Rp945.500.000 Rp950.500.000 Rp956.000.000 Rp962.050.000
+COST
+EBIT (Rp805.300.000) (Rp454.375.000) (Rp6.763.875) Rp359.852.928
+BIAYA BUNGA Rp55.385.128 Rp8.151.456 Rp8.151.456 Rp8.151.456
+EBT (Rp860.685.128) (Rp462.526.456) (Rp14.915.331) Rp351.701.472
+TAX PPH Badan
+Rp28.600.000 Rp68.200.000 Rp118.800.000 Rp160.600.000
+22%
+EAT (Rp889.285.128) (Rp530.726.456) (Rp133.715.331) Rp191.101.472
+ARR 41,62% EMITRA's profit and loss projections
+show a positive growth trend, with EAT
+Fig. 32 - Income Statetment Proyection of EEMMIITTRRAA
+increasing from -IDR 889,285,128 in the
+Source: Makosan’s Team
+first year to IDR 191,101,472 in the
+Rp4.000.000.000 fourth year and continuing to rise in the
+subsequent years, reflecting improved
+Rp3.000.000.000
+performance and operational efficiency.
+However, in the first year, EMITRA
+Rp2.000.000.000
+still experienced a cash flow deficit of
+(IDR 1,255,174,360) due to investment
+Rp1.000.000.000
+expenditures and initial operational
+RRpp00 costs. Overall, although the first year is
+still in an adjustment phase, EMITRA
+Rp-1.000.000.000
+Y1Y2Y3Y4Y5Y6Y7Y8Y9 Y10 demonstrates strong profitability
+prospects for the following years.
+===== PAGE 24 =====
+CCttjLLajjOOjsbSSgIIsNNjgGGsi
+Sustainability Strategy
+Empower Expand Innovate
+Equipping Indonesian exporters Expanding market reach through Continuously developing features and
+with independent & affordable strategic partnerships and regional user experience through technology
+carbon compliance capabilities growth innovation
+Conclusion
+EEMMIITTRRAA is an AI-powered SaaS platform that addresses the structural compliance
+crisis created by the European Union's Carbon Border Adjustment Mechanism
+(CBAM), which threatens Indonesia's USD 757.7 million in annual exports of iron,
+steel, and aluminum to the EU. By automating the full CBAM compliance cycle from
+raw factory document ingestion to EU-registry-ready XML declaration. EEMMIITTRRAA
+delivers 40–70% cost savings compared to manual environmental audits, transforming
+carbon compliance from a financial burden consuming up to 14% of annual net profit
+into an efficient and affordable process. With the urgent February 2027 CBAM
+deadline approaching, EEMMIITTRRAA targets 24 clients by Year 3 and 320 cumulative
+regional clients across ASEAN by Year 5, with financial break-even projected at
+3Y2M and revenue reaching up to IDR 2 billion by Year 3.
+EEMMIITTRRAA driven by a strong management team, strategic partnerships with industry
+associations (IISIA, ALFI, KADIN) and verification bodies (SUCOFINDO, SGS),
+and a scalable cloud-native architecture, EMITRA offers a compelling investment
+opportunity at the intersection of urgent market demand, sustainable business model,
+and strong social and environmental impact. By safeguarding Indonesian export
+competitiveness, supporting green financing access, and contributing to Indonesia's
+Nationally Determined Contributions, EEMMIITTRRAA is positioned for long-term success
+as the trusted carbon compliance partner for Indonesian exporters.
+===== PAGE 25 =====
+BBIIBBtLLtjaIIjOOjjsGGbgRRsjAAgsPPiHHYY
+Bibliography
+1.Badan Pusat Statistik (BPS). (2025). Statistik Ekspor Indonesia 2024. Jakarta:
+BPS.
+2.European Commission. (2025). Carbon Border Adjustment Mechanism:
+Implementation Guidelines. Brussels: European Commission.
+3.European Parliament. (2024). Regulation (EU) 2023/956 of the European
+Parliament and of the Council of 10 May 2023 establishing a carbon border
+adjustment mechanism. Official Journal of the European Union.
+4.Indonesian Iron and Steel Industry Association (IISIA). (2025). Impact
+Assessment of CBAM on Indonesian Steel Exports. Jakarta: IISIA.
+5.Kementerian Perdagangan Republik Indonesia. (2025). Analisis Dampak CBAM
+terhadap Ekspor Indonesia. Jakarta: Kemendag.
+6.Korpar, L., et al. (2023). The Economic Impact of CBAM on EU Trading
+Partners. ScienceDirect.
+7.Ramadhani, D. P., & Koo, J. (2022). Carbon Border Adjustment and Domestic
+Carbon Tax: A Comparative Analysis. ScienceDirect.
+8.Rinaldi, M. R., & Firdausy, C. M. (2025). Readiness of the European Trading
+Countries Toward Carbon Border Adjustment Mechanism: Evidence from
+Indonesia. ScienceDirect.
+9.Sucofindo. (2025). ESG Starts with Basic Compliance: The Role of
+Environmental Verification. Jakarta: Sucofindo.
+10.Trading Economics. (2022). Indonesia Exports to European Union. Retrieved
+from https://tradingeconomics.com
+11.World Bank. (2024). Indonesia Economic Prospects, December 2024: Climate
+Action for Sustainable Growth. Washington, DC: World Bank Group.
+12.International Monetary Fund (IMF). (2025). World Economic Outlook Database.
+Washington, DC: IMF.
+13.Kementerian Ketenagakerjaan Republik Indonesia. (2024). Data Tenaga Kerja
+Asing di Indonesia. Jakarta: Kemnaker.
+===== PAGE 26 =====
+AAttPPjaPPjjjEEsbNNgsDDjgIIsXXi
+Business Model Canvas
+ARTIME
+avnaC
+ledoM
+ssenisuB
+REMOTSUC
+REMOTSUC
+EULAV
+SEITIVITCA
+YEK
+YEK
+STNEMGES
+PIHSNOITALER
+SNOITISOPORP
+SRENTRAP
+ecnanetniam
+dna tnempoleved
+enilepip
+RCO
+& IA
+elacs-muidem
+3/2-reiT
+:yramirP
+setadpu
+dna gnirotinom
+noitaluger
+MABC
+UE
+dna
+,leets
+,nori
+fo
+sretropxe
+troppus
+gniniart
+dna
+gnidraobno
+detacideD
+nad
+asahab
+narajalebmeP
+stisiv etis
+dna gnidraobno
+tneilC
+:snoitaicossA
+yrtsudnI
+UE
+eht
+ot
+munimula
+gniogno
+rof
+IPA
+ssenisuB
+ppAstahW
+namalagnep
+sisabreb
+ayadub
+tnempoleved
+pihsrentrap
+dna selas
+esirpretne
+B2B
+,)leetS
+dna norI(
+AISII
+,gnarakiC
+:cihpargoeG
+troppus
+.kitnetua
+gnay aisnal
+pudih
+noitadilav
+ygolodohtem
+noitaluclac
+noissimE
+,)scitsigoL(
+IFLA
+sranibew
+etadpu
+yrotaluger
+ralugeR
+gnay
+deretnec-namuh
+iskaretnI
+fo rebmahC(
+NIDAK
+avaJ(
+nogeliC
+,gnawaraK
+esirpretnE
+rof
+reganam
+tnuocca
+detacideD
+helo
+nakitnagid
+tapad
+kadit
+)ecremmoC
+)srodirroc
+lairtsudni
+stneilc
+narajalebmep
+uata IA
+metsis
+:seidoB
+noitacifireV
+latem
+,gnirutcafunaM
+:rotceS
+emit-laer
+htiw
+draobhsad
+ecivres-fleS
+.sitamoto
+,SGS
+,ODNIFOCUS
+seirdnuof
+,gnissecorp
+sutats
+ecnailpmoc
+lanoitarenegretni
+natakedneP
+iratseL
+gnugA
+utuM
+UE
+ot
+gnitropxE
+:eliforP
+nakgnubuhgnem
+gnay
+gninrael
+:seicnegA
+tnemnrevoG
+MABC
+gnicaf
+;stekram
+nagned
+labolg
+adum
+isareneg
+fo yrtsiniM(
+KHLK
+stnemeriuqer
+ecnailpmoc
+.aisenodnI
+aisnal
+rotnem
+,)tnemnorivnE
+ot
+noisnapxe
+NAESA
+:erutuF
+lebiskelf
+narajalebmep
+iseS
+fo yrtsiniM(
+gadnemeK
+aisyalaM
+dna
+manteiV
+gnirotnem
+evil
+1-no-1
+sisabreb
+SECRUOSER
+YEK
+)edarT
+.llac oediv
+iulalem
+:snoitutitsnI
+laicnaniF
+SLENNAHC
+rajaleb
+namalagneP
+bew
+sisabreb NAWOS
+igolonket
+mroftalP
+INB
+,iridnaM
+knaB
+gnay
+lautsketnok
+.llac oediv metsis
+nagned
+noitacilppa
+/ gnicnaniF
+neerG(
+yrotcaf
+ot
+selas
+esirpretnE
+:selaS tceriD
+,asahab
+nakgnubaggnem
+:takgnit
+agit malad isarukid
+gnay
+aisnal
+rotneM
+)uajiH
+RUK
+setatse
+lairtsudni
+ni
+tnemeganam
+gnilletyrots
+nad
+,ayadub
+.ortseaM
+nad ,udnameP
+,tabahaS
+:srentraP
+ygolonhceT
+htiw
+spihsrentraP
+:snoitaicossA
+yrtsudnI
+.atayn napudihek
+,OFC
+,OTC
+,OEC irad iridret
+gnay
+putrats
+itni miT
+sredivorp
+duolC
+NIDAK
+,IFLA ,AISII
+iulalem
+laisos
+kapmaD
+rotneM
+& DRH atres
+,snoitarepO
+fo daeH
+lacol
+,)PCG/SWA(
+,srepapetihw
+,OES
+:gnitekraM
+dnuobnI
+nad
+aisnal
+naayadrebmep
+.rotanidrooC
+erawtfos
+gnitnuocca
+seiduts
+esac
+ecnailpmoc
+.fisulkni
+imonoke
+naatpicnep
+,revres
+duolc itrepes
+igolonket
+rutkurtsarfnI
+)etaruccA
+,di.lanruJ(
+yrtsudni
+dna
+stneilc
+deifsitaS
+:slarrefeR
+.yawetag
+tnemyap
+nad
+,esabatad
+skrowten
+narajalebmep
+mroftalp
+iagabes
+NAWOS
+dnarB
+.laisos
+kapmad sisabreb
+ayadub
+nad
+asahab
+MAERTS
+EUNEVER
+ERUTCURTS
+TSOC
+emit-eno(
+orp rof
+noillim
+001
+dna
+cisab
+rof
+noillim 06
+RDI
+:
+eeF
+puteS
+eciffo ,stidua ytiruces
+,ecnailpmoc
+lagel
+,seiralas
+gnireenignE
+:stsoC dexiF
+)noitatnemelpmi
+gnidraobno
+tneilc
+,snoissimmoc
+selas ,erutcurtsarfni
+duolC
+:stsoC
+elbairaV
+)sreit
+orP/cisaB(
+raey/noillim
+08–05
+RDI :noitpircsbuS
+launnA
+stneve yrtsudni
+,noitaerc
+tnetnoc
+,gnitekram
+latigiD
+:stsoC
+gnitekraM
+)+2
+raeY(
+gnitlusnoc
+noitcuder
+noissimE
+:secivreS
+no-ddA
+spihsrentrap
+noitacifirev
+,noitacifitrec
+10072
+OSI
+:stsoC
+yrotalugeR
+spihsrentrap
+gniknab
+morf
+eunever
+erutuF
+:noitargetnI
+gnicnaniF
+neerG
+snoitarepo
+aisyalaM
+dna
+manteiV
+morf
+euneveR
+:noisnapxE
+lanoigeR

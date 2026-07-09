@@ -152,7 +152,7 @@ Dex used a 5-AI orchestration system (Claude, ChatGPT, Gemini, Grok, Qwen) as th
 
 | Data Point | Value | Source |
 | :--- | :--- | :--- |
-| EU total exports | USD 21.5B | BPS 2025 |
+| EU total exports | USD 19.28B | BPS 2025 |
 | CBAM-affected exports | USD 757.7M | Kemendag 2025 |
 | Steel exports to EU | 4% of total | IISIA 2025 |
 | Certificate cost (steel) | €383M total / €390 per ton | IISIA 2025 |
@@ -188,8 +188,10 @@ Dex used a 5-AI orchestration system (Claude, ChatGPT, Gemini, Grok, Qwen) as th
 | Mock data | ✅ 5 companies with realistic CBAM data |
 | Build | ✅ `npm run build` passes (0 errors) |
 | Color palette (ChatGPT) | ✅ Emerald `#0A8754`, Navy `#1A2E4A`, Amber `#F5A623` |
-| Deploy to Vercel | ⏳ Not yet deployed |
-| Landing page build | ⏳ Blueprint ready (session 9 merged), build pending |
+| Deploy to Vercel | ✅ Deployed to `https://emitra-app.vercel.app` |
+| GitHub | ✅ `https://github.com/Stylenecy/emitra` — public |
+| Landing page build | ✅ Built + redesigned (ATLAS nav, KRESNA footer, per-segment backgrounds, bento footer) |
+| README for judges | ✅ Written — product-focused, live demo link |
 
 ## 9. LANDING PAGE BLUEPRINT (Session 9 Orchestration)
 
@@ -253,4 +255,23 @@ Referensi: `orchestration/session-9/MERGED-LANDING-BLUEPRINT.md`
 
 ---
 
-*This file is the canonical project tracker. Updated: 2026-07-08 16:00 — Post Session 9 orchestration.*
+## 11. SESSION 10 — Deploy & Polish (8 Jul 2026 ~21:30)
+
+| Item | Status |
+|------|--------|
+| Landing page redesigned | ✅ ATLAS glass pill navbar, KRESNA bento footer, per-segment backgrounds |
+| Internal views polished | ✅ All 5 views (Dashboard, Upload, Validate, Calculate, Report) use glass-card classes |
+| Build | ✅ `npm run build` passes (0 errors) — 3 consecutive builds clean |
+| GitHub repo | ✅ Created `Stylenecy/emitra` — public, initial commit + README |
+| Vercel deploy | ✅ Live at `https://emitra-app.vercel.app` (also `emitra-cbam.vercel.app`) |
+| Project renamed | ✅ `emitra-frontend` → `emitra` di Vercel |
+| README | ✅ Product-focused README for BMC #12 judges |
+
+### Blocker (unchanged)
+- 🔴 **Financial Y2-3 projections** — Adriel, belum masuk
+- 🔴 **Proposal → PDF** — pending financial
+- 🔴 **Vercel `emitra.vercel.app`** — udah dipake orang lain, pake `emitra-app.vercel.app`
+
+---
+
+*This file is the canonical project tracker. Updated: 2026-07-08 21:30 — Post Session 10: GitHub + Vercel + Landing page redesign.*

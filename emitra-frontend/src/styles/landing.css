@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 :root {
   --emerald: #0A8754;
   --emerald-glow: rgba(10, 135, 84, 0.15);
@@ -31,14 +35,35 @@
 
 .landing {
   font-family: 'Inter', system-ui, sans-serif;
-  background: var(--surface);
+  background: transparent; /* Transparent backdrop so canvas is visible */
   color: var(--text);
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.75;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+.landing .section-fade-top {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(180deg, #09090b 0%, rgba(9, 9, 11, 0.85) 30%, rgba(9, 9, 11, 0) 100%);
+  z-index: 8;
+  pointer-events: none;
+}
+.landing .section-fade-bottom {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(0deg, #09090b 0%, rgba(9, 9, 11, 0.85) 30%, rgba(9, 9, 11, 0) 100%);
+  z-index: 8;
+  pointer-events: none;
 }
 
 .landing ::selection {
@@ -83,16 +108,16 @@
   padding: 0 8px 0 20px;
   height: 52px;
   background: var(--glass-tint);
-  border: 1px solid var(--glass-stroke);
+  border: 1px solid rgba(10, 135, 84, 0.45);
   backdrop-filter: blur(20px) saturate(140%);
   -webkit-backdrop-filter: blur(20px) saturate(140%);
   border-radius: 999px;
-  box-shadow: 0 18px 60px -20px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px rgba(10, 135, 84, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transition: all 500ms var(--ease-quiet);
 }
 .landing .topbar.scrolled .topbar__inner {
   height: 46px;
-  box-shadow: 0 12px 40px -16px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 24px rgba(10, 135, 84, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 .landing .brand {
   display: flex;
@@ -133,6 +158,11 @@
 }
 .landing .brand-name span {
   color: var(--emerald);
+}
+.landing .brand__logo {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 .landing .nav {
   display: flex;
@@ -202,12 +232,12 @@
 }
 .landing .section-title em {
   font-style: italic;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--emerald);
 }
 .landing .section-lead {
   font-family: 'Fraunces', serif;
-  font-weight: 300;
+  font-weight: 600;
   font-style: italic;
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.7;
@@ -231,65 +261,91 @@
 .landing .fade-up.delay-5 { transition-delay: 600ms; }
 
 /* ─────── HERO ─────── */
+/* ─────── Neural particle background (Three.js) ─────── */
+.landing .neural-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(10, 135, 84, 0.10) 0%, transparent 55%),
+    radial-gradient(100% 80% at 82% 100%, rgba(26, 46, 74, 0.55) 0%, transparent 60%),
+    var(--surface);
+}
+
+/* ─────── Hero (clean immersive: video bg + particle) ─────── */
 .landing .hero {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   overflow: hidden;
   color: var(--text);
+  background: transparent;
   padding: 8rem 2rem 6rem;
 }
-.landing .hero__media {
-  position: absolute; inset: 0;
-  overflow: hidden;
-  z-index: 0;
-}
-.landing .hero__img-wrap {
+.landing .hero__video {
   position: absolute;
-  inset: -3%;
-  will-change: transform;
-  animation: hero-breath 10s ease-in-out infinite alternate;
-}
-.landing .hero__img-wrap img {
-  width: 100%; height: 100%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  filter: brightness(0.35) saturate(0.6) contrast(1.1);
+  z-index: 0;
+  opacity: 0.16;
+  filter: saturate(1.05) contrast(1.05);
 }
-@keyframes hero-breath {
-  0%   { transform: scale(1.00) translate(0%, 0%); }
-  100% { transform: scale(1.06) translate(-1.2%, -1.2%); }
+.landing .hero__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 1;
+  will-change: transform;
+}
+.landing .hero__orb--emerald {
+  width: 42vw; height: 42vw;
+  top: 8%; left: -8%;
+  background: radial-gradient(circle, rgba(10, 135, 84, 0.55) 0%, transparent 70%);
+}
+.landing .hero__orb--navy {
+  width: 50vw; height: 50vw;
+  bottom: -10%; right: -12%;
+  background: radial-gradient(circle, rgba(26, 46, 74, 0.65) 0%, transparent 70%);
+}
+.landing .hero__orb--amber {
+  width: 26vw; height: 26vw;
+  top: 45%; right: 12%;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.22) 0%, transparent 70%);
 }
 .landing .hero__veil {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse at 50% 60%, transparent 0%, rgba(10, 135, 84, 0.08) 50%, rgba(9, 9, 11, 0.6) 100%),
-    linear-gradient(180deg, rgba(9, 9, 11, 0.5) 0%, transparent 35%, transparent 65%, rgba(9, 9, 11, 0.7) 100%);
+    radial-gradient(ellipse at 50% 45%, transparent 0%, rgba(9, 9, 11, 0.30) 55%, rgba(9, 9, 11, 0.80) 100%),
+    linear-gradient(180deg, rgba(9, 9, 11, 0.45) 0%, transparent 30%, transparent 55%, rgba(9, 9, 11, 0.85) 100%);
   z-index: 1;
-}
-.landing .hero__beam {
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(115deg,
-      transparent 22%,
-      rgba(10, 135, 84, 0.08) 28%,
-      transparent 35%,
-      transparent 52%,
-      rgba(245, 166, 35, 0.04) 60%,
-      transparent 67%
-    );
-  mix-blend-mode: screen;
   pointer-events: none;
+}
+.landing .hero__sticky {
+  position: relative;
   z-index: 2;
+  max-width: 1000px;
 }
 .landing .hero__content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   max-width: 1000px;
+}
+
+/* keep content sections above the fixed neural layer */
+.landing section:not(.hero),
+.landing footer {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 .landing .hero__label {
   font-family: 'Inter', sans-serif;
@@ -473,58 +529,44 @@
 /* ─────── Problem / pain section ─────── */
 .landing .pain {
   padding: 8rem 2rem 6rem;
-  background: var(--surface);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
 .landing .pain::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 30%, rgba(229, 62, 62, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(245, 166, 35, 0.05) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 0%, rgba(245, 166, 35, 0.02) 0%, transparent 40%);
-  pointer-events: none;
+  display: none;
 }
 .landing .pain::after {
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  width: 45%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 40px,
-    rgba(245, 166, 35, 0.015) 40px,
-    rgba(245, 166, 35, 0.015) 41px
-  );
-  pointer-events: none;
-  mask-image: linear-gradient(to left, transparent, black 30%, black 70%, transparent);
-  -webkit-mask-image: linear-gradient(to left, transparent, black 30%, black 70%, transparent);
+  display: none;
 }
 .landing .pain__grid {
   max-width: 1280px;
   margin: 4rem auto 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   background: var(--border);
   position: relative;
   z-index: 2;
 }
 .landing .pain-card {
-  background: var(--surface-raised);
-  padding: 3.5rem 2.5rem;
+  background: rgba(20, 20, 24, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2.2rem 2rem;
   position: relative;
-  transition: background 700ms var(--ease-quiet);
+  transition: all 700ms var(--ease-quiet);
 }
 .landing .pain-card:hover {
-  background: #1c1c22;
+  background: rgba(28, 28, 34, 0.85);
+  border-color: rgba(10, 135, 84, 0.25);
 }
-.landing .pain-card:first-child {
-  grid-row: span 2;
+.landing .pain-card__chart {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(9, 9, 11, 0.45);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
 }
 .landing .pain-card__num {
   font-family: 'Inter', sans-serif;
@@ -555,7 +597,7 @@
 /* ─────── Solution ─────── */
 .landing .solution {
   padding: 8rem 2rem;
-  background: var(--surface-raised);
+  background: transparent;
   overflow: hidden;
   position: relative;
 }
@@ -651,7 +693,7 @@
 /* ─────── How It Works ─────── */
 .landing .how {
   padding: 8rem 2rem;
-  background: var(--surface);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -692,8 +734,9 @@
 .landing .how__card {
   text-align: center;
   padding: 2.5rem 1.5rem;
-  background: var(--surface-raised);
-  border: 1px solid var(--border);
+  background: rgba(9, 9, 11, 0.93);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   transition: all 600ms var(--ease-quiet);
   position: relative;
@@ -723,41 +766,30 @@
 }
 .landing .how__title {
   font-family: 'Boska', serif;
-  font-weight: 400;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.15rem;
   margin-bottom: 0.6rem;
-  color: var(--text);
+  color: #ffffff;
 }
 .landing .how__desc {
   font-size: 0.85rem;
-  color: var(--text-mute);
-  line-height: 1.6;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.65;
 }
 
 /* ─────── Features / bento grid ─────── */
 .landing .features {
   padding: 8rem 2rem;
-  background: var(--surface-raised);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
 .landing .features::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 20%, rgba(10, 135, 84, 0.05) 0%, transparent 40%),
-    radial-gradient(ellipse at 80% 80%, rgba(10, 135, 84, 0.03) 0%, transparent 50%);
-  pointer-events: none;
+  display: none;
 }
 .landing .features::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background:
-    linear-gradient(90deg, transparent 0%, rgba(10, 135, 84, 0.02) 50%, transparent 100%);
-  pointer-events: none;
+  display: none;
 }
 .landing .features__grid {
   max-width: 1280px;
@@ -770,13 +802,31 @@
   z-index: 2;
 }
 .landing .feature {
-  background: var(--surface);
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(12px);
   padding: 3rem 2.5rem;
   transition: all 700ms var(--ease-quiet);
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
 }
 .landing .feature:hover {
-  background: #1a1a1e;
+  background: #1c1c22;
+  border-color: rgba(10, 135, 84, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -16px rgba(0, 0, 0, 0.5);
+}
+.landing .feature__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.landing .feature__icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(10, 135, 84, 0.2));
 }
 .landing .feature__num {
   font-family: 'Inter', sans-serif;
@@ -784,7 +834,6 @@
   font-weight: 500;
   letter-spacing: 0.32em;
   color: var(--emerald);
-  margin-bottom: 2rem;
 }
 .landing .feature__title {
   font-family: 'Boska', serif;
@@ -797,14 +846,14 @@
 .landing .feature__desc {
   font-size: 0.9rem;
   line-height: 1.75;
-  color: var(--text-mute);
+  color: var(--text-soft);
   max-width: 420px;
 }
 
 /* ─────── Stats ─────── */
 .landing .stats {
   padding: 6rem 2rem;
-  background: var(--surface);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -835,7 +884,9 @@
   z-index: 2;
 }
 .landing .stat-card {
-  background: var(--surface-raised);
+  background: rgba(20, 20, 24, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   padding: 3rem 2rem;
   text-align: center;
   position: relative;
@@ -878,7 +929,7 @@
 /* ─────── Testimonials ─────── */
 .landing .testimonials {
   padding: 8rem 2rem;
-  background: var(--surface-raised);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -909,8 +960,9 @@
   z-index: 2;
 }
 .landing .testimonial {
-  background: var(--surface-card);
-  border: 1px solid var(--border);
+  background: rgba(20, 20, 24, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 2.5rem 2rem;
   transition: all 600ms var(--ease-quiet);
@@ -988,7 +1040,7 @@
 /* ─────── Partners ─────── */
 .landing .partners {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, var(--surface) 0%, rgba(10, 135, 84, 0.01) 50%, var(--surface) 100%);
+  background: transparent;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1022,27 +1074,80 @@
 .landing .partners__list {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 3rem;
+  align-items: stretch;
+  gap: 2rem;
   flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.landing .partners__item {
+.landing .partners__card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 340px;
+  background: linear-gradient(135deg, rgba(10, 135, 84, 0.05) 0%, rgba(9, 9, 11, 0.6) 100%);
+  border: 1px solid rgba(10, 135, 84, 0.25);
+  border-radius: 12px;
+  padding: 2.5rem 2rem 2.2rem;
+  transition: all 600ms var(--ease-quiet);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(10, 135, 84, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.landing .partners__card:hover {
+  border-color: var(--emerald-bright);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(10, 135, 84, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(10, 135, 84, 0.08) 0%, rgba(20, 20, 24, 0.8) 100%);
+}
+.landing .partners__status {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--emerald-bright);
+  font-weight: 700;
+}
+.landing .partners__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0d9d63;
+  box-shadow: 0 0 8px #0d9d63;
+  animation: partner-pulse 1.8s infinite;
+}
+@keyframes partner-pulse {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 12px #0d9d63; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+.landing .partners__name {
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--text-soft);
-  letter-spacing: 0.04em;
-  opacity: 0.5;
-  transition: opacity 500ms var(--ease-quiet);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--emerald);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
 }
-.landing .partners__item:hover {
-  opacity: 0.8;
+.landing .partners__desc {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  line-height: 1.45;
 }
 
 /* ─────── Pricing ─────── */
 .landing .pricing {
   padding: 8rem 2rem;
-  background: var(--surface);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -1074,21 +1179,30 @@
   z-index: 2;
 }
 .landing .pricing-card {
-  background: var(--surface-raised);
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(20px);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 3rem 2.5rem;
+  border-radius: 18px;
+  padding: 3.5rem 2.5rem;
   position: relative;
   transition: all 600ms var(--ease-quiet);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .landing .pricing-card:hover {
-  border-color: rgba(10, 135, 84, 0.2);
-  transform: translateY(-2px);
-  box-shadow: 0 20px 48px -16px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 64px -16px rgba(0, 0, 0, 0.6);
 }
 .landing .pricing-card.featured {
-  border-color: rgba(10, 135, 84, 0.3);
-  background: linear-gradient(180deg, rgba(10, 135, 84, 0.05) 0%, transparent 100%);
+  border-color: rgba(10, 135, 84, 0.45);
+  background: linear-gradient(180deg, rgba(10, 135, 84, 0.08) 0%, rgba(20, 20, 24, 0.8) 100%);
+  box-shadow: 0 20px 48px -12px rgba(10, 135, 84, 0.12);
+}
+.landing .pricing-card.featured:hover {
+  border-color: var(--emerald);
+  box-shadow: 0 24px 64px -12px rgba(10, 135, 84, 0.25);
 }
 .landing .pricing-card__badge {
   position: absolute;
@@ -1105,17 +1219,18 @@
 }
 .landing .pricing-card__tier {
   font-family: 'Boska', serif;
-  font-weight: 400;
-  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
   color: var(--text);
   margin-bottom: 0.5rem;
 }
 .landing .pricing-card__price {
   font-family: 'Boska', serif;
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: var(--text);
   margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
 }
 .landing .pricing-card__price span {
   font-size: 1rem;
@@ -1123,7 +1238,7 @@
   font-family: 'Inter', sans-serif;
 }
 .landing .pricing-card__desc {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-mute);
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -1135,10 +1250,10 @@
 }
 .landing .pricing-card__list {
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .landing .pricing-card__list li {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-soft);
   padding: 0.5rem 0;
   display: flex;
@@ -1146,22 +1261,23 @@
   gap: 0.7rem;
 }
 .landing .pricing-card__list li::before {
-  content: '\2713';
+  content: '✓';
   color: var(--emerald);
-  font-weight: 600;
+  font-weight: 700;
+  margin-right: 4px;
 }
 .landing .pricing-card__list li.muted {
   color: var(--text-mute);
 }
 .landing .pricing-card__list li.muted::before {
-  content: '\2014';
+  content: '—';
   color: var(--text-mute);
 }
 
 /* ─────── FAQ ─────── */
 .landing .faq {
   padding: 8rem 2rem;
-  background: var(--surface-raised);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -1255,7 +1371,7 @@
 /* ─────── Final CTA ─────── */
 .landing .final-cta {
   padding: 8rem 2rem 10rem;
-  background: linear-gradient(180deg, var(--surface-raised) 0%, rgba(10, 135, 84, 0.02) 50%, var(--surface-raised) 100%);
+  background: transparent;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -1324,7 +1440,7 @@
 /* ─────── KRESNA-inspired bento footer ─────── */
 .landing footer {
   padding: 5rem 2rem 2rem;
-  background: var(--surface);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -1351,31 +1467,36 @@
   fill: rgba(255, 255, 255, 0.025);
 }
 .landing .footer__bento {
-  max-width: 1280px;
+  max-width: 700px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 2px;
-  background: var(--border);
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   position: relative;
   z-index: 2;
 }
 .landing .footer__card-left {
-  background: linear-gradient(135deg, rgba(10, 135, 84, 0.06) 0%, var(--surface-raised) 100%);
+  background: linear-gradient(135deg, rgba(10, 135, 84, 0.05) 0%, rgba(20, 20, 24, 0.65) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 .landing .footer__card-left .footer-name {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: var(--text);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .landing .footer__card-left .footer-name span {
   color: var(--emerald);
@@ -1386,11 +1507,13 @@
   font-weight: 300;
   color: var(--text-mute);
   line-height: 1.7;
-  font-size: 0.9rem;
-  max-width: 36ch;
+  font-size: 0.95rem;
+  max-width: 50ch;
+  margin: 0 auto;
 }
 .landing .footer__social {
   display: flex;
+  justify-content: center;
   gap: 0.75rem;
   margin-top: 1rem;
 }
@@ -1475,6 +1598,175 @@
   z-index: 2;
 }
 
+/* ─────── Hero video background ─────── */
+.landing .hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.45;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+/* ─────── Feature 3D icons ─────── */
+.landing .feature__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+.landing .feature__icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: var(--emerald-soft);
+  border: 1px solid var(--border);
+  padding: 6px;
+  box-shadow: 0 8px 30px -12px rgba(10, 135, 84, 0.5);
+}
+.landing .feature__num {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--text-mute);
+}
+
+/* ─────── How It Works media ─────── */
+.landing .how__media {
+  margin-top: 4rem;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-med);
+  box-shadow: 0 40px 120px -40px rgba(0, 0, 0, 0.8);
+  aspect-ratio: 16 / 7;
+  background: var(--surface-raised);
+}
+.landing .how__media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─────── Floating section accents (parallax) ─────── */
+.landing .section-accent {
+  position: absolute;
+  border-radius: 20px;
+  object-fit: cover;
+  opacity: 0.16;
+  filter: saturate(1.1);
+  pointer-events: none;
+  z-index: 0;
+  border: 1px solid var(--border);
+  will-change: transform;
+}
+.landing .section-accent--factory {
+  width: 340px; height: 240px;
+  top: 6%; right: -60px;
+}
+.landing .section-accent--mood {
+  width: 300px; height: 360px;
+  top: 0; right: -40px;
+  opacity: 0.14;
+}
+.landing .section-accent--map {
+  width: 380px; height: 240px;
+  top: 4%; left: -80px;
+  opacity: 0.14;
+}
+.landing .section-accent--quote {
+  width: 260px; height: 320px;
+  bottom: 4%; right: -30px;
+  opacity: 0.14;
+}
+
+/* ─────── Team ─────── */
+.landing .team__banner {
+  margin: 2.5rem 0 3.5rem;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-med);
+  box-shadow: 0 40px 120px -40px rgba(0, 0, 0, 0.8);
+  aspect-ratio: 21 / 8;
+  background: var(--surface-raised);
+}
+.landing .team__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.landing .team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.landing .team__card {
+  background: rgba(20, 20, 24, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  transition: all 500ms var(--ease-quiet);
+}
+.landing .team__card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(10, 135, 84, 0.35);
+}
+.landing .team__avatar {
+  width: 60px; height: 60px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--emerald), var(--navy));
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.landing .team__name { font-weight: 600; font-size: 1.1rem; }
+.landing .team__role {
+  color: var(--emerald-bright);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0.3rem 0 0.8rem;
+}
+.landing .team__desc { color: var(--text-soft); font-size: 0.9rem; line-height: 1.6; }
+
+/* ─────── Section photo/video backgrounds ─────── */
+.landing .section-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.landing .section-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, #09090b 0%, rgba(9, 9, 11, 0.84) 15%, rgba(9, 9, 11, 0.84) 85%, #09090b 100%);
+  pointer-events: none;
+}
+.landing .section-bg > *:not(.section-video) {
+  position: relative;
+  z-index: 2;
+}
+.landing .section-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.32;
+  filter: saturate(1.1) contrast(1.05);
+}
+.landing .stats__grid { position: relative; z-index: 2; }
+
 /* ─────── Responsive ─────── */
 @media (max-width: 960px) {
   .landing .topbar { top: 12px; }
@@ -1502,6 +1794,9 @@
   .landing .pricing__grid { grid-template-columns: 1fr; }
   .landing .footer__bento { grid-template-columns: 1fr; }
   .landing .footer__card-right { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .landing .section-accent { display: none; }
+  .landing .team__grid { grid-template-columns: 1fr 1fr; }
+  .landing .team__banner { aspect-ratio: 16 / 9; }
 }
 
 @media (max-width: 640px) {
@@ -1510,4 +1805,18 @@
   .landing .footer__card-left,
   .landing .footer__card-right { padding: 2rem; }
   .landing .footer__card-right { grid-template-columns: 1fr; }
+}
+
+/* ─────── Walkthrough Tour Pulsing Styles ─────── */
+@keyframes tour-button-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+}
+.tour-pulse {
+  animation: tour-button-pulse 2s infinite !important;
+  border: 1px solid #10b981 !important;
 }

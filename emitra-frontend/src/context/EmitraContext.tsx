@@ -7,6 +7,8 @@ interface EmitraContextValue {
   selectedCompanyId: number | null;
   selectCompany: (id: number) => void;
   getSelectedCompany: () => Company | undefined;
+  tourStep: number;
+  setTourStep: (step: number) => void;
 }
 
 const EmitraContext = createContext<EmitraContextValue | undefined>(undefined);
@@ -19,6 +21,10 @@ export const EmitraProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     return saved ? JSON.parse(saved) : mockCompanies;
   });
   const [selectedCompanyId, setSelectedCompanyId] = useState<number | null>(1);
+  const [tourStep, setTourStepState] = useState<number>(() => {
+    const saved = localStorage.getItem('emitra_tour_step');
+    return saved ? parseInt(saved, 10) : 0;
+  });
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(companies));
@@ -28,8 +34,13 @@ export const EmitraProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   const getSelectedCompany = () => companies.find((c) => c.id === selectedCompanyId);
 
+  const setTourStep = (step: number) => {
+    setTourStepState(step);
+    localStorage.setItem('emitra_tour_step', step.toString());
+  };
+
   return (
-    <EmitraContext.Provider value={{ companies, selectedCompanyId, selectCompany, getSelectedCompany }}>
+    <EmitraContext.Provider value={{ companies, selectedCompanyId, selectCompany, getSelectedCompany, tourStep, setTourStep }}>
       {children}
     </EmitraContext.Provider>
   );

@@ -1,89 +1,95 @@
 export const stats = [
-  { value: '1.500+', label: 'Eksportir Terdampak CBAM' },
-  { value: 'USD 757,7 Jt', label: 'Nilai Ekspor Terancam' },
-  { value: '67%', label: 'Hemat Biaya Kepatuhan' },
-  { value: 'Feb 2027', label: 'Deadline Sertifikat EU' },
+  { value: '1,500+', label: 'Exporters Affected by CBAM' },
+  { value: 'USD 757.7M', label: 'Threatened Export Value' },
+  { value: '67%', label: 'Compliance Cost Savings' },
+  { value: 'Feb 2027', label: 'EU Certificate Deadline' },
 ];
 
 export const testimonials = [
   {
     name: 'Budi Santoso', role: 'Plant Manager', company: 'PT Baja Nusantara Prima',
-    quote: 'Emitra memangkas waktu pelaporan CBAM dari 3 minggu menjadi 2 hari. Audit trail-nya bikin verifikator EU langsung ACC.',
-    result: 'Hemat 120 jam kerja / tahun', avatar: 'BS',
+    quote: 'Emitra cut our CBAM reporting time from 3 weeks to 2 days. The complete audit trail allowed EU verifiers to approve it instantly.',
+    result: 'Saved 120 working hours / year', avatar: 'BS',
   },
   {
     name: 'Siti Aminah', role: 'CFO', company: 'CV Logam Mulia Sejahtera',
-    quote: 'Biaya konsultan lingkungan kami turun 67% di tahun kedua. ROI-nya terasa banget di margin bersih pabrik.',
-    result: 'Hemat IDR 135 Juta / tahun', avatar: 'SA',
+    quote: 'Our environmental consulting costs dropped by 67% in the second year. The ROI is immediately apparent in our plant\'s net margin.',
+    result: 'Saved IDR 135 Million / year', avatar: 'SA',
   },
   {
     name: 'Hendra Wijaya', role: 'Export Director', company: 'PT Cilegon Steel Works',
-    quote: 'Buyer Jerman kami minta data emisi real-time. Emitra satu-satunya tools lokal yang output XML-nya diterima EU Registry.',
-    result: 'Kontrak Eropa aman 3 tahun', avatar: 'HW',
+    quote: 'Our German buyers requested real-time emissions data. Emitra is the only local tool whose XML output was accepted by the EU Registry.',
+    result: 'European contracts secured for 3 years', avatar: 'HW',
   },
 ];
 
 export const partners = [
   { name: 'IISIA', label: 'Indonesian Iron & Steel Industry Association' },
-  { name: 'KADIN', label: 'Kamar Dagang dan Industri Indonesia' },
-  { name: 'ALFI', label: 'Asosiasi Logam dan Mesin Indonesia' },
+  { name: 'KADIN', label: 'Indonesian Chamber of Commerce and Industry' },
+  { name: 'ALFI', label: 'Indonesian Logistics and Machine Association' },
 ];
 
 export const features = [
   {
-    num: '01', title: 'Upload Sekali',
-    desc: 'Unggah invoice, tagihan listrik PLN, log BBM, dan laporan produksi — tanpa format khusus.',
+    num: '01', title: 'One-Time Upload',
+    desc: 'Upload invoices, utility bills, fuel logs, and production records—no special format required.',
+    img: '/assets/icon-cert.webp',
   },
   {
-    num: '02', title: 'AI OCR Otomatis',
-    desc: 'Ekstraksi data dari dokumen kotor, kertas termal pudar, atau scan buram jadi data terstruktur dalam detik.',
+    num: '02', title: 'Automated AI OCR',
+    desc: 'Extract data from low-quality docs, faded thermal paper, or blurry scans into structured data in seconds.',
+    img: '/assets/icon-ai.webp',
   },
   {
-    num: '03', title: 'Validasi HITL',
-    desc: 'Jika confidence AI di bawah 90%, sistem menampilkan side-by-side — koreksi 3 detik oleh admin pabrik.',
+    num: '03', title: 'HITL Validation',
+    desc: 'If AI confidence falls below 90%, the system shows a side-by-side layout for quick 3-second human correction.',
+    img: '/assets/icon-cert.webp',
   },
   {
-    num: '04', title: 'Kalkulasi Deterministik',
-    desc: 'Perhitungan emisi mengikuti metodologi EU CBAM resmi. 100% auditable — bukan AI black-box.',
+    num: '04', title: 'Deterministic Calculation',
+    desc: 'Emissions calculations follow official EU CBAM methodologies. 100% auditable—no black-box AI.',
+    img: '/assets/icon-carbon.webp',
   },
   {
-    num: '05', title: 'XML Siap EU Registry',
-    desc: 'Satu klik generate laporan XML sesuai skema CBAM yang diterima langsung oleh EU Customs.',
+    num: '05', title: 'Registry-Ready XML',
+    desc: 'Generate XML reports in one click, fully compliant with CBAM schemas accepted directly by EU Customs.',
+    img: '/assets/icon-growth.webp',
   },
   {
-    num: '06', title: 'Audit Trail Lengkap',
-    desc: 'Setiap angka bisa ditelusuri ke dokumen sumber — siapa, kapan, nilai lama, nilai baru.',
+    num: '06', title: 'Complete Audit Trail',
+    desc: 'Every figure can be traced back to its source document—showing who, when, old values, and new values.',
+    img: '/assets/icon-cert.webp',
   },
 ];
 
 export const howItWorks = [
-  { step: '1', title: 'Upload Dokumen', desc: 'PDF invoice, foto meteran listrik, log produksi' },
-  { step: '2', title: 'AI Ekstrak Data', desc: 'LayoutLM membaca & mengekstrak angka emisi' },
-  { step: '3', title: 'Validasi Manual', desc: 'HITL — koreksi jika confidence rendah' },
-  { step: '4', title: 'Kalkulasi Emisi', desc: 'EU methodology: Scope 1 & 2 otomatis' },
-  { step: '5', title: 'XML EU Registry', desc: 'Download laporan siap submit' },
+  { step: '1', title: 'Upload Documents', desc: 'PDF invoices, utility bills, production logs' },
+  { step: '2', title: 'AI Data Extraction', desc: 'LayoutLM reads & extracts carbon emission data' },
+  { step: '3', title: 'Manual Validation', desc: 'HITL—correct details if AI confidence is low' },
+  { step: '4', title: 'Emissions Calculation', desc: 'EU methodology: Scope 1 & 2 computed automatically' },
+  { step: '5', title: 'XML EU Registry', desc: 'Download report ready for direct submission' },
 ];
 
 export const faqItems = [
   {
-    q: 'Apa bedanya Emitra dengan Excel?',
-    a: 'Excel tidak connect ke EU Registry, tidak punya metodologi kalkulasi resmi EU, tidak ada audit trail per angka, dan manual entry untuk 500 invoice tidak scalable. Emitra mengotomatisasi dari dokumen ke XML dalam hitungan jam.',
+    q: 'What is the difference between Emitra and Excel?',
+    a: 'Excel does not connect to the EU Registry, lacks official EU calculation methodologies, provides no figure-by-figure audit trail, and manual data entry is not scalable. Emitra automates document processing to XML in hours.',
   },
   {
-    q: 'Bagaimana jika hasil OCR tidak akurat?',
-    a: 'Dokumen dengan confidence di bawah 90% masuk ke HITL (Human-in-the-Loop) — tampilan side-by-side, koreksi 3 detik oleh admin pabrik. Akurasi terjaga tanpa memperlambat proses.',
+    q: 'What if the OCR results are inaccurate?',
+    a: 'Documents with confidence scores below 90% go to HITL (Human-in-the-Loop) for a side-by-side preview and quick 3-second manual verification. Accuracy is maintained without slowing down workflows.',
   },
   {
-    q: 'Apakah data perusahaan kami aman?',
-    a: 'Ya. Single-tenant isolation + AES-256 + TLS 1.3. Data klien A tidak bisa diakses klien B atau staf Emitra tanpa otorisasi. UU PDP compliant.',
+    q: 'Is our company data secure?',
+    a: 'Yes. We use single-tenant isolation, AES-256 encryption, and TLS 1.3. Client data is fully isolated. Fully compliant with data protection laws.',
   },
   {
-    q: 'Siapa yang bertanggung jawab kalau ada kesalahan hitung?',
-    a: 'Emitra adalah software tool, bukan accredited verifier. Verifikasi akhir tetap oleh Sucofindo / SGS / Mutu Agung Lestari. Liability kami di-capped di subscription fees.',
+    q: 'Who is responsible if there is a calculation error?',
+    a: 'Emitra is a software tool, not an accredited verifier. Final verification is still done by certified bodies like Sucofindo, SGS, or Mutu Agung Lestari. Our liability is capped at subscription fees.',
   },
   {
-    q: 'Berapa lama implementasinya?',
-    a: 'Onboarding selesai dalam 3-5 hari kerja. Pilot clients bisa langsung upload dokumen dan melihat hasil kalkulasi di hari pertama.',
+    q: 'How long does the implementation take?',
+    a: 'Onboarding is completed within 3 to 5 business days. Pilot clients can start uploading documents and view emission calculations on day one.',
   },
 ];
 

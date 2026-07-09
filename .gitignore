@@ -1,0 +1,10 @@
+# Proposal binaries — kept locally, not pushed to GitHub
+proposal/*.pdf
+proposal/[0-9].jpeg
+proposal/Cover*.png
+proposal/Cover_*.jpeg
+4-Logo.png
+emitra-frontend/public/Logo-*.png
+archive/drive-download-*.zip
+deploy.err
+dev.log

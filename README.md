@@ -105,7 +105,7 @@ The demo frontend (built with React 18 + TypeScript + Tailwind CSS) showcases th
 Proud participant of **BMC #12 — International Business Plan Competition**
 - **Theme:** Innovating Global Business Strategies for a Sustainable Future
 - **Category:** Sustainable Business & Green Innovation
-- **Host:** Politeknik Negeri Bali
+- **Host:** Universitas Kristen Duta Wacana
 
 ---
 

@@ -1,6 +1,51 @@
 import { useEffect, useRef, useState } from 'react';
 import '../styles/landing.css';
-import { stats, testimonials, partners, features, howItWorks, faqItems } from '../data/landing';
+import HeroCanvas from '../components/HeroCanvas';
+import { useEmitra } from '../context/EmitraContext';
+import { stats, testimonials, partners, features, howItWorks, faqItems, team } from '../data/landing';
+
+/* ───────── Video Ping-Pong Loop Hook ───────── */
+function usePingPongVideo(ref: React.RefObject<HTMLVideoElement>) {
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    let reverseInterval: any = null;
+    let isReversing = false;
+
+    const onEnded = () => {
+      isReversing = true;
+      video.pause();
+      const fps = 30;
+      const step = 1 / fps;
+      
+      reverseInterval = setInterval(() => {
+        if (!video) return;
+        video.currentTime -= step * 1.5;
+        if (video.currentTime <= 0.05) {
+          video.currentTime = 0;
+          clearInterval(reverseInterval);
+          isReversing = false;
+          video.play().catch(() => {});
+        }
+      }, 1000 / fps);
+    };
+
+    const onPlay = () => {
+      if (isReversing) {
+        isReversing = false;
+        clearInterval(reverseInterval);
+      }
+    };
+
+    video.addEventListener('ended', onEnded);
+    video.addEventListener('play', onPlay);
+    return () => {
+      video.removeEventListener('ended', onEnded);
+      video.removeEventListener('play', onPlay);
+      clearInterval(reverseInterval);
+    };
+  }, [ref]);
+}
 
 /* ───────── Fade-up observer ───────── */
 function useFadeObserver() {
@@ -19,6 +64,37 @@ function useFadeObserver() {
       setTimeout(() => el.classList.add('is-in'), 100);
     });
     return () => obs.disconnect();
+  }, []);
+}
+
+/* ───────── Scroll-triggered parallax ───────── */
+function useParallax() {
+  useEffect(() => {
+    const els = Array.from(document.querySelectorAll<HTMLElement>('[data-parallax]'));
+    if (!els.length) return;
+    let raf = 0;
+    const update = () => {
+      raf = 0;
+      const vh = window.innerHeight;
+      els.forEach((el) => {
+        const speed = parseFloat(el.dataset.parallax || '0.1');
+        const rect = el.getBoundingClientRect();
+        const center = rect.top + rect.height / 2;
+        const offset = (center - vh / 2) * -speed;
+        el.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0)`;
+      });
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      cancelAnimationFrame(raf);
+    };
   }, []);
 }
 
@@ -71,86 +147,118 @@ function FaqRow({ q, a, isOpen, onClick }: { q: string; a: string; isOpen: boole
 
 /* ───────── Landing Page ───────── */
 export function Landing() {
+  const { tourStep, setTourStep } = useEmitra();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const heroRef = useRef<HTMLDivElement>(null);
+  
+  const heroVideoRef = useRef<HTMLVideoElement>(null);
+  const howVideoRef = useRef<HTMLVideoElement>(null);
 
   useFadeObserver();
   useScrollTopbar();
+  useParallax();
+  
+  usePingPongVideo(heroVideoRef);
+  usePingPongVideo(howVideoRef);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="landing">
       <div className="grain" />
+      <HeroCanvas />
 
       {/* ───────── ATLAS-inspired floating glass pill navbar ───────── */}
       <header className="topbar">
         <div className="topbar__inner">
-          <a href="#top" className="brand">
-            <span className="brand__mark" />
-            <span className="brand-name">E<span>mi</span>tra</span>
+          <a href="#top" className="brand" onClick={(e) => handleNavClick(e, 'top')}>
+            <img src="/logo.svg" alt="Emitra" className="brand__logo" />
           </a>
           <nav className="nav">
-            <a href="#problem">Masalah</a>
-            <a href="#how">Cara Kerja</a>
-            <a href="#features">Fitur</a>
-            <a href="#pricing">Harga</a>
-            <a href="#faq">FAQ</a>
-            <a href="/dashboard" className="nav-cta">Dashboard →</a>
+            <a href="#problem" onClick={(e) => handleNavClick(e, 'problem')}>Problem</a>
+            <a href="#how" onClick={(e) => handleNavClick(e, 'how')}>How It Works</a>
+            <a href="#features" onClick={(e) => handleNavClick(e, 'features')}>Features</a>
+            <a href="#pricing" onClick={(e) => handleNavClick(e, 'pricing')}>Pricing</a>
+            <a href="#faq" onClick={(e) => handleNavClick(e, 'faq')}>FAQ</a>
+            <a 
+              href="/dashboard" 
+              className={`nav-cta ${tourStep === 0 ? 'tour-pulse' : ''}`}
+              onClick={() => {
+                if (tourStep === 0) setTourStep(1);
+              }}
+            >
+              Dashboard →
+            </a>
           </nav>
         </div>
       </header>
 
       {/* ───────── Hero ───────── */}
       <section className="hero" id="top" ref={heroRef}>
-        <div className="hero__media">
-          <div className="hero__img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=2400&q=80"
-              alt="Industrial facility — steel and heavy machinery"
-              loading="eager"
-            />
-          </div>
-          <div className="hero__veil" />
-          <div className="hero__beam" />
-        </div>
+        <video
+          ref={heroVideoRef}
+          className="hero__video"
+          autoPlay
+          muted
+          playsInline
+          preload="auto"
+          poster="/assets/factory.webp"
+        >
+          <source src="/assets/hero-bg.mp4" type="video/mp4" />
+        </video>
+        <div className="hero__orb hero__orb--emerald" data-parallax="0.12" />
+        <div className="hero__orb hero__orb--navy" data-parallax="-0.08" />
+        <div className="hero__orb hero__orb--amber" data-parallax="0.18" />
+        <div className="hero__veil" />
 
-        <div className="hero__content">
-          <div className="hero__label fade-up">
-            AI-Powered Carbon Compliance<span></span>Untuk Eksportir RI
+        <div className="hero__sticky">
+          <div className="hero__content">
+            <div className="hero__label fade-up">
+              AI-Powered Carbon Compliance<span></span>For Indonesian Exporters
+            </div>
+            <h1 className="hero__title fade-up delay-1">
+              Keep Exporting<br />To Europe
+            </h1>
+            <p className="hero__sub fade-up delay-2">
+              Without CBAM Hassles
+            </p>
+            <p className="hero__tag fade-up delay-2">
+              From operational documents to XML EU Registry in hours —{' '}
+              <em>not weeks.</em> AI compliance that{' '}
+              <em>works for you, not the other way around.</em>
+            </p>
+            <div className="hero__actions fade-up delay-3">
+              <a href="#final" className="btn-primary" onClick={(e) => handleNavClick(e, 'final')}>
+                <span>Start 3-Month Free Pilot</span>
+                <span className="arrow">→</span>
+              </a>
+              <a href="#how" className="btn-secondary" onClick={(e) => handleNavClick(e, 'how')}>
+                <span>See How It Works</span>
+              </a>
+            </div>
           </div>
-          <h1 className="hero__title fade-up delay-1">
-            Ekspor ke Eropa<br />Tetap Jalan
-          </h1>
-          <p className="hero__sub fade-up delay-2">
-            Tanpa ribet CBAM
-          </p>
-          <p className="hero__tag fade-up delay-2">
-            Dari dokumen ke XML EU Registry dalam hitungan jam —{' '}
-            <em>bukan minggu.</em> AI compliance yang{' '}
-            <em>bekerja untuk Anda, bukan sebaliknya.</em>
-          </p>
-          <div className="hero__actions fade-up delay-3">
-            <a href="#final" className="btn-primary">
-              <span>Coba Gratis 30 Hari</span>
-              <span className="arrow">→</span>
-            </a>
-            <a href="#how" className="btn-secondary">
-              <span>Lihat Cara Kerja</span>
-            </a>
-          </div>
-        </div>
 
-        <div className="hero__scroll fade-up delay-4">
-          <span>scroll</span>
-          <div className="hero__scrollline" />
+          <div className="hero__scroll fade-up delay-4">
+            <span>scroll</span>
+            <div className="hero__scrollline" />
+          </div>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Problem / Pain ───────── */}
       <section className="pain" id="problem">
+        <div className="section-fade-top" />
         <SectionHeader
-          label="01 · Masalah"
-          title="Kenapa ini <em>urgent</em> sekarang?"
-          lead="EU CBAM (Carbon Border Adjustment Mechanism) mulai berlaku penuh. Eksportir RI yang tidak patuh siap-siap kehilangan akses pasar Eropa."
+          label="01 · The Problem"
+          title="Why is this <em>urgent</em> now?"
+          lead="EU CBAM (Carbon Border Adjustment Mechanism) is now in full effect. Non-compliant exporters face losing access to the European market."
         />
         <div className="pain__grid">
           <div className="pain-card fade-up">
@@ -160,11 +268,30 @@ export function Landing() {
                 <path d="M12 9v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg>
             </div>
-            <h3 className="pain-card__title">Default Value = Kalah Saing</h3>
+            <h3 className="pain-card__title">Default Value = Higher Costs</h3>
             <p className="pain-card__desc">
-              Kalau tidak punya data emisi riil, EU menggunakan <em>default value</em> — yang
-              20-40% lebih tinggi dari emisi aktual. Artinya: <strong>bayar pajak karbon lebih mahal</strong> dari yang seharusnya.
+              Without actual emissions data, the EU applies default values—which are 
+              20-40% higher than your actual emissions. This means paying significantly higher carbon taxes.
             </p>
+            <div className="pain-card__chart">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <rect x="10" y="30" width="70" height="40" rx="4" fill="url(#orange-grad)" />
+                <text x="45" y="23" fill="#F5A623" fontSize="9" fontWeight="bold" textAnchor="middle">Default (1.4x)</text>
+                <rect x="110" y="50" width="70" height="20" rx="4" fill="url(#green-grad)" />
+                <text x="145" y="43" fill="#0A8754" fontSize="9" fontWeight="bold" textAnchor="middle">Actual (1.0x)</text>
+                <path d="M80 35 L110 55" stroke="#E53E3E" strokeWidth="1.5" strokeDasharray="3 3" />
+                <defs>
+                  <linearGradient id="orange-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#F5A623" stopOpacity="0.8" />
+                    <stop offset="100%" stopColor="#F5A623" stopOpacity="0.2" />
+                  </linearGradient>
+                  <linearGradient id="green-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#0A8754" stopOpacity="0.8" />
+                    <stop offset="100%" stopColor="#0A8754" stopOpacity="0.2" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
           </div>
           <div className="pain-card fade-up delay-1">
             <div className="pain-card__num">— 02</div>
@@ -173,12 +300,19 @@ export function Landing() {
                 <path d="M12 2v20M2 12h20" />
               </svg>
             </div>
-            <h3 className="pain-card__title">14% Tambahan Biaya untuk Data Manual</h3>
+            <h3 className="pain-card__title">14% Extra Cost for Manual Entry</h3>
             <p className="pain-card__desc">
-              Perusahaan menghabiskan 12-14% dari revenue ekspor untuk konsultan lingkungan
-              dan tenaga kerja manual — meng-entry ulang data dari invoice, PLN, dan log
-              produksi ke spreadsheet Excel.
+              Companies spend 12-14% of their export revenue on environmental consultants 
+              and manual data entry, manually copying data from invoices, utility bills, and logs into spreadsheets.
             </p>
+            <div className="pain-card__chart">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <circle cx="100" cy="40" r="28" stroke="rgba(255,255,255,0.06)" strokeWidth="6" />
+                <circle cx="100" cy="40" r="28" stroke="#E53E3E" strokeWidth="6" strokeDasharray="175" strokeDashoffset="150" strokeLinecap="round" transform="rotate(-90 100 40)" />
+                <text x="100" y="44" fill="#E53E3E" fontSize="13" fontWeight="bold" textAnchor="middle">14%</text>
+                <text x="100" y="58" fill="#a1a1aa" fontSize="7" textAnchor="middle">Revenue Loss</text>
+              </svg>
+            </div>
           </div>
           <div className="pain-card fade-up delay-2">
             <div className="pain-card__num">— 03</div>
@@ -190,29 +324,42 @@ export function Landing() {
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
             </div>
-            <h3 className="pain-card__title">Februari 2027 — Deadline Fix</h3>
+            <h3 className="pain-card__title">February 2027 — Hard Deadline</h3>
             <p className="pain-card__desc">
-              Sertifikat CBAM wajib mulai Februari 2027. Tanpa sistem terintegrasi sekarang,
-              perusahaan akan <strong>kejar-kejaran dengan waktu</strong> — dan berisiko
-              kehilangan akses ke 67% mitra dagang Eropa.
+              CBAM certificates will be mandatory starting February 2027. Without an integrated 
+              system, companies will face a race against time—risking access to 67% of their European partners.
             </p>
+            <div className="pain-card__chart">
+              <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
+                <rect x="60" y="15" width="80" height="50" rx="8" fill="#141416" stroke="rgba(229, 62, 62, 0.4)" strokeWidth="1.5" />
+                <rect x="60" y="15" width="80" height="15" rx="8" fill="#E53E3E" />
+                <text x="100" y="26" fill="#ffffff" fontSize="9" fontWeight="bold" textAnchor="middle">DEADLINE</text>
+                <text x="100" y="46" fill="#ffffff" fontSize="13" fontWeight="bold" textAnchor="middle">FEB 2027</text>
+                <path d="M25 45 L35 30 L45 45 Z" fill="#F5A623" />
+                <text x="35" y="43" fill="#000" fontSize="8" fontWeight="bold" textAnchor="middle">!</text>
+                <path d="M155 45 L165 30 L175 45 Z" fill="#F5A623" />
+                <text x="165" y="43" fill="#000" fontSize="8" fontWeight="bold" textAnchor="middle">!</text>
+              </svg>
+            </div>
           </div>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Solution ───────── */}
-      <section className="solution" id="solution">
+      <section className="solution section-bg" id="solution" style={{ backgroundImage: 'url(/assets/mood-green.webp)' }}>
+        <div className="section-fade-top" />
         <div className="solution__inner">
           <div className="solution__text">
             <SectionHeader
-              label="02 · Solusi"
-              title="e-Faktur-nya <em>kepatuhan karbon</em>"
-              lead="Ingat e-Faktur PPN yang dulu ribet, sekarang jadi satu klik? Konsep yang sama — tapi untuk pelaporan emisi CBAM."
+              label="02 · The Solution"
+              title="The e-Invoice of <em>carbon compliance</em>"
+              lead="Remember how complex VAT invoicing used to be before it became a single click? The same concept applies here—but for CBAM emissions reporting."
             />
             <p className="section-lead fade-up delay-3" style={{ textAlign: 'left', marginLeft: 0 }}>
-              Emitra adalah <em>AI-powered compliance platform</em> yang mengubah dokumen
-              operasional sehari-hari (tagihan listrik, invoice BBM, log produksi) menjadi
-              laporan emisi siap EU Registry.
+              Emitra is an <em>AI-powered compliance platform</em> that converts your everyday 
+              operational documents (electricity bills, fuel invoices, production logs) into 
+              EU Registry-ready emissions reports.
             </p>
           </div>
           <div className="solution__visual fade-up delay-2">
@@ -220,70 +367,93 @@ export function Landing() {
               <div className="solution__step">
                 <span className="solution__step-num">01</span>
                 <span className="solution__step-text">
-                  <strong>Upload dokumen</strong> — PDF, scan, foto. No format khusus.
+                  <strong>Upload documents</strong> — PDF, scan, photo. No special format required.
                 </span>
               </div>
               <div className="solution__step" style={{ borderColor: 'rgba(10, 135, 84, 0.2)' }}>
                 <span className="solution__step-num">02</span>
                 <span className="solution__step-text">
-                  <strong>AI LayoutLM</strong> mengekstrak data emisi secara otomatis.
+                  <strong>AI LayoutLM</strong> extracts carbon emission data automatically.
                 </span>
               </div>
               <div className="solution__step">
                 <span className="solution__step-num">03</span>
                 <span className="solution__step-text">
-                  <strong>Validasi HITL</strong> — konfirmasi 3 detik jika confidence &lt; 90%.
+                  <strong>HITL Validation</strong> — 3-second review if confidence is &lt; 90%.
                 </span>
               </div>
               <div className="solution__step" style={{ borderColor: 'rgba(10, 135, 84, 0.2)' }}>
                 <span className="solution__step-num">04</span>
                 <span className="solution__step-text">
-                  <strong>XML siap EU Registry</strong> — satu klik, siap submit.
+                  <strong>XML for EU Registry</strong> — one click, ready to submit.
                 </span>
               </div>
             </div>
           </div>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── How It Works ───────── */}
       <section className="how" id="how">
-        <SectionHeader
-          label="03 · Cara Kerja"
-          title="5 langkah — <em>dari dokumen ke kepatuhan</em>"
-          lead="Tanpa training. Tanpa IT support. Cukup upload dokumen seperti biasa — Emitra yang mengerjakan sisanya."
-        />
-        <div className="how__grid">
-          {howItWorks.map((item, i) => (
-            <div className={`how__card fade-up ${i > 0 ? `delay-${i}` : ''}`} key={i}>
-              <div className="how__step">{item.step}</div>
-              <h3 className="how__title">{item.title}</h3>
-              <p className="how__desc">{item.desc}</p>
-            </div>
-          ))}
+        <div className="section-fade-top" />
+        <video 
+          ref={howVideoRef} 
+          className="section-video" 
+          autoPlay 
+          muted 
+          playsInline 
+          preload="metadata" 
+          poster="/assets/icon-ai.webp"
+          style={{ opacity: 0.22 }}
+        >
+          <source src="/assets/data-flow.mp4" type="video/mp4" />
+        </video>
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <SectionHeader
+            label="03 · How It Works"
+            title="5 steps — <em>from document to compliance</em>"
+            lead="No training. No IT support needed. Just upload your documents as usual — Emitra handles the rest."
+          />
+          <div className="how__grid">
+            {howItWorks.map((item, i) => (
+              <div className={`how__card fade-up ${i > 0 ? `delay-${i}` : ''}`} key={i}>
+                <div className="how__step">{item.step}</div>
+                <h3 className="how__title">{item.title}</h3>
+                <p className="how__desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Features ───────── */}
       <section className="features" id="features">
+        <div className="section-fade-top" />
         <SectionHeader
-          label="04 · Fitur"
-          title="Enam fitur — <em>satu platform</em>"
-          lead="Bukan black-box AI. Setiap langkah auditable, setiap angka bisa ditelusuri ke dokumen sumber."
+          label="04 · Features"
+          title="Six Features — <em>One Platform</em>"
+          lead="Not a black-box AI. Every step is auditable, and every figure can be traced back to its source document."
         />
         <div className="features__grid">
           {features.map((f, i) => (
             <div className={`feature fade-up ${i > 0 ? `delay-${Math.min(i, 5)}` : ''}`} key={f.num}>
-              <div className="feature__num">— {f.num}</div>
+              <div className="feature__head">
+                <img className="feature__icon" src={f.img} alt={f.title} loading="lazy" />
+                <div className="feature__num">— {f.num}</div>
+              </div>
               <h3 className="feature__title">{f.title}</h3>
               <p className="feature__desc">{f.desc}</p>
             </div>
           ))}
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Stats ───────── */}
       <section className="stats" id="stats">
+        <div className="section-fade-top" />
         <div className="stats__grid">
           {stats.map((s, i) => (
             <div className={`stat-card fade-up ${i > 0 ? `delay-${i}` : ''}`} key={s.label}>
@@ -292,14 +462,16 @@ export function Landing() {
             </div>
           ))}
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Testimonials ───────── */}
-      <section className="testimonials" id="testimonials">
+      <section className="testimonials section-bg" id="testimonials" style={{ backgroundImage: 'url(/assets/testimonial.webp)' }}>
+        <div className="section-fade-top" />
         <SectionHeader
-          label="05 · Testimonial"
-          title="Sudah dipakai oleh <em>industri</em>"
-          lead="Ini bukan pitching ke startup — ini solusi untuk pabrik dengan 40 tahun sejarah operasi."
+          label="05 · Testimonials"
+          title="Trusted by <em>Leading Industries</em>"
+          lead="This is not a pitch for startups — it is a proven solution for factories with decades of operational history."
         />
         <div className="testimonials__grid">
           {testimonials.map((t, i) => (
@@ -312,116 +484,153 @@ export function Landing() {
             </div>
           ))}
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
-      {/* ───────── Partners ───────── */}
-      <section className="partners">
-        <div className="partners__label fade-up">Didukung oleh</div>
-        <div className="partners__list fade-up delay-1">
-          {partners.map(p => (
-            <div className="partners__item" key={p.name}>{p.name}</div>
+      {/* ───────── Team ───────── */}
+      <section className="team section-bg" id="team" style={{ backgroundImage: 'url(/assets/team.webp)' }}>
+        <div className="section-fade-top" />
+        <SectionHeader
+          label="06 · The Team"
+          title="Built by <em>Industry Innovators</em>"
+        />
+        <div className="team__grid">
+          {team.map((m, i) => (
+            <div className={`team__card fade-up ${i > 0 ? `delay-${Math.min(i, 3)}` : ''}`} key={m.name}>
+              <div className="team__avatar">{m.avatar}</div>
+              <div className="team__name">{m.name}</div>
+              <div className="team__role">{m.role}</div>
+            </div>
           ))}
         </div>
+        <div className="section-fade-bottom" />
+      </section>
+
+      {/* ───────── Partners (Supported By) ───────── */}
+      <section className="partners">
+        <div className="section-fade-top" />
+        <div className="partners__label fade-up">Supported By</div>
+        <div className="partners__list fade-up delay-1">
+          {partners.map(p => (
+            <div className="partners__card" key={p.name}>
+              <div className="partners__status">
+                <span className="partners__dot"></span>
+                Verified Connection
+              </div>
+              <div className="partners__name">{p.name}</div>
+              <div className="partners__desc">{p.label}</div>
+            </div>
+          ))}
+        </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Pricing ───────── */}
       <section className="pricing" id="pricing">
+        <div className="section-fade-top" />
         <SectionHeader
-          label="06 · Harga"
-          title="Investasi <em>sebanding risiko</em>"
-          lead="Mulai dari 3% dari biaya konsultan manual. ROI terasa di bulan pertama."
+          label="07 · Pricing"
+          title="Investment <em>Matching Your Risk</em>"
+          lead="Starting at just 3% of manual consulting costs. ROI realized in the first month."
         />
         <div className="pricing__grid">
           <div className="pricing-card fade-up">
             <div className="pricing-card__tier">Basic</div>
             <div className="pricing-card__price">
-              IDR 30–50 Juta <span>/ year</span>
+              Setup IDR 60M<span> + Subscription IDR 100M / year</span>
             </div>
-            <p className="pricing-card__desc">Untuk pabrik kecil-menengah dengan &lt; 3 produk CBAM per kuartal.</p>
+            <p className="pricing-card__desc">For small-to-medium factories with &lt; 3 CBAM products per quarter.</p>
             <div className="pricing-card__divider" />
             <ul className="pricing-card__list">
-              <li>Upload hingga 100 dokumen / bulan</li>
-              <li>AI OCR — LayoutLM ekstraksi otomatis</li>
+              <li>Upload up to 100 documents / month</li>
+              <li>AI OCR — LayoutLM automated extraction</li>
               <li>HITL validation — side-by-side preview</li>
-              <li>Kalkulasi emisi Scope 1 & 2</li>
-              <li>XML export EU Registry format</li>
-              <li>Audit trail dasar (30 hari)</li>
-              <li className="muted">Multi-pengguna (single user only)</li>
+              <li>Scope 1 & 2 emissions calculation</li>
+              <li>XML export in EU Registry format</li>
+              <li>Basic audit trail (30 days)</li>
+              <li className="muted">Multi-user (single user only)</li>
               <li className="muted">Dedicated support</li>
             </ul>
-            <button className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Mulai Trial</button>
+            <button className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Start Pilot</button>
           </div>
 
           <div className="pricing-card featured fade-up delay-1">
-            <div className="pricing-card__badge">Rekomendasi</div>
+            <div className="pricing-card__badge">Recommended</div>
             <div className="pricing-card__tier">Pro</div>
             <div className="pricing-card__price">
-              IDR 50–80 Juta <span>/ year</span>
+              Setup IDR 100M<span> + Subscription IDR 160M / year</span>
             </div>
-            <p className="pricing-card__desc">Untuk pabrik besar / korporasi dengan volume ekspor tinggi (3+ produk / kuartal).</p>
+            <p className="pricing-card__desc">For large factories / corporations with high export volumes (3+ products / quarter).</p>
             <div className="pricing-card__divider" />
             <ul className="pricing-card__list">
-              <li>Upload hingga 500+ dokumen / bulan</li>
-              <li>AI OCR — LayoutLM ekstraksi otomatis</li>
+              <li>Upload up to 500+ documents / month</li>
+              <li>AI OCR — LayoutLM automated extraction</li>
               <li>HITL validation — side-by-side preview</li>
-              <li>Kalkulasi emisi Scope 1 & 2</li>
-              <li>XML export EU Registry format</li>
-              <li>Audit trail penuh (1 tahun +)</li>
-              <li>Multi-pengguna (unlimited)</li>
+              <li>Scope 1 & 2 emissions calculation</li>
+              <li>XML export in EU Registry format</li>
+              <li>Full audit trail (1 year +)</li>
+              <li>Multi-user (unlimited users)</li>
               <li>Dedicated support & onboarding</li>
-              <li>Early access: Scope 3 (Year 3)</li>
+              <li>Early access: Scope 3 emissions</li>
             </ul>
-            <button className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Mulai Trial</button>
+            <button className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Start Pilot</button>
           </div>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── FAQ ───────── */}
-      <section className="faq" id="faq">
-        <SectionHeader
-          label="07 · FAQ"
-          title="Pertanyaan yang <em>sering diajukan</em>"
-          lead="Jujur lebih baik dari sopan. Ini jawaban untuk hal-hal yang ingin Anda tanyakan tapi mungkin malu."
-        />
-        <div className="faq__list fade-up">
-          {faqItems.map((item, i) => (
-            <FaqRow
-              key={i}
-              q={item.q}
-              a={item.a}
-              isOpen={openFaq === i}
-              onClick={() => setOpenFaq(openFaq === i ? null : i)}
-            />
-          ))}
+      <section className="faq section-bg" id="faq" style={{ backgroundImage: 'url(/assets/factory.webp)' }}>
+        <div className="section-fade-top" />
+        <div style={{ position: 'relative', zIndex: 2 }}>
+          <SectionHeader
+            label="08 · FAQ"
+            title="Frequently Asked <em>Questions</em>"
+            lead="Honesty is better than politeness. Here are the answers to the questions you want to ask but might hesitate to."
+          />
+          <div className="faq__list fade-up">
+            {faqItems.map((item, i) => (
+              <FaqRow
+                key={i}
+                q={item.q}
+                a={item.a}
+                isOpen={openFaq === i}
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+              />
+            ))}
+          </div>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── Final CTA ───────── */}
       <section className="final-cta" id="final">
+        <div className="section-fade-top" />
         <div className="final-cta__inner">
           <h2 className="final-cta__title fade-up">
-            Siap <em>amankan ekspor</em> Anda?
+            Ready to <em>secure your exports</em>?
           </h2>
           <p className="final-cta__desc fade-up delay-1">
-            Coba gratis 30 hari — tanpa kartu kredit. Kami bantu onboarding dalam 3-5 hari kerja.
-            Kalau tidak cocok, cancel. <em>Simple.</em>
+            Try free for 30 days — no credit card required. We will onboard you within 3-5 business days.
+            If it is not a fit, cancel anytime. <em>Simple.</em>
           </p>
           <div className="final-cta__actions fade-up delay-2">
             <a href="#top" className="btn-primary" onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}>
-              <span>Coba Gratis 30 Hari</span>
+              <span>Start 3-Month Free Pilot</span>
               <span className="arrow">→</span>
             </a>
             <a href="/dashboard" className="btn-secondary">
-              Lihat Demo Dashboard →
+              View Demo Dashboard →
             </a>
           </div>
           <p className="final-cta__note fade-up delay-3">
-            Gratis 30 hari · 3-5 hari onboarding · Cancel kapan saja
+            3-Month Free Pilot · 3-5 Day Onboarding · Cancel Anytime
           </p>
         </div>
+        <div className="section-fade-bottom" />
       </section>
 
       {/* ───────── KRESNA-inspired bento footer ───────── */}
@@ -436,7 +645,7 @@ export function Landing() {
           <div className="footer__card-left">
             <div>
               <div className="footer-name">E<span>mi</span>tra</div>
-              <p>AI-powered carbon compliance untuk eksportir Indonesia. Dari dokumen ke EU Registry dalam hitungan jam — karena kepatuhan karbon tidak boleh jadi hambatan ekspor.</p>
+              <p>AI-powered carbon compliance for Indonesian exporters. From documents to the EU Registry in hours — because carbon compliance should never be an obstacle to exporting.</p>
             </div>
             <div className="footer__social">
               <a href="#" className="footer__social-icon" title="Instagram" aria-label="Instagram">
@@ -449,32 +658,42 @@ export function Landing() {
                 <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
             </div>
-          </div>
-          <div className="footer__card-right">
-            <div className="footer__col">
-              <h4>Produk</h4>
-              <ul>
-                <li>Upload Dokumen</li>
-                <li>AI OCR</li>
-                <li>Validasi HITL</li>
-                <li className="em">Kalkulasi Emisi</li>
-              </ul>
-            </div>
-            <div className="footer__col">
-              <h4>Perusahaan</h4>
-              <ul>
-                <li>Tentang Emitra</li>
-                <li className="em">BMC #12 · PNB</li>
-                <li>Grand Final 20 Agu 2026</li>
-              </ul>
+            <div style={{ marginTop: '1.5rem', opacity: 0.6, fontSize: '0.8rem', letterSpacing: '0.05em' }}>
+              Politeknik Negeri Bali · Competition Finalist 2026
             </div>
           </div>
         </div>
         <div className="footer__base">
-          <span>© Emitra · BMC #12</span>
-          <span>Dari dokumen ke EU Registry · Satu klik</span>
+          <span>© Emitra</span>
+          <span>From document to EU Registry · One click</span>
         </div>
       </footer>
+
+      {tourStep === 0 && (
+        <div style={{
+          position: 'fixed',
+          bottom: '24px',
+          right: '24px',
+          zIndex: 10000,
+          padding: '16px',
+          background: 'linear-gradient(135deg, rgba(13, 21, 39, 0.95), rgba(8, 13, 26, 0.95))',
+          border: '1px solid rgba(16, 185, 129, 0.3)',
+          borderRadius: '16px',
+          boxShadow: '0 8px 32px rgba(10, 135, 84, 0.25)',
+          backdropFilter: 'blur(20px)',
+          maxWidth: '300px',
+          fontFamily: 'system-ui, sans-serif'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#10b981', display: 'inline-block', boxShadow: '0 0 8px #10b981' }} className="animate-pulse" />
+            <span style={{ fontSize: '9px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#10b981' }}>Simulation Tour</span>
+          </div>
+          <h4 style={{ margin: 0, fontSize: '13px', fontWeight: 'bold', color: '#ffffff' }}>Start CBAM Compliance!</h4>
+          <p style={{ margin: '4px 0 0 0', fontSize: '11px', color: '#a1a1aa', lineHeight: '1.4' }}>
+            Click the flashing green <strong>"Dashboard →"</strong> link in the top header to begin the step-by-step walkthrough.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
