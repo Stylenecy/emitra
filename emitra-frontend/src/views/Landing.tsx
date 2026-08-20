@@ -270,8 +270,8 @@ export function Landing() {
             </div>
             <h3 className="pain-card__title">Default Value = Higher Costs</h3>
             <p className="pain-card__desc">
-              Without actual emissions data, the EU applies default values—which are 
-              20-40% higher than your actual emissions. This means paying significantly higher carbon taxes.
+              Without verified emissions data, the EU applies a default value derived from the
+              worst-performing producers. A clean Indonesian plant is billed as if it were the dirtiest.
             </p>
             <div className="pain-card__chart">
               <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
@@ -300,17 +300,17 @@ export function Landing() {
                 <path d="M12 2v20M2 12h20" />
               </svg>
             </div>
-            <h3 className="pain-card__title">14% Extra Cost for Manual Entry</h3>
+            <h3 className="pain-card__title">Up to 14% of Net Profit</h3>
             <p className="pain-card__desc">
-              Companies spend 12-14% of their export revenue on environmental consultants 
-              and manual data entry, manually copying data from invoices, utility bills, and logs into spreadsheets.
+              A manual consultant audit costs IDR 150-250 million a year. For a Tier-2 factory running
+              an 8-10% net margin, that is up to 14% of net profit - spent copying invoices into spreadsheets.
             </p>
             <div className="pain-card__chart">
               <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
                 <circle cx="100" cy="40" r="28" stroke="rgba(255,255,255,0.06)" strokeWidth="6" />
                 <circle cx="100" cy="40" r="28" stroke="#E53E3E" strokeWidth="6" strokeDasharray="175" strokeDashoffset="150" strokeLinecap="round" transform="rotate(-90 100 40)" />
                 <text x="100" y="44" fill="#E53E3E" fontSize="13" fontWeight="bold" textAnchor="middle">14%</text>
-                <text x="100" y="58" fill="#a1a1aa" fontSize="7" textAnchor="middle">Revenue Loss</text>
+                <text x="100" y="58" fill="#a1a1aa" fontSize="7" textAnchor="middle">of Net Profit</text>
               </svg>
             </div>
           </div>
@@ -326,8 +326,8 @@ export function Landing() {
             </div>
             <h3 className="pain-card__title">February 2027 — Hard Deadline</h3>
             <p className="pain-card__desc">
-              CBAM certificates will be mandatory starting February 2027. Without an integrated 
-              system, companies will face a race against time—risking access to 67% of their European partners.
+              The first financial settlement deadline for EU importers is February 2027. European buyers
+              already ask for per-unit emission data before renewing a contract - no data, no renewal.
             </p>
             <div className="pain-card__chart">
               <svg width="100%" height="80" viewBox="0 0 200 80" fill="none">
@@ -469,9 +469,9 @@ export function Landing() {
       <section className="testimonials section-bg" id="testimonials" style={{ backgroundImage: 'url(/assets/testimonial.webp)' }}>
         <div className="section-fade-top" />
         <SectionHeader
-          label="05 · Testimonials"
-          title="Trusted by <em>Leading Industries</em>"
-          lead="This is not a pitch for startups — it is a proven solution for factories with decades of operational history."
+          label="05 · Target Outcomes"
+          title="What Emitra is <em>Built to Deliver</em>"
+          lead="Emitra is pre-revenue. We have no paying customers yet, so these are modelled scenarios built from sector data and our own pricing - not customer statements."
         />
         <div className="testimonials__grid">
           {testimonials.map((t, i) => (
@@ -531,13 +531,13 @@ export function Landing() {
         <SectionHeader
           label="07 · Pricing"
           title="Investment <em>Matching Your Risk</em>"
-          lead="40–70% cost savings compared to manual environmental audits. ROI realized in the first month."
+          lead="A manual consultant audit costs IDR 150-250 million a year. Emitra Basic costs IDR 80 million in year one and IDR 50 million after that - 47-68% saved in year one, 67-80% from year two."
         />
         <div className="pricing__grid">
           <div className="pricing-card fade-up">
             <div className="pricing-card__tier">Basic</div>
             <div className="pricing-card__price">
-              Setup IDR 60M<span> + Subscription IDR 100M / year</span>
+              Setup IDR 30M<span> + Subscription IDR 50M / year</span>
             </div>
             <p className="pricing-card__desc">For small-to-medium factories with &lt; 3 CBAM products per quarter.</p>
             <div className="pricing-card__divider" />
@@ -558,7 +558,7 @@ export function Landing() {
             <div className="pricing-card__badge">Recommended</div>
             <div className="pricing-card__tier">Pro</div>
             <div className="pricing-card__price">
-              Setup IDR 100M<span> + Subscription IDR 160M / year</span>
+              Setup IDR 50M<span> + Subscription IDR 80M / year</span>
             </div>
             <p className="pricing-card__desc">For large factories / corporations with high export volumes (3+ products / quarter).</p>
             <div className="pricing-card__divider" />

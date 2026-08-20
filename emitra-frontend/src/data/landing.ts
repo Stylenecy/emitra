@@ -1,32 +1,32 @@
 export const stats = [
-  { value: '1,500+', label: 'Exporters Affected by CBAM' },
+  { value: '3,200', label: 'Indonesian Manufacturers Exposed to CBAM' },
   { value: 'USD 757.7M', label: 'Threatened Export Value' },
-  { value: '67%', label: 'Compliance Cost Savings' },
+  { value: '47-80%', label: 'Saved vs a Manual Consultant Audit' },
   { value: 'Feb 2027', label: 'EU Certificate Deadline' },
 ];
 
 export const testimonials = [
   {
-    name: 'Budi Santoso', role: 'Plant Manager', company: 'PT Baja Nusantara Prima',
-    quote: 'Emitra cut our CBAM reporting time from 3 weeks to 2 days. The complete audit trail allowed EU verifiers to approve it instantly.',
-    result: 'Saved 120 working hours / year', avatar: 'BS',
+    name: 'Scenario A - Steel, Cikarang', role: 'Modelled from sector data', company: 'Not a customer statement',
+    quote: 'A Tier-2 steel plant replaces a three-week manual collection cycle with upload, AI extraction and human validation. The same documents it already produces - a different pipeline.',
+    result: 'Design target: 3 weeks to under 48 hours', avatar: '01',
   },
   {
-    name: 'Siti Aminah', role: 'CFO', company: 'CV Logam Mulia Sejahtera',
-    quote: 'Our environmental consulting costs dropped by 67% in the second year. The ROI is immediately apparent in our plant\'s net margin.',
-    result: 'Saved IDR 135 Million / year', avatar: 'SA',
+    name: 'Scenario B - Aluminium, Ceper', role: 'Modelled from our own pricing', company: 'Not a customer statement',
+    quote: 'A foundry paying IDR 200 million a year for a manual consultant audit moves to Emitra Basic: IDR 80 million in year one, IDR 50 million from year two onward.',
+    result: '60% saved in year one, 75% from year two', avatar: '02',
   },
   {
-    name: 'Hendra Wijaya', role: 'Export Director', company: 'PT Cilegon Steel Works',
-    quote: 'Our German buyers requested real-time emissions data. Emitra is the only local tool whose XML output was accepted by the EU Registry.',
-    result: 'European contracts secured for 3 years', avatar: 'HW',
+    name: 'Scenario C - Steel, Cilegon', role: 'Modelled from EU CBAM methodology', company: 'Not a customer statement',
+    quote: 'An exporter asked by its German buyer for per-unit emission data files an EU-registry XML declaration in which every figure is traceable to its source document.',
+    result: 'Audit trail on every single value', avatar: '03',
   },
 ];
 
 export const partners = [
   { name: 'IISIA', label: 'Indonesian Iron & Steel Industry Association' },
   { name: 'KADIN', label: 'Indonesian Chamber of Commerce and Industry' },
-  { name: 'ALFI', label: 'Indonesian Logistics and Machine Association' },
+  { name: 'ALFI', label: 'Indonesian Logistics and Forwarders Association' },
 ];
 
 export const features = [
@@ -81,7 +81,7 @@ export const faqItems = [
   },
   {
     q: 'Is our company data secure?',
-    a: 'Yes. We use single-tenant isolation, AES-256 encryption, and TLS 1.3. Client data is fully isolated. Fully compliant with data protection laws.',
+    a: 'Client data is isolated per tenant and every value carries a full audit log. Our ISO/IEC 27001 certification is scheduled for years two and three - it has not started, and we will not claim it has. In the interim we rely on contractual confidentiality and on-premise export of the client\'s own data.',
   },
   {
     q: 'Who is responsible if there is a calculation error?',
@@ -89,13 +89,21 @@ export const faqItems = [
   },
   {
     q: 'How long does the implementation take?',
-    a: 'Onboarding is completed within 3 to 5 business days. Pilot clients can start uploading documents and view emission calculations on day one.',
+    a: 'Our onboarding is designed to take 3 to 5 business days, including an on-site visit. To be clear: this is a design target, not a measured one - we have not yet onboarded a live factory.',
+  },
+  {
+    q: 'Do you already have paying customers?',
+    a: 'No. Emitra is pre-revenue: no paying customer, no signed partnership, and no pilot inside a live factory yet. What exists is a deployed product with a public repository, and a year-one plan whose first milestone is three free pilots through an industry association. Every figure shown in the dashboard is demo data.',
+  },
+  {
+    q: 'How much does Emitra cost?',
+    a: 'Basic is IDR 30 million to set up plus IDR 50 million a year. Pro is IDR 50 million plus IDR 80 million a year. Enterprise is custom. A manual consultant audit costs IDR 150-250 million a year, so Basic saves 47-68% in year one and 67-80% from year two.',
   },
 ];
 
 export const team = [
   { name: 'Imeldya', role: 'CEO', avatar: 'IM', desc: 'B2B Strategy & Partnerships' },
   { name: 'Dex Bennett', role: 'CTO', avatar: 'DB', desc: 'AI/ML Architecture & Cloud' },
-  { name: 'Adriel', role: 'CFO', avatar: 'AD', desc: 'Financial Modeling & Pricing' },
-  { name: 'Keren Tiara', role: 'CMO', avatar: 'KT', desc: 'Market Research & Go-to-Market' },
+  { name: 'Adriel', role: 'CMO', avatar: 'AD', desc: 'Market Research & Go-to-Market' },
+  { name: 'Keren Tiara', role: 'CFO', avatar: 'KT', desc: 'Financial Modeling & Pricing' },
 ];
